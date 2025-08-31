@@ -8,24 +8,24 @@ export default function Home() {
       <div  className="flex justify-between w-[100%]">
         <div className="flex flex-col gap-[8vw] w-[40%]">
           <div className="flex flex-col items-center w-[100%]">
-            <VideoCards src="/videos/social-media.mp4"/>
+            <VideoCards src="/videos/social-media.mp4" poster="/poster/social-media.jpeg"/>
             <h4 className="text-[18px] font-bold">Social media</h4>
             <p className="text-[12px]">Ver mais...</p>
           </div>
           <div className="flex flex-col items-center">
-          <VideoCards src="/videos/social-media.mp4"/>
+          <VideoCards src="/videos/criacao-video.mp4" poster="/poster/criacao-video.jpeg"/>
             <h4 className="text-[18px] font-bold">Produtora de video</h4>
             <p className="text-[12px]">Ver mais...</p>
           </div>
         </div>
         <div className="flex flex-col gap-[8vw] mt-[13vw] w-[40%]">
           <div className="flex flex-col items-center w-[100%]">
-          <VideoCards src="/videos/social-media.mp4"/>
+          <VideoCards src="/videos/ti-automacao.mp4" poster="/poster/ti-automacao.jpeg"/>
             <h4 className="text-[18px] font-bold">T.I.</h4>
             <p className="text-[12px]">Ver mais...</p>
           </div>
           <div className="flex flex-col items-center">
-          <VideoCards src="/videos/social-media.mp4"/>
+          <VideoCards src="/videos/parceiros.mp4" poster="/poster/parceiros.jpeg"/>
             <h4 className="text-[18px] font-bold">Parceiros</h4>
             <p className="text-[12px]">Ver mais...</p>
           </div>

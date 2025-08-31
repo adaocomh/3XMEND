@@ -3,21 +3,24 @@ import React, { useRef, useState } from 'react'
 
 type VideoCardsProps = {
     src: string;
+    poster?: string;
 }
 
-export default function VideoCards({ src }: VideoCardsProps){
+export default function VideoCards({ src, poster }: VideoCardsProps){
     const videoRef = useRef<HTMLVideoElement>(null)
     const handleMouseEnter = () => {
         videoRef.current?.play()
     }
     const handleMouseLeave = () => {
-        videoRef.current?.pause()
-        videoRef.current!.currentTime = 0
+        if(videoRef.current){
+        videoRef.current.pause()
+        videoRef.current.currentTime = 0
+        }
     }
 
     return(
-        <div className='w-[100%] h-[100%] overflow-hidden rounded-[10px] bg-[url(/videos/social-media.jpeg)] bg-cover cursor-pointer mb-[10px]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <video ref={videoRef} className='w-full h-full object-cover' muted loop preload="metadata">
+        <div className='w-[100%] h-[100%] bg-cover rounded-[10px] mb-[10px] overflow-hidden cursor-pointer' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <video ref={videoRef} className='w-full h-full object-cover' muted loop preload="metadata" poster={poster}>
             <source src={src} type="video/mp4" />
             Seu navegador não suporta vídeos HTML5.
             </video>
