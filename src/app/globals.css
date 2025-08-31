@@ -2,15 +2,9 @@
 
 :root {
   --background: #F5F5F5;
-  --foreground: 575757;
+  --foreground: #575757;
+  --cor-secundaria: #262626;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-roboto: var(--font-roboto);
-}
-
 
 body {
   background: var(--background);
