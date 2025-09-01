@@ -3,6 +3,7 @@ import BtnSobre from "./components/btnSobre"
 import FallingText from "./components/fallingText";
 import Image from "next/image";
 import Hamburger from "./components/menuHamburg";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
         </div>
         <BtnSobre/>
       </main>
+      <Footer/>
   </div>
   );
 }
