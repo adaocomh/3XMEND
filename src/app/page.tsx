@@ -11,7 +11,7 @@ export default function Home() {
         <FallingText text="3XMEND"/>
         </div>
         <div>
-          <p className="text-[48px] font-black text-[#F5F5F5]">Agência completa de marketing.</p>
+          <p className="text-[48px] font-extrabold text-[#F5F5F5]">Agência completa de marketing.</p>
         </div>
         <div className="self-end p-[30px] m-[10px]">⬇️</div>
 
