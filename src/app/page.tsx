@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 export default function Home() {
   return (
   <div className="flex flex-col items-center w-[100vw]">
-    <header className="w-[100%] h-[100vh] bg-[url(/videos/video-header-cortado.mp4)] bg-cover bg-top">
+    <header className="w-[100%] h-[100vh] bg-[url(/videos/video-header-cortado-s-som.mp4)] bg-cover bg-top">
       <div className="flex flex-col items-center justify-between w-[100%] h-[100%] bg-[rgba(0,0,0,0.6)]">
         <div className="flex justify-between w-[100vw]">
         <FallingText text="3XMEND"/>

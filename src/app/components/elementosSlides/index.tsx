@@ -33,7 +33,7 @@ export default function Slide({ children, className = "" }: SlideProps) {
   return (
     <div
       ref={ref}
-      className={`${visible ? "slide-up" : " "} ${className}`}
+      className={`${visible ? "slide-up" : "translate-x-0 opacity-0"} ${className}`}
     >
       {children}
     </div>

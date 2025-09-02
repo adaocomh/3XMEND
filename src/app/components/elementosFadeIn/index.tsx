@@ -33,7 +33,7 @@ export default function FadeIn({ children, className = "" }: FadeInProps) {
   return (
     <div
       ref={ref}
-      className={`${visible ? "fade-in" : " "} ${className}`}
+      className={`${visible ? "fade-in" : "opacity-0"} ${className}`}
     >
       {children}
     </div>

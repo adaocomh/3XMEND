@@ -2,22 +2,24 @@ import BtnAgencia from "../btnContatoFooter"
 import Image from "next/image"
 import Slide from "../elementosSlides"
 import FadeIn from "../elementosFadeIn"
+import Line from "../linhaCrescente"
 
 export default function Footer(){
     return(
         <div className="flex flex-col justify-center items-center w-[100vw] py-[50px] bg-[var(--cor-secundaria)]">
-            <div className="flex flex-col justify-center items-center w-[1200px]">
-                <div className="flex flex-col justify-center items-center w-full p-[60px] pt-0 border-b-[0.3px] border-[var(--foreground)] mb-[50]">
-                    <div className="overflow-hidden">
-                        <Slide>
-                            <h1 className="text-[100px] text-(--background) font-bold">Entre em contato.</h1>
-                        </Slide>
-                    </div>
-                    <div className="overflow-hidden">
-                        <Slide>
-                            <BtnAgencia/>
-                        </Slide>
-                    </div>
+            <div className="flex flex-col justify-center gap-[60px] items-center w-[1200px] mb-[50]">
+                <div className="overflow-hidden">
+                    <Slide>
+                        <h1 className="text-[100px] text-(--background) font-bold">Entre em contato.</h1>
+                    </Slide>
+                </div>
+                <div className="overflow-hidden">
+                    <Slide>
+                        <BtnAgencia/>
+                    </Slide>
+                </div> 
+                <div className="w-full">
+                <Line><div className="justify-self-start border-b-[0.3px] border-[var(--foreground)]"></div></Line>
                 </div>
                 <div className="flex flex-col w-full gap-[50px]">
                     <FadeIn>
