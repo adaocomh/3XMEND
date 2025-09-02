@@ -32,6 +32,37 @@
   }
 }
 
+.slide-up{
+  width: 100%;
+}
+
+.slide-up {
+  animation: slide-up 1.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1.8s cubic-bezier(1, 1, 0.35, 1);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
