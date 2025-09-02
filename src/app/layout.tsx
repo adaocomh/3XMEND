@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Loader from "./components/telaDeCarregamento";
+import CustomCursor from "./components/cursorCustomizado";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -21,8 +23,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={`flex flex-col justify-center items-center ${roboto.variable} antialiased`}
-      >
+      ><CustomCursor/>
+        <Loader>
         {children}
+        </Loader>
       </body>
     </html>
   );

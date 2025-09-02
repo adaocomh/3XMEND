@@ -30,15 +30,15 @@ export default function Footer(){
                     <div className="flex justify-between items-center w-full">
                         <p className="text-[16px] text-(--foreground)) text-center text-(--foreground) font-light  w-[350px]">© 2025 3XMEND. Todos os direitos reservados.</p>
                         <div className="flex gap-[10px]">
-                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px]"><Image src="/icons/instagram.png" alt="Icon do instagram" width={30} height={30}/></div>
-                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px]"><Image src="/icons/whatsapp.png" alt="Icon do whatsapp" width={30} height={30}/></div>
-                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px]"><Image src="/icons/telephone.png" alt="Icon do telefone" width={30} height={30}/></div>
-                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px]"><Image src="/icons/email.png" alt="Icon do email" width={30} height={30}/></div>
+                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/instagram.png" alt="Icon do instagram" width={30} height={30}/></div>
+                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/whatsapp.png" alt="Icon do whatsapp" width={30} height={30}/></div>
+                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/telephone.png" alt="Icon do telefone" width={30} height={30}/></div>
+                            <div className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/email.png" alt="Icon do email" width={30} height={30}/></div>
                         </div>
                         <div className="flex w-[350px]">
-                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)]">Português</p>
-                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)]">English</p>
-                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px]">Español</p>
+                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">Português</p>
+                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">English</p>
+                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] hoverSeta">Español</p>
                         </div>
                     </div>
                     </FadeIn>
