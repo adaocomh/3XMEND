@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 
-export default function CustomCursor() {
+export default function CustomCursor({ open }: { open: boolean }) {
   const cursorRef = useRef<HTMLDivElement>(null);
   const arrowRef = useRef<HTMLImageElement>(null)
 
@@ -52,10 +51,21 @@ export default function CustomCursor() {
     };
   }, []);
 
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    if (!cursor) return;
+
+    if (open) {
+      cursor.style.backgroundColor = "#F5F5F5";
+    } else {
+      cursor.style.backgroundColor = "#00BFFF";
+    }
+  }, [open]);
+
   return (
     <div
       ref={cursorRef}
-      className="flex justify-center items-center fixed w-5 h-5 rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-[width,height] duration-150"
-    ><img className="hidden transition-[width,height] duration-150" ref={arrowRef} src="/icons/right-arrow.png" alt="seta para direita"/></div>
+      className="flex justify-center items-center fixed w-5 h-5 rounded-full bg-[#00BFFF] pointer-events-none z-9999 transition-[width,height] duration-150"
+    ><img className="hidden transition-[width,height] duration-150" ref={arrowRef} src={`${open ? "/icons/right-blue.png" : "/icons/right-arrow.png"}`} alt="seta para direita"/></div>
   );
 }

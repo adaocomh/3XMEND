@@ -1,18 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
-export default function Hamburger() {
-  const [open, setOpen] = useState(false);
+export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,15 +17,27 @@ export default function Hamburger() {
 
 
   return (
-    <div className={`fixed flex transition-all duration-300 ease-in-out z-9 hoverSeta ${open ? "right-[0px] top-[0px] justify-end w-[100vw] h-[100vh] bg-[#00BFFF] p-[60px]" : "right-[35px] w-[50px] h-[50px] justify-center items-center] rounded-full cursor-pointer"} ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"}`}>
+    <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out z-9 hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"}`}>
+      <div className={`absolute flex justify-center items-center w-0 h-0 bg-[#00BFFF] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""}`}>
+        <div className={`${open ? "flex flex-col justify-start w-[1000px] z-999 gap-[40px]" : "hidden"}`}>
+          <h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta">Serviços</h3>
+          <h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta">Sobre</h3>
+          <div className="slideMenu3 flex">
+              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">BR</p>
+              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">EUA</p>
+              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] hoverSeta">ES</p>
+          </div>
+          <div className="slideMenu4 flex gap-[10px]">
+            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/instagram-blue.png" alt="Icon do instagram" width={20} height={20}/></div>
+            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/whatsapp-blue.png" alt="Icon do whatsapp" width={20} height={20}/></div>
+            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/telephone-blue.png" alt="Icon do telefone" width={20} height={20}/></div>
+            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/email-blue.png" alt="Icon do email" width={20} height={20}/></div>
+        </div>
+        </div>
+      </div>
       <button
-        onClick={() => {
-          setOpen(!open)
-          if(!open){
-            setScrolled(true)
-          }
-        }}
-        className={`relative top-[10px] w-[30px] h-[30px] cursor-pointer transition-all duration-500 ease-in-out hoverSeta`}
+        onClick={() => setOpen(!open)}
+        className="relative w-[30px] h-[30px] cursor-pointer transition-all duration-500 ease-in-out hoverSeta z-99"
       >
         <div className="hoverSeta">
           <span

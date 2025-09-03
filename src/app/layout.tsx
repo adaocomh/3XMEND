@@ -23,7 +23,9 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={`flex flex-col justify-center items-center ${roboto.variable} antialiased`}
-      ><CustomCursor/>
+         cz-shortcut-listen="true"
+      >
+        <CustomCursor open/>
         <Loader>
         {children}
         </Loader>

@@ -46,6 +46,31 @@
   }
 }
 
+.slideMenu1{
+  animation: slide2 0.6s cubic-bezier(0, 0, 0.7, 0);
+}
+.slideMenu2{
+  animation: slide2 0.7s cubic-bezier(0, 0, 0.8, 0);
+}
+.slideMenu3{
+  animation: slide2 0.8s cubic-bezier(0, 0, 0.9, 0);
+}
+.slideMenu4{
+  animation: slide2 0.9s cubic-bezier(0, 0, 1, 0);
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateY(150px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+
 .fade-in {
   animation: fade-in 3s cubic-bezier(0.7, 0.9, 0.35, 1);
 }
