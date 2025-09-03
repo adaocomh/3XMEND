@@ -12,7 +12,14 @@ export default function Home() {
       <div className="flex flex-col items-center justify-between w-[100%] h-[100%] bg-[rgba(0,0,0,0.6)]">
         <div className="flex justify-between w-[100vw]">
         <FallingText text="3XMEND"/>
-        <div className="flex p-[30px] m-[5px] mr-[10px] pb-0 mb-0"><Hamburger/></div>
+        <div className="flex gap-[30px] items-center">
+          <div className="relative top-[20px] flex">
+              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">BR</p>
+              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">EUA</p>
+              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] hoverSeta">ES</p>
+          </div>
+          <div className="flex justify-center items-center p-[30px] m-[5px] mr-[10px] pb-0 mb-0"><Hamburger/></div>
+        </div>
         </div>
         <div>
           <p className="text-[48px] font-extrabold text-[#F5F5F5]">Agência completa de marketing.</p>
