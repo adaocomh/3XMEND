@@ -32,12 +32,8 @@
   }
 }
 
-.slide-up{
-  width: 100%;
-}
-
 .slide-up {
-  animation: slide-up 1.8s cubic-bezier(0.65, 0, 0.35, 1);
+  animation: slide-up 1.6s cubic-bezier(0.65, 0, 0.35, 1);
 }
 @keyframes slide-up {
   0% {
@@ -53,7 +49,6 @@
 .fade-in {
   animation: fade-in 3s cubic-bezier(0.7, 0.9, 0.35, 1);
 }
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -66,7 +61,6 @@
 .linha-crescente {
   animation: line 1.8s cubic-bezier(0.20, 0.5, 0, 1);
 }
-
 @keyframes line {
   0% {
     width: 0%;
