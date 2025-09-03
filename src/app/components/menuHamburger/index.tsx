@@ -21,10 +21,15 @@ export default function Hamburger() {
 
 
   return (
-    <div className={`fixed right-[35px] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer transition-all duration-300 ease-in-out z-9 hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"}`} >
+    <div className={`fixed flex transition-all duration-300 ease-in-out z-9 hoverSeta ${open ? "right-[0px] top-[0px] justify-end w-[100vw] h-[100vh] bg-[#00BFFF] p-[60px]" : "right-[35px] w-[50px] h-[50px] justify-center items-center] rounded-full cursor-pointer"} ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"}`}>
       <button
-        onClick={() => setOpen(!open)}
-        className="relative w-[30px] h-[30px] cursor-pointer transition-all duration-500 ease-in-out hoverSeta"
+        onClick={() => {
+          setOpen(!open)
+          if(!open){
+            setScrolled(true)
+          }
+        }}
+        className={`relative top-[10px] w-[30px] h-[30px] cursor-pointer transition-all duration-500 ease-in-out hoverSeta`}
       >
         <div className="hoverSeta">
           <span

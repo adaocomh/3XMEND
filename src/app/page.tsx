@@ -8,17 +8,17 @@ import Footer from "./components/footer";
 export default function Home() {
   return (
   <div className="flex flex-col items-center w-[100vw]">
-    <header className="w-[100%] h-[100vh] bg-[url(/videos/video-header-cortado-s-som.mp4)] bg-cover bg-top">
+    <header className="w-[100%] h-[100vh] bg-[url(/videos/video-header-cortado-s-som.mp4)] bg-cover bg-top p-[px]">
       <div className="flex flex-col items-center justify-between w-[100%] h-[100%] bg-[rgba(0,0,0,0.6)]">
         <div className="flex justify-between w-[100vw]">
         <FallingText text="3XMEND"/>
-        <div className="flex gap-[30px] items-center">
-          <div className="relative top-[20px] flex">
+        <div className="flex gap-[100px] items-center">
+          <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">BR</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">EUA</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] hoverSeta">ES</p>
           </div>
-          <div className="flex justify-center items-center p-[30px] m-[5px] mr-[10px] pb-0 mb-0"><Hamburger/></div>
+          <div className="flex justify-center items-center"><Hamburger/></div>
         </div>
         </div>
         <div>
