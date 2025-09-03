@@ -19,7 +19,7 @@ export default function VideoCards({ src, poster }: VideoCardsProps){
     }
 
     return(
-            <video ref={videoRef} className='w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} muted loop preload="auto" poster={poster} onLoadedData={() => {
+            <video ref={videoRef} className='w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} muted poster={poster} onLoadedData={() => {
                 if(videoRef.current){
                     videoRef.current.currentTime = 0.1
                 }
