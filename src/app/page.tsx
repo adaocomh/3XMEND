@@ -2,7 +2,7 @@ import VideoCards from "./components/videoCard";
 import BtnSobre from "./components/btnSobre"
 import FallingText from "./components/fallingText";
 import Image from "next/image";
-import Hamburger from "./components/menuHamburg";
+import Hamburger from "./components/menuHamburger";
 import Footer from "./components/footer";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         <div>
           <p className="text-[48px] font-extrabold text-[#F5F5F5]">Agência completa de marketing.</p>
         </div>
-        <div className="self-end p-[30px] m-[10px] mr-[0]"><Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/></div>
+        <div className="self-end p-[30px] m-[10px]"><Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/></div>
       </div>
     </header>
       <main className="flex flex-col items-center justify-center gap-[5vw] py-[5vw] max-w-[1200px]">

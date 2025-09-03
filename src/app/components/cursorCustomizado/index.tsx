@@ -11,7 +11,6 @@ export default function CustomCursor() {
     const cursor = cursorRef.current;
     const arrow = arrowRef.current;
     if (!cursor || !arrow) return;
-    arrow.style.display ="none";
 
     const moveCursor = (e: MouseEvent) => {
       cursor.style.left = e.clientX - 10 + "px";
@@ -26,6 +25,8 @@ export default function CustomCursor() {
         cursor.style.height = "70px";
         cursor.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.3)";
         arrow.style.display ="block";
+        arrow.style.width = "30px";
+        arrow.style.height = "30px";
       }
     };
 
@@ -35,7 +36,8 @@ export default function CustomCursor() {
         cursor.style.width = "20px";
         cursor.style.height = "20px";
         cursor.style.boxShadow = "none";
-        arrow.style.display ="none";
+        arrow.style.width = "0px";
+        arrow.style.height = "0px";
       }
     };
 
@@ -53,7 +55,7 @@ export default function CustomCursor() {
   return (
     <div
       ref={cursorRef}
-      className="flex justify-center items-center fixed w-5 h-5 rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-transform duration-300"
-    ><Image ref={arrowRef} src="/icons/right-arrow.png" alt="seta para direita" width={30} height={30} loading="lazy"/></div>
+      className="flex justify-center items-center fixed w-5 h-5 rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-[width,height] duration-150"
+    ><img className="hidden transition-[width,height] duration-150" ref={arrowRef} src="/icons/right-arrow.png" alt="seta para direita"/></div>
   );
 }
