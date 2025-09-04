@@ -3,7 +3,6 @@ import BtnSobre from "./components/btnSobre"
 import FallingText from "./components/fallingText";
 import Image from "next/image";
 import HamburgerCursor from "./components/cursorMenu";
-import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -32,7 +31,6 @@ export default function Home() {
         <CardsVideos/>
         <BtnSobre/>
       </main>
-      <Footer/>
   </div>
   );
 }

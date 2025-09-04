@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Loader from "./components/telaDeCarregamento";
 import CustomCursor from "./components/cursorCustomizado";
+import Footer from "./components/footer";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <CustomCursor open/>
         <Loader>
         {children}
+        <Footer/>
         </Loader>
       </body>
     </html>
