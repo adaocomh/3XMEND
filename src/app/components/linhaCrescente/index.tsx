@@ -3,11 +3,10 @@
 import { useEffect, useRef, useState, ReactNode } from "react";
 
 type LineProps = {
-  children: ReactNode;
   className?: string;
 };
 
-export default function Line({ children, className = "" }: LineProps) {
+export default function Line({className = "" }: LineProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -35,7 +34,7 @@ export default function Line({ children, className = "" }: LineProps) {
       ref={ref}
       className={`${visible ? "linha-crescente " : "w-[0%]"} ${className}`}
     >
-      {children}
+      <div className="w-[100%] h-[1px] border-b-[1px] border-[var(--foreground)]"></div>
     </div>
   );
 }

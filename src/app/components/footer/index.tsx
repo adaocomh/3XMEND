@@ -19,7 +19,7 @@ export default function Footer(){
                     </Slide>
                 </div> 
                 <div className="w-full">
-                <Line><div className="justify-self-start border-b-[0.3px] border-[var(--foreground)]"></div></Line>
+                <Line/>
                 </div>
                 <div className="flex flex-col w-full gap-[50px]">
                     <FadeIn>
