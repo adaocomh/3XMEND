@@ -15,6 +15,19 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [open]);
+
+
 
   return (
     <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out z-9 hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"}`}>

@@ -65,7 +65,7 @@ export default function CustomCursor({ open }: { open: boolean }) {
   return (
     <div
       ref={cursorRef}
-      className="flex justify-center items-center fixed w-5 h-5 rounded-full bg-[#00BFFF] pointer-events-none z-9999 transition-[width,height] duration-150"
+      className="fixed flex justify-center items-center w-5 h-5 rounded-full bg-[#00BFFF] pointer-events-none z-9999 transition-[width,height] duration-150"
     ><img className="hidden transition-[width,height] duration-150" ref={arrowRef} src={`${open ? "/icons/right-blue.png" : "/icons/right-arrow.png"}`} alt="seta para direita"/></div>
   );
 }
