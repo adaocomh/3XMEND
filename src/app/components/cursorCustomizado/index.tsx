@@ -8,6 +8,17 @@ export default function CustomCursor({ open }: { open: boolean }) {
 
   useEffect(() => {
     const cursor = cursorRef.current;
+    if (!cursor) return;
+
+    if (open) {
+      cursor.style.backgroundColor = "#F5F5F5";
+    } else {
+      cursor.style.backgroundColor = "#00BFFF";
+    }
+  }, [open]);
+
+  useEffect(() => {
+    const cursor = cursorRef.current;
     const arrow = arrowRef.current;
     if (!cursor || !arrow) return;
 
@@ -50,17 +61,6 @@ export default function CustomCursor({ open }: { open: boolean }) {
       document.removeEventListener("mouseout", handleMouseOut);
     };
   }, []);
-
-  useEffect(() => {
-    const cursor = cursorRef.current;
-    if (!cursor) return;
-
-    if (open) {
-      cursor.style.backgroundColor = "#F5F5F5";
-    } else {
-      cursor.style.backgroundColor = "#00BFFF";
-    }
-  }, [open]);
 
   return (
     <div
