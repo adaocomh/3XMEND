@@ -1,16 +1,17 @@
 "use client";
-
 import React from "react";
+import Data from "../../data/data.json"
+import Link from "next/link";
 
 type CardsItem = {
   src: string;
   poster: string;
   title: string;
   ver: string;
-  desc: string;
+  href: string;
 };
 
-export default function CardsCategoria({ src, poster, title, ver, desc }: CardsItem) {
+export default function CardsPageIni() {
   const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
     e.currentTarget.play();
   };
@@ -23,9 +24,8 @@ export default function CardsCategoria({ src, poster, title, ver, desc }: CardsI
   const handleLoadedData = (e: React.SyntheticEvent<HTMLVideoElement>) => {
     e.currentTarget.currentTime = 0.1;
   };
-
-  return (
-    <div className="flex flex-col items-center w-[30%]">
+  const Cards = ({ src, poster, title, ver, href }: CardsItem) => (
+    <Link href={href} className="flex flex-col items-center w-[100%]">
       <video
         className="w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta"
         onMouseEnter={handleMouseEnter}
@@ -40,6 +40,21 @@ export default function CardsCategoria({ src, poster, title, ver, desc }: CardsI
       </video>
       <h4 className="text-[18px] font-bold hoverSeta">{title}</h4>
       <p className="text-[12px] text-[#7e7e7e] hoverSeta">{ver}</p>
+    </Link>
+  );
+  return (
+    <div className="flex justify-between w-[100%]">
+      <div className="flex flex-col gap-[8vw] w-[40%]">
+        {Data.cadsPageIniLeft.map((video, index) => (
+          <Cards key={index} {...video} />
+        ))}
+      </div>
+
+      <div className="flex flex-col gap-[8vw] mt-[13vw] w-[40%]">
+        {Data.cadsPageIniRight.map((video, index) => (
+          <Cards key={index} {...video} />
+        ))}
+      </div>
     </div>
   );
 }

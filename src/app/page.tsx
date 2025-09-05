@@ -1,4 +1,4 @@
-import CardsVideos from "./components/cardsVideos";
+import CardsVideos from "./components/cardsCategoria";
 import BtnSobre from "./components/btnSobre"
 import FallingText from "./components/fallingText";
 import Image from "next/image";

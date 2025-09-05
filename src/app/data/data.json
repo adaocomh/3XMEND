@@ -194,14 +194,14 @@
                   "poster": "/poster/social-media.jpeg",
                   "title": "Social media",
                   "ver": "Ver mais...",
-                  "desc": ""
+                  "href": "/socialmedia"
                 },
                 {
                   "src": "/videos/criacao-video.mp4",
                   "poster": "/poster/criacao-video.jpeg",
                   "title": "Produtora de video",
                   "ver": "Ver mais...",
-                  "desc": ""
+                  "href": ""
                 }
               ],
             
@@ -211,14 +211,14 @@
                   "poster": "/poster/ti-automacao.jpeg",
                   "title": "T.I.",
                   "ver": "Ver mais...",
-                  "desc": ""
+                  "href": "/ti"
                 },
                 {
                   "src": "/videos/parceiros.mp4",
                   "poster": "/poster/parceiros.jpeg",
                   "title": "Parceiros",
                   "ver": "Ver mais...",
-                  "desc": ""
+                  "href": ""
                 }
               ]
 

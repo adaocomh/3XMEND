@@ -1,6 +1,6 @@
 import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
-import CardsCategoria from "../components/cardsCategoria";
+import CardsCategoria from "../components/cards";
 import Data from "../data/data.json";
 
 export default async function PageDinamicasCategorias({
