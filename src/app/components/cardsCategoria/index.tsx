@@ -1,6 +1,6 @@
 "use client";
+
 import React from "react";
-import Data from "../../data/data.json"
 
 type CardsItem = {
   src: string;
@@ -10,7 +10,7 @@ type CardsItem = {
   desc: string;
 };
 
-export default function CardsPageIni() {
+export default function CardsCategoria({ src, poster, title, ver, desc }: CardsItem) {
   const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
     e.currentTarget.play();
   };
@@ -23,8 +23,9 @@ export default function CardsPageIni() {
   const handleLoadedData = (e: React.SyntheticEvent<HTMLVideoElement>) => {
     e.currentTarget.currentTime = 0.1;
   };
-  const Cards = ({ src, poster, title, desc }: CardsItem) => (
-    <div className="flex flex-col items-center w-[100%]">
+
+  return (
+    <div className="flex flex-col items-center w-[30%]">
       <video
         className="w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta"
         onMouseEnter={handleMouseEnter}
@@ -38,22 +39,7 @@ export default function CardsPageIni() {
         Seu navegador não suporta vídeos HTML5.
       </video>
       <h4 className="text-[18px] font-bold hoverSeta">{title}</h4>
-      <p className="text-[12px] text-[#7e7e7e] hoverSeta">{desc}</p>
-    </div>
-  );
-  return (
-    <div className="flex justify-between w-[100%]">
-      <div className="flex flex-col gap-[8vw] w-[40%]">
-        {Data.cadsPageIniLeft.map((video, index) => (
-          <Cards key={index} {...video} />
-        ))}
-      </div>
-
-      <div className="flex flex-col gap-[8vw] mt-[13vw] w-[40%]">
-        {Data.cadsPageIniRight.map((video, index) => (
-          <Cards key={index} {...video} />
-        ))}
-      </div>
+      <p className="text-[12px] text-[#7e7e7e] hoverSeta">{ver}</p>
     </div>
   );
 }
