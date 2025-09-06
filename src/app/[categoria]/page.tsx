@@ -33,7 +33,7 @@ export default async function PageDinamicasCategorias({
     <div className="header-page-dinamic flex flex-col  bg-[#F5F5F5] items-center">
       <header className=" w-[100vw]">
         <div className="flex justify-between w-[100%] p-[40px]">
-          <FallingText text="3XMEND" />
+          <FallingText text="3XMEND" open/>
           <div className="flex gap-[60px] items-center">
             <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">

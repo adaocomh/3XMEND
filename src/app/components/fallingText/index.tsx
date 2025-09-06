@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function FallingText({ text }: { text: string }) {
+export default function FallingText({ text, open }: { text: string; open: boolean }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(true);
   const [mounted, setMounted] = useState(false);
@@ -42,7 +42,7 @@ export default function FallingText({ text }: { text: string }) {
           key={i}
           className={`
             text-[38px] font-semibold
-            ${isBgLight ? "text-[#00BFFF]" : "text-[#F5F5F5]"} duration-300 ease-in-out hoverSeta
+            ${isBgLight ? "text-[#00BFFF]" : open ? "text-[#F5F5F5]" : "text-[#00BFFF]"} duration-300 ease-in-out hoverSeta
             ${visible ? "translate-y-0 opacity-100 transition-transform" : "-translate-y-[100px] opacity-0 transition"}
           `}
           style={{

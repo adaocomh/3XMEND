@@ -79,7 +79,7 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
       <div className={`absolute flex justify-center items-center w-0 h-0 bg-[#00BFFF] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""}`}>
         <div className={`${open ? "flex flex-col justify-start w-[1000px] z-999 gap-[40px]" : "hidden"}`}>
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
-            <FallingText text="3XMEND"/>
+            <FallingText text="3XMEND" open/>
           </div>
           <h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min">Serviços</h3>
           <h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">Sobre</h3>
