@@ -6,9 +6,8 @@ export default function FallingText({ text }: { text: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(true);
   const [mounted, setMounted] = useState(false);
-  const [isBgLight, setIsBgLight] = useState(false); // true se o bg for F5F5F5
+  const [isBgLight, setIsBgLight] = useState(false);
 
-  // Observer de visibilidade
   useEffect(() => {
     setMounted(true);
     const observer = new IntersectionObserver(
@@ -23,7 +22,6 @@ export default function FallingText({ text }: { text: string }) {
     };
   }, []);
 
-  // Checa a cor do header e define flag
   useEffect(() => {
     const header = document.querySelector<HTMLElement>(".header-page-dinamic");
     if (!header) return;

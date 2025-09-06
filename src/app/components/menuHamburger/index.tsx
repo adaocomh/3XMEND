@@ -6,6 +6,7 @@ import FallingText from "../fallingText";
 
 export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
+  const [isBgLight, setIsBgLight] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,10 +29,53 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
     };
   }, [open]);
 
+  useEffect(() => {
+    const header = document.querySelector<HTMLElement>(".div-menu");
+    const fundoPage = document.querySelector<HTMLElement>(".header-page-dinamic");
+    const listras = document.querySelectorAll<HTMLElement>(".listras");
+    if (!header || !fundoPage) return;
+  
+    const updateListras = () => {
+      const bgColor = window.getComputedStyle(header).backgroundColor;
+      const rgbValues = bgColor
+        .replace(/^rgba?\(|\s+|\)$/g, "")
+        .split(",")
+        .map(Number);
+      const isTransparent = rgbValues[3] === 0 || bgColor === "transparent";
+  
+      const bgPColor = window.getComputedStyle(fundoPage).backgroundColor;
+      const rgbFValues = bgPColor
+        .replace(/^rgba?\(|\s+|\)$/g, "")
+        .split(",")
+        .map(Number);
+      const isPageLight = rgbFValues[0] === 245 && rgbFValues[1] === 245 && rgbFValues[2] === 245;
+  
+      const corListras = open ? "#F5F5F5" : (isTransparent && isPageLight ? "#262626" : "#F5F5F5");
+      setIsBgLight(!open && isTransparent && isPageLight);
+  
+      listras.forEach(listra => {
+        listra.style.backgroundColor = corListras;
+      });
+    };
+  
+    updateListras();
+  
+    const observer = new MutationObserver(updateListras);
+    observer.observe(header, { attributes: true, attributeFilter: ["style", "class"] });
+    observer.observe(fundoPage, { attributes: true, attributeFilter: ["style", "class"] });
+  
+    window.addEventListener("scroll", updateListras);
+  
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", updateListras);
+    };
+  }, [open, scrolled]);
+
 
 
   return (
-    <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out z-9 hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"}`}>
+    <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out z-9 hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"} div-menu`}>
       <div className={`absolute flex justify-center items-center w-0 h-0 bg-[#00BFFF] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""}`}>
         <div className={`${open ? "flex flex-col justify-start w-[1000px] z-999 gap-[40px]" : "hidden"}`}>
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
@@ -59,15 +103,15 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
         <div className="hoverSeta">
           <span
             className={`absolute left-0 block h-[3px] rounded-lg bg-(--background) transition-all duration-300 ease-in-out hoverSeta
-              ${open ? "w-[30px] rotate-[135deg]" : "top-[5px] w-[20px] rotate-0"}`}
+              ${open ? "w-[30px] rotate-[135deg]" : "top-[5px] w-[20px] rotate-0"} listras`}
           />
           <span
             className={`absolute left-0 block h-[3px] w-[30px] rounded-lg bg-(--background) transition-all duration-300 ease-in-out hoverSeta
-              ${open ? "opacity-0 -translate-x-5" : "top-[14px] opacity-100 translate-x-0"}`}
+              ${open ? "opacity-0 -translate-x-5" : "top-[14px] opacity-100 translate-x-0"} listras`}
           />
           <span
             className={`absolute left-0 block h-[3px] rounded-lg bg-(--background) transition-all duration-300 ease-in-out hoverSeta
-              ${open ? "w-[30px] -rotate-[135deg]" : "top-[23px] w-[25px] rotate-0"}`}
+              ${open ? "w-[30px] -rotate-[135deg]" : "top-[23px] w-[25px] rotate-0"} listras`}
           />
         </div>
       </button>
