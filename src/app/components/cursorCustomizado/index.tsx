@@ -12,12 +12,10 @@ export default function CustomCursor({ open }: { open: boolean }) {
     const cursor = cursorRef.current;
     const arrow = arrowRef.current;
     if (!cursor || !arrow) return;
-    cursor.style.width = "20px";
-    cursor.style.height = "20px";
 
     const moveCursor = (e: MouseEvent) => {
-      cursor.style.left = e.clientX - 10 + "px";
-      cursor.style.top = e.clientY - 10 + "px";
+      cursor.style.left = `${e.clientX }px`;
+      cursor.style.top = `${e.clientY }px`;
     };
 
     const handleMouseOver = (e: MouseEvent) => {
