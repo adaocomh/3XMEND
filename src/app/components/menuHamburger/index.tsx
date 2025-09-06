@@ -76,10 +76,10 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
 
   return (
     <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out z-9 hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"} div-menu`}>
-      <div className={`absolute flex justify-center items-center w-0 h-0 bg-[#00BFFF] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""}`}>
+      <div className={`absolute flex justify-center items-center w-0 h-0 bg-[#00BFFF] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""} menu-w`}>
         <div className={`${open ? "flex flex-col justify-start w-[1000px] z-999 gap-[40px]" : "hidden"}`}>
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
-            <FallingText text="3XMEND" open/>
+            <FallingText text="3XMEND"/>
           </div>
           <h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min">Serviços</h3>
           <h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">Sobre</h3>
