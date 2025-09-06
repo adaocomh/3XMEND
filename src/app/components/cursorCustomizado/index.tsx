@@ -14,8 +14,8 @@ export default function CustomCursor({ open }: { open: boolean }) {
     if (!cursor || !arrow) return;
 
     const moveCursor = (e: MouseEvent) => {
-      cursor.style.left = `${e.clientX }px`;
-      cursor.style.top = `${e.clientY }px`;
+      cursor.style.left = e.clientX - 10 + "px";
+      cursor.style.top = e.clientY - 10 + "px";
     };
 
     const handleMouseOver = (e: MouseEvent) => {
