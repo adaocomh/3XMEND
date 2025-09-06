@@ -1,26 +1,19 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 export default function CustomCursor({ open }: { open: boolean }) {
   const cursorRef = useRef<HTMLDivElement>(null);
   const arrowRef = useRef<HTMLImageElement>(null)
-
-  useEffect(() => {
-    const cursor = cursorRef.current;
-    if (!cursor) return;
-
-    if (open) {
-      cursor.style.backgroundColor = "#F5F5F5";
-    } else {
-      cursor.style.backgroundColor = "#00BFFF";
-    }
-  }, [open]);
+  const pathname = usePathname();
 
   useEffect(() => {
     const cursor = cursorRef.current;
     const arrow = arrowRef.current;
     if (!cursor || !arrow) return;
+    cursor.style.width = "20px";
+    cursor.style.height = "20px";
 
     const moveCursor = (e: MouseEvent) => {
       cursor.style.left = e.clientX - 10 + "px";
@@ -62,10 +55,36 @@ export default function CustomCursor({ open }: { open: boolean }) {
     };
   }, []);
 
+  useEffect(()=>{
+    const cursor = cursorRef.current;
+    if (!cursor) return;
+    if(open){
+      cursor.classList.add("menu-aberto")
+    }else{
+      cursor.classList.remove("menu-aberto")
+    }
+  })
+
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    const arrow = arrowRef.current;
+    if (!cursor || !arrow) return;
+    
+    cursor.classList.remove("menu-aberto");
+    cursor.style.width = "20px";
+    cursor.style.height = "20px";
+    cursor.style.boxShadow = "none";
+
+    arrow.style.display = "none";
+    arrow.style.width = "0px";
+    arrow.style.height = "0px";
+  }, [pathname]);
   return (
     <div
       ref={cursorRef}
-      className="fixed flex justify-center items-center w-5 h-5 rounded-full bg-[#00BFFF] pointer-events-none z-9999 transition-[width,height] duration-150"
-    ><img className="hidden transition-[width,height] duration-150" ref={arrowRef} src={`${open ? "/icons/right-blue.png" : "/icons/right-arrow.png"}`} alt="seta para direita"/></div>
+      className={`fixed flex justify-center w-[20px] h-[20px] items-center rounded-full bg-[#00BFFF] pointer-events-none z-9999 transition-[width,height,background-color] duration-150`}
+    ><img
+    className="hidden transition-[width,height] duration-150" ref={arrowRef} src={open ? "/icons/right-blue.png" : "/icons/right-arrow.png"} alt="seta para direita"
+  /></div>
   );
 }

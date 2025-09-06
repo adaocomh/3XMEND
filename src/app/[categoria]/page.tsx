@@ -54,7 +54,7 @@ export default async function PageDinamicasCategorias({
       </header>
 
       <main className="flex flex-col items-center justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
-        <h2 className="text-[80px] text-center font-extrabold">
+        <h2 className="text-[80px] text-center font-black">
           {title}
         </h2>
 

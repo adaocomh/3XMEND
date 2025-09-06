@@ -6,6 +6,12 @@
   --cor-secundaria: #262626;
 }
 
+.menu-aberto{
+  width: 70px;
+  height: 70px;
+  background-color: #F5F5F5;
+}
+
 .bounce{
   animation: text-shadow 1.5s ease-in-out infinite;
 }
