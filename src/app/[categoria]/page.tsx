@@ -1,6 +1,7 @@
 import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import CardsCategoria from "../components/cards";
+import Link from "next/link";
 import Data from "../data/data.json";
 
 export default async function PageDinamicasCategorias({
@@ -33,7 +34,7 @@ export default async function PageDinamicasCategorias({
     <div className="header-page-dinamic flex flex-col  bg-[#F5F5F5] items-center">
       <header className=" w-[100vw]">
         <div className="flex justify-between w-[100%] p-[40px]">
-          <FallingText text="3XMEND"/>
+          <Link href="/" className="z-999"><FallingText text="3XMEND"/></Link>
           <div className="flex gap-[60px] items-center">
             <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">

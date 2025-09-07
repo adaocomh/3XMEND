@@ -64,7 +64,7 @@ export default function FallingText({ text }: { text: string }) {
   }, [visible]);
 
   return (
-    <div ref={containerRef} className="flex z-999">
+    <div ref={containerRef} className="flex">
       {text.split("").map((letter, i, arr) => {
 
          const colorClass = menuOpen

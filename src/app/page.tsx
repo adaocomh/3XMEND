@@ -3,6 +3,7 @@ import BtnSobre from "./components/btnSobre"
 import FallingText from "./components/fallingText";
 import Image from "next/image";
 import HamburgerCursor from "./components/cursorMenu";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
     <header className="w-[100vw] h-[100vh] bg-[url(/videos/video-header-cortado-s-som.mp4)] bg-cover bg-top">
       <div className="flex flex-col items-center justify-between w-[100%] h-[100%] bg-[rgba(0,0,0,0.6)] p-[40px]">
         <div className="flex justify-between w-[100%]">
-        <FallingText text="3XMEND"/>
+        <Link href="/" className="z-999"><FallingText text="3XMEND"/></Link>
         <div className="flex gap-[60px] items-center">
           <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">BR</p>
