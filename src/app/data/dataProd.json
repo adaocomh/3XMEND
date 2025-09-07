@@ -1,0 +1,93 @@
+[
+    {
+    "src": "/videos/designer.mp4",
+    "title": "Designer",
+    "desc": "Nosso serviço de Designer transforma ideias em artes profissionais, criativas e alinhadas com seus objetivos. Seja para redes sociais, branding, materiais gráficos ou projetos personalizados, entregamos visual que conecta, comunica e vende. Sua marca merece ser vista com personalidade e impacto!",
+    "produto": "designer"
+    },
+    {
+    "src": "/videos/criacao-video.mp4",
+    "title": "Edição de video",
+    "desc": "Seus vídeos merecem impacto e profissionalismo! A edição de vídeo da 3XMEND transforma gravações em conteúdos envolventes, com cortes precisos, efeitos na medida certa e uma identidade visual alinhada ao seu propósito. Dê vida às suas ideias e destaque-se com produções que realmente comunicam sua mensagem. Vamos criar algo incrível juntos?",
+    "produto": "edicao-de-video"
+    },
+    {
+    "src": "/videos/social-media.mp4",
+    "title": "Social media",
+    "desc": "Sua marca nas redes sociais com estratégia, criatividade e resultado! Com o serviço de Social Media da 3XMEND, você tem conteúdos planejados, artes profissionais, legendas que engajam e uma presença digital que se destaca. Cuidamos da sua comunicação para atrair, conectar e vender todos os dias. Chega de postar por postar vem crescer com a gente! ",
+    "produto": "social-media"
+    },
+    {
+    "src": "/videos/ads.mp4",
+    "title": "ADS",
+    "desc": "Pare de falar com todo mundo e comece a alcançar quem realmente importa! Com o serviço de ADS da 3XMEND, suas campanhas são estrategicamente planejadas, otimizadas e direcionadas para gerar resultados reais. Seja para vender, atrair seguidores ou fortalecer sua marca, criamos anúncios que convertem e fazem seu investimento valer a pena. Anuncie com inteligência, anuncie com a 3XMEND!",
+    "produto": "ads"
+    },
+    {
+    "src": "/videos/criacao-curso.mp4",
+    "title": "Criação de curso",
+    "desc": "Transforme seu conhecimento em um produto digital de sucesso com a criação de cursos da 3XMEND!  Nossa equipe cuida de tudo: estrutura de conteúdo, roteiros, gravação, edição, identidade visual e publicação. Seu curso pronto para vender, com qualidade profissional, didática envolvente e foco nos resultados. Ensinar nunca foi tão fácil e lucrativo. Vamos criar juntos?",
+    "produto": "criacao-de-curso"
+    },
+    {
+    "src": "/videos/seo.mp4",
+    "title": "SEO",
+    "desc": "Quer aparecer no Google quando seus clientes te procurarem? A 3XMEND faz isso acontecer!  Com nosso serviço de SEO, seu site ganha mais visibilidade, autoridade e tráfego qualificado. Otimizamos conteúdos, estrutura e palavras-chave para colocar sua marca no topo das buscas e na frente da concorrência. Mais cliques, mais visitas, mais vendas!",
+    "produto": "seo"
+    },
+    {
+    "src": "/videos/seo.mp4",
+    "title": "Criação de vinheta",
+    "desc": "Transforme sua marca em uma experiência inesquecível! Com a 3XMEND, suas vinhetas ganham vida com criatividade e impacto, deixando sua mensagem clara e profissional. Destaque-se com animações que marcam presença!",
+    "produto": "criacao-de-vinheta"
+    },
+    {
+    "src": "/videos/marca.mp4",
+    "title": "Marca",
+    "desc": "Sua marca precisa ter alma, propósito e presença e é exatamente isso que a 3XMEND entrega! Com nosso serviço de Criação de Marca e Branding, desenvolvemos desde o nome e identidade visual até o posicionamento e a essência da sua marca. Tudo pensado estrategicamente para transmitir seus valores, conectar com o público certo e gerar reconhecimento. Marcas fortes não nascem por acaso elas nascem na 3XMEND! ",
+    "produto": "marca"
+    },
+    {
+    "src": "/videos/criacao-fisico-digital.mp4",
+    "title": "Criação de produtos físicos e digitais",
+    "desc": "Da ideia ao mercado, a 3XMEND transforma sua visão em realidade! Com nosso serviço de Criação de Produtos Físicos e Digitais, desenvolvemos tudo o que você precisa: identidade visual, design, embalagem, materiais promocionais e até conteúdos para lançamento. Seja um e-book, curso, infoproduto ou produto físico, entregamos soluções completas para você lançar com qualidade, autoridade e resultados. Seu produto começa aqui!",
+    "produto": "criacao-de-produtos-fisicos-e-digitais"
+    },
+
+    {
+    "src": "/videos/site.mp4",
+    "title": "Sites e e-commerce",
+    "desc": "Tenha um site ou e-commerce que realmente trabalha por você!  Na 3XMEND, criamos plataformas modernas, rápidas e responsivas, com design profissional e foco total na experiência do usuário. Seja para apresentar sua marca ou vender seus produtos online, entregamos sites otimizados, seguros e prontos para converter. Chega de presença digital amadora com a 3XMEND, sua vitrine é de alto nível!",
+    "produto": "sites-e-ecommerce"
+    },
+    {
+    "src": "/videos/banco-dados.mp4",
+    "title": "Banco de dados",
+    "desc": "Organize, proteja e potencialize suas informações com o serviço de Banco de Dados da 3XMEND!  Criamos estruturas inteligentes e seguras para você armazenar, gerenciar e acessar dados com eficiência. Ideal para empresas que valorizam a organização, automação e tomada de decisões baseadas em dados. Tenha controle total sobre o que realmente importa com tecnologia feita sob medida para o seu negócio!",
+    "produto": "banco-de-dados"
+    },
+    {
+    "src": "/videos/cripto.mp4",
+    "title": "Cripto",
+    "desc": "Esteja à frente do seu tempo com o serviço de recebimento de pagamentos em cripto da 3XMEND!  Facilitamos a integração de criptomoedas ao seu negócio, oferecendo segurança, praticidade e inovação para seus clientes. Expanda suas formas de pagamento, alcance um público mais tech e mostre que sua marca está conectada ao futuro. Simples, moderno e sem fronteiras é assim que a 3XMEND faz!",
+    "produto": "cripto"
+    },
+    {
+    "src": "/videos/ti-automacao.mp4",
+    "title": "Automação",
+    "desc": "Ganhe tempo, escale resultados e foque no que realmente importa com o serviço de Automação da 3XMEND! 🤖⚙️ Automatizamos processos de atendimento, vendas, marketing e muito mais para que seu negócio funcione de forma inteligente, mesmo quando você estiver offline. Chega de tarefas repetitivas com a 3XMEND, seu fluxo de trabalho se torna mais ágil, eficiente e estratégico!",
+    "produto": "automacao"
+    },
+    {
+    "src": "/videos/criacao-video.mp4",
+    "title": "Produtora de video",
+    "desc": "O estúdio 3XMEND é a escolha ideal para quem busca excelência em produções audiovisuais. Com uma estrutura moderna, bem planejada e equipada com tecnologia de ponta, o espaço oferece tudo o que você precisa para gravar vídeos com qualidade profissional, seja para redes sociais, campanhas publicitárias, vídeos institucionais, tutoriais, podcasts ou qualquer outro formato.",
+    "produto": "produtora-de-video"
+    },
+    {
+    "src": "/videos/parceiros.mp4",
+    "title": "Parceiros",
+    "desc": "Ser parceiro da 3xmend é ter ao seu lado uma agência de marketing comprometida com resultados reais. Você conta com uma equipe criativa, estratégica e sempre focada em impulsionar sua marca. Com soluções personalizadas, inovação constante e total transparência",
+    "produto": "parceiros"
+    }
+]
