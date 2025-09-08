@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 type CardsItem = {
   src: string;
@@ -8,9 +9,12 @@ type CardsItem = {
   title: string;
   ver: string;
   desc: string;
+  produto: string;
 };
 
-export default function CardsCategoria({ src, poster, title, ver, desc }: CardsItem) {
+export default function CardsCategoria({ src, poster, title, ver, desc, produto }: CardsItem) {
+
+
   const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
     e.currentTarget.play();
   };
@@ -25,7 +29,7 @@ export default function CardsCategoria({ src, poster, title, ver, desc }: CardsI
   };
 
   return (
-    <div className="flex flex-col items-center w-[30%]">
+    <Link href={`produto/${produto}`} className="flex flex-col items-center w-[30%]">
       <video
         className="w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta"
         onMouseEnter={handleMouseEnter}
@@ -40,6 +44,6 @@ export default function CardsCategoria({ src, poster, title, ver, desc }: CardsI
       </video>
       <h4 className="text-[18px] font-bold hoverSeta">{title}</h4>
       <p className="text-[12px] text-[#7e7e7e] hoverSeta">{ver}</p>
-    </div>
+    </Link>
   );
 }
