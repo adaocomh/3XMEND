@@ -1,7 +1,8 @@
 {   
   "titlesG": {
     "titleSocial": "Serviços de social media.",
-    "titleTi": "Serviços de T.I."
+    "titleTi": "Serviços de T.I.",
+    "titleParceiro": "Seja um parceiro da 3XMEND"
   },
   "socialmedia": [
     {
@@ -127,62 +128,169 @@
     "img6": "",
     "produto": "produtora-de-video"
   },
-  "parceiros": {
+  "parceiros": [
+    {
+      "src": "",
+      "poster": "/parceiros/ana.webp",
+      "title": "Ana Farias",
+      "ver": "@anafariasfs",
+      "desc": "O Instagram de Ana Farias é dedicado a promover uma abordagem equilibrada e saudável à nutrição. 'Com o lema Te ajudo a ter resultados com o equilíbrio que você sempre quis', Ana oferece atendimentos online personalizados, visando auxiliar seus seguidores a alcançarem seus objetivos de forma sustentável.",
+      "produto": "ana"
+    },
+    {
+      "src": "",
+      "poster": "/parceiros/diego.webp",
+      "title": "Diego Rossato",
+      "ver": "@diegorossato_",
+      "desc": "O Instagram de Diego Rossato  é dedicado à sua jornada como atleta híbrido, combinando musculação, corrida e jiu-jitsu para ganhar músculo e perder gordura. Ele compartilha treinos, desafios e conquistas, como a conclusão de seu primeiro triatlo olímpico no Triathlon Internacional de Santos.",
+      "produto": "diego"
+    },
+    {
+      "src": "",
+      "poster": "/parceiros/douglas.webp",
+      "title": "Douglas Flamino",
+      "ver": "@flaminodoug",
+      "desc": "O Instagram de Douglas Flamino é um espaço vibrante e bem-humorado onde ele compartilha conteúdos que combinam lifestyle, fitness, reviews de produtos e humor. Conhecido como o “review humano da internet”, Douglas testa e comenta sobre diversos produtos e experiências do cotidiano, sempre com uma abordagem descontraída.",
+      "produto": "douglas"
+    },
+    {
+      "src": "",
+      "poster": "/parceiros/fabiana.webp",
+      "title": "Fabiana Santos",
+      "ver": "@fabianasantosfisio",
+      "desc": "Fabiana é dedicada à promoção da saúde e qualidade de vida por meio da fisioterapia. Com o lema 'O movimento é qualidade de vida', ela compartilha conteúdos que incentivam hábitos saudáveis e a importância da atividade física.",
+      "produto": "fabiana"
+    },
+    {
+      "src": "",
+      "poster": "/parceiros/flavia.webp",
+      "title": "Flavia Palheiros (Vinha)",
+      "ver": "@corro_pra_descansar",
+      "desc": "@corro_pra_descansar é um espaço dedicado a compartilhar a paixão pela corrida como forma de autocuidado e bem-estar. O perfil oferece conteúdos que inspiram e motivam corredores de todos os níveis, promovendo a ideia de que correr é uma maneira de descansar a mente e fortalecer o corpo.",
+      "produto": "flavia"
+    },
+    {
+      "src": "",
+      "poster": "/parceiros/tiago.webp",
+      "title": "Tiago Mecabo",
+      "ver": "@tiagomecabo",
+      "desc": "O Instagram de Tiago Mecabo é uma referência para corredores que desejam melhorar seu desempenho. Campeão pela Seleção Brasileira, autor de dois livros e palestrante, Tiago já ajudou mais de 20 mil alunos em 23 países a correrem mais rápido e quebrarem recordes.",
+      "produto": "tiago"
+    }
+  ]
+  ,"outrosSocial": [
+  {
+    "src": "/videos/criacao-video.mp4",
+    "poster": "/poster/criacao-video.jpeg",
+    "title": "Produtora de video",
+    "ver": "Ver mais...",
+    "href": "/produto/produtora-de-video",
+    "produto": ""
+  },
+  {
+    "src": "/videos/ti-automacao.mp4",
+    "poster": "/poster/ti-automacao.jpeg",
+    "title": "T.I.",
+    "ver": "Ver mais...",
+    "href": "/ti",
+    "produto": ""
+  },
+  {
     "src": "/videos/parceiros.mp4",
     "poster": "/poster/parceiros.jpeg",
     "title": "Parceiros",
     "ver": "Ver mais...",
-    "desc": "",
-    "titleDesc": "Seja um parceiro da 3XMEND",
-    "desc1": "Ser parceiro da 3xmend é ter ao seu lado uma agência de marketing comprometida com resultados reais. Você conta com uma equipe criativa, estratégica e sempre focada em impulsionar sua marca. Com soluções personalizadas, inovação constante e total transparência",
-    "produto": "parceiros"
+    "href": "/parceiros",
+    "produto": ""
+  }
+],
+
+"outrosTI": [
+  {
+    "src": "/videos/social-media.mp4",
+    "poster": "/poster/social-media.jpeg",
+    "title": "Social media",
+    "ver": "Ver mais...",
+    "href": "/socialmedia",
+    "produto": ""
   },
-  "outrosSocial": [
-    {
-      "src": "/videos/criacao-video.mp4",
-      "poster": "/poster/criacao-video.jpeg",
-      "title": "Produtora de video",
-      "ver": "Ver mais...",
-      "produto": "produtora-de-video"
-    },
-    {
-      "src": "/videos/ti-automacao.mp4",
-      "poster": "/poster/ti-automacao.jpeg",
-      "title": "T.I.",
-      "ver": "Ver mais...",
-      "produto": ""
-    },
-    {
-      "src": "/videos/parceiros.mp4",
-      "poster": "/poster/parceiros.jpeg",
-      "title": "Parceiros",
-      "ver": "Ver mais...",
-      "produto": "parceiros"
-    }
-  ],
-  "outrosTI": [
-    {
-      "src": "/videos/social-media.mp4",
-      "poster": "/poster/social-media.jpeg",
-      "title": "Social media",
-      "ver": "Ver mais...",
-      "produto": "social-media"
-    },
-    {
-      "src": "/videos/criacao-video.mp4",
-      "poster": "/poster/criacao-video.jpeg",
-      "title": "Produtora de video",
-      "ver": "Ver mais...",
-      "produto": "produtora-de-video"
-    },
-    {
-      "src": "/videos/parceiros.mp4",
-      "poster": "/poster/parceiros.jpeg",
-      "title": "Parceiros",
-      "ver": "Ver mais...",
-      "produto": "parceiros"
-    }
-  ],
+  {
+    "src": "/videos/criacao-video.mp4",
+    "poster": "/poster/criacao-video.jpeg",
+    "title": "Produtora de video",
+    "ver": "Ver mais...",
+    "href": "produto/produtora-de-video",
+    "produto": ""
+  },
+  {
+    "src": "/videos/parceiros.mp4",
+    "poster": "/poster/parceiros.jpeg",
+    "title": "Parceiros",
+    "ver": "Ver mais...",
+    "href": "/parceiros",
+    "produto": ""
+  }
+],
+"outrosParceiros": [
+  {
+    "src": "/videos/social-media.mp4",
+    "poster": "/poster/social-media.jpeg",
+    "title": "Social media",
+    "ver": "Ver mais...",
+    "href": "/social-media",
+    "produto": ""
+  },
+  {
+    "src": "/videos/ti-automacao.mp4",
+    "poster": "/poster/ti-automacao.jpeg",
+    "title": "T.I.",
+    "ver": "Ver mais...",
+    "href": "/ti",
+    "produto": ""
+  },
+  {
+    "src": "/videos/criacao-video.mp4",
+    "poster": "/poster/criacao-video.jpeg",
+    "title": "Produtora de video",
+    "ver": "Ver mais...",
+    "href": "produto/produtora-de-video",
+    "produto": ""
+  }
+],
+"outros": [
+  {
+    "src": "/videos/social-media.mp4",
+    "poster": "/poster/social-media.jpeg",
+    "title": "Social media",
+    "ver": "Ver mais...",
+    "href": "/socialmedia",
+    "produto": ""
+  },
+  {
+    "src": "/videos/ti-automacao.mp4",
+    "poster": "/poster/ti-automacao.jpeg",
+    "title": "T.I.",
+    "ver": "Ver mais...",
+    "href": "/ti",
+    "produto": ""
+  },
+  {
+    "src": "/videos/criacao-video.mp4",
+    "poster": "/poster/criacao-video.jpeg",
+    "title": "Produtora de video",
+    "ver": "Ver mais...",
+    "href": "/produto/produtora-de-video",
+    "produto": ""
+  },
+  {
+    "src": "/videos/parceiros.mp4",
+    "poster": "/poster/parceiros.jpeg",
+    "title": "Parceiros",
+    "ver": "Ver mais...",
+    "href": "/parceiros",
+    "produto": ""
+  }
+],
   "prosProd": [
     {
       "src": "/videos/social-media.mp4",
@@ -220,14 +328,14 @@
       "title": "Social media",
       "ver": "Ver mais...",
       "href": "/socialmedia",
-      "produto": "social-media"
+      "produto": ""
     },
     {
       "src": "/videos/criacao-video.mp4",
       "poster": "/poster/criacao-video.jpeg",
       "title": "Produtora de video",
       "ver": "Ver mais...",
-      "href": "",
+      "href": "/produto/produtora-de-video",
       "produto": "produtora-de-video"
     }
   ],
@@ -245,7 +353,7 @@
       "poster": "/poster/parceiros.jpeg",
       "title": "Parceiros",
       "ver": "Ver mais...",
-      "href": "",
+      "href": "/parceiros",
       "produto": "parceiros"
     }
   ]

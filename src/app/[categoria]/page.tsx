@@ -1,8 +1,27 @@
 import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import CardsCategoria from "../components/cards";
+import Cards from "../components/CardsOutros";
 import Link from "next/link";
 import Data from "../data/data.json";
+
+type CardsOutrosProps = {
+  src: string;
+  poster: string;
+  title: string;
+  ver: string;
+  href: string;
+};
+
+type CardsProps = {
+  src: string;
+  poster: string;
+  title: string;
+  ver: string;
+  desc: string;
+  produto: string;
+};
+
 
 export default async function PageDinamicasCategorias({
   params,
@@ -19,15 +38,17 @@ export default async function PageDinamicasCategorias({
     const titleMap: Record<string, string> = {
       socialmedia: Data.titlesG.titleSocial,
       ti: Data.titlesG.titleTi,
+      parceiros: Data.titlesG.titleParceiro
     };
     const title = titleMap[categoria] || "Categoria";
 
-      const outros =
-      Array.isArray(
-        (categoria === "socialmedia" ? Data.outrosSocial : Data.outrosTI) || []
-      )
-        ? (categoria === "socialmedia" ? Data.outrosSocial : Data.outrosTI)!
-        : [];
+    const outrosMap: Record<string, any[]> = {
+      socialmedia: Data.outrosSocial,
+      parceiros: Data.outrosParceiros,
+      ti: Data.outrosTI
+    };
+    
+    const outros = Array.isArray(outrosMap[categoria]) ? outrosMap[categoria]! : [];
 
 
   return (
@@ -61,7 +82,7 @@ export default async function PageDinamicasCategorias({
 
         <div className="flex flex-col w-[100%] gap-[60px]">
           <div className="flex flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
-          {cards.map((card: any, index: number) => (
+          {cards.map((card: CardsProps, index: number) => (
               <CardsCategoria key={index} {...card} />
             ))}
           </div>
@@ -69,9 +90,11 @@ export default async function PageDinamicasCategorias({
           <h2 className="text-[30px] text-center font-extrabold">
             Outros serviços.
           </h2>
-          <div className="flex flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
-          {outros.map((card: any, index: number) => (
-              <CardsCategoria key={index} {...card} />
+          <div className="flex flex-row flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
+          {outros.map((card: CardsOutrosProps, index: number) => (
+              <div className="w-[30%]">
+                <Cards key={index} {...card}/>
+              </div>
             ))}
           </div>
         </div>

@@ -3,13 +3,18 @@ import HamburgerCursor from "../../components/cursorMenu"
 import Image from "next/image"
 import Link from "next/link"
 import Data from "../../data/dataProd.json"
+import DataOutros from "../../data/data.json"
+import Cards from "@/app/components/CardsOutros"
 
 type CardsItem = {
     src: string;
+    poster: string;
+    ver: string;
     title: string;
     desc: string;
     produto: string;
   };
+
 export default async function PaginaDinamicProd({ params } : 
     { params: Promise<{produto: string}> }){
         const { produto } = await params
@@ -18,17 +23,19 @@ export default async function PaginaDinamicProd({ params } :
 
   if (!item) return
 
+  const outros =  DataOutros.outros
+
   return (
     <div className="flex flex-col items-center w-[100vw]">
     <header className="relative w-[100vw] h-[100vh]">
-      <video
+      { item.src ? <video
         src={item.src}
         autoPlay
         muted
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
-      />
+      /> : <img src={item.poster} className="absolute inset-0 w-full h-full bg-top z-0"/>}
       <div className="absolute inset-0 flex flex-col items-center justify-between bg-[rgba(0,0,0,0.6)] p-[40px] z-10">
         <div className="flex justify-between w-full">
           <Link href="/" className="z-999">
@@ -60,11 +67,21 @@ export default async function PaginaDinamicProd({ params } :
       </div>
     </header>
 
-    <main className="flex flex-col items-center justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
-      <h2 className="text-[50px] text-center font-extrabold">
+    <main className="flex flex-col items-start justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
+      <h2 className="text-[50px] text-start font-extrabold">
         {item.title}
       </h2>
       <p>{item.desc}</p>
+      <h2 className="text-[30px] text-center font-extrabold">
+            Outros serviços.
+          </h2>
+          <div className="flex justify-center flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
+          {outros.map((card: any, index: number) => (
+              <div className="w-[30%]">
+                <Cards key={index} {...card} />
+              </div>
+            ))}
+          </div>
     </main>
   </div>
   );
