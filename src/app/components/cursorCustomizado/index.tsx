@@ -24,7 +24,7 @@ export default function CustomCursor({ open }: { open: boolean }) {
       if (target.classList.contains("hoverSeta"))  {
         cursor.style.width = "70px";
         cursor.style.height = "70px";
-        cursor.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.3)";
+        cursor.style.boxShadow = "0px 0px 10px #00BFFF20";
         arrow.style.display ="block";
         arrow.style.width = "30px";
         arrow.style.height = "30px";
