@@ -10,7 +10,7 @@ export default function Home() {
   <div className="flex flex-col items-center w-[100vw]">
     <header className="relative w-[100vw] h-[100vh]">
       <video src="/videos/video-header-cortado-s-som.mp4" autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover"/>
-      <div className="absolute inset-0 flex flex-col items-center justify-between bg-[rgba(0,0,0,0.6)] p-[40px]">
+      <div className="absolute inset-0 flex flex-col items-center justify-between bg-[rgba(0,0,0,0.8)] p-[40px]">
         <div className="flex justify-between w-full">
           <Link href="/" className="z-999">
             <FallingText text="3XMEND"/>
