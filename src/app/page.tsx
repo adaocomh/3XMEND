@@ -12,16 +12,16 @@ export default function Home() {
       <video src="/videos/video-header-cortado-s-som.mp4" autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover"/>
       <div className="absolute inset-0 flex flex-col items-center justify-between bg-[rgba(0,0,0,0.8)] p-[40px]">
         <div className="flex justify-between w-full">
-          <Link href="/" className="z-999">
+          <Link href="/">
             <FallingText text="3XMEND"/>
           </Link>
-          <div className="flex gap-[60px] items-center">
+          <div className="flex gap-[60px] items-center z-20">
             <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta">BR</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta">EUA</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] hoverSeta">ES</p>
             </div>
-          <div className="flex justify-center items-center"><HamburgerCursor/></div>
+          <div className="flex justify-center items-center z-30"><HamburgerCursor/></div>
         </div>
         </div>
         <div>

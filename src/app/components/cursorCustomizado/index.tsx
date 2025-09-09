@@ -80,8 +80,8 @@ export default function CustomCursor({ open }: { open: boolean }) {
   return (
     <div
       ref={cursorRef}
-      className={`fixed flex justify-center w-[20px] h-[20px] items-center rounded-full bg-[#00BFFF] pointer-events-none z-9999 transition-[width,height,background-color] duration-150`}
-    ><img className="hidden transition-[width,height] duration-150" ref={arrowRef} src={open ? "/icons/right-blue.png" : "/icons/right-arrow.png"} alt="seta para direita"/>
+      className={`fixed flex justify-center w-[20px] h-[20px] items-center rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-[width,height,background-color] duration-150`}
+    ><img className="transition-[width,height] duration-150" ref={arrowRef} src={open ? "/icons/right-blue.png" : "/icons/right-arrow.png"} alt="seta para direita"/>
     </div>
   );
 }

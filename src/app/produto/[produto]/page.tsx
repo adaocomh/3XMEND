@@ -5,7 +5,6 @@ import Link from "next/link"
 import Data from "../../data/dataProd.json"
 import DataOutros from "../../data/data.json"
 import Cards from "@/app/components/CardsOutros"
-import CustomCursor from "@/app/components/cursorCustomizado"
 
 type CardsProps = {
     src: string;
@@ -41,7 +40,6 @@ export default async function PaginaDinamicProd({ params } :
 
   return (
     <div className="flex flex-col items-center w-[100vw]">
-      <CustomCursor open/>
     <header className="relative w-[100vw] h-[100vh]">
       { item.src ? <video
         src={item.src}
@@ -49,14 +47,14 @@ export default async function PaginaDinamicProd({ params } :
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      /> : <img src={item.poster} className="absolute inset-0 w-full h-full bg-top z-0"/>}
+        className="absolute inset-0 w-full h-full object-cover"
+      /> : <img src={item.poster} className="absolute inset-0 w-full h-full bg-top"/>}
       <div className="absolute inset-0 flex flex-col items-center justify-between bg-[rgba(0,0,0,0.8)] p-[40px] z-10">
         <div className="flex justify-between w-full">
-          <Link href="/" className="z-999">
+          <Link href="/">
             <FallingText text="3XMEND" />
           </Link>
-          <div className="flex gap-[60px] items-center">
+          <div className="flex gap-[60px] items-center z-30">
             <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta">BR</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta">EUA</p>
@@ -71,17 +69,10 @@ export default async function PaginaDinamicProd({ params } :
           <p className="text-[48px] font-extrabold text-[#F5F5F5]">{item.title}</p>
         </div>
         <div className="self-center">
-          <Image
-            className="bounce"
-            src="/icons/down-arrow.png"
-            alt="seta"
-            width={40}
-            height={40}
-          />
+          <Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/>
         </div>
       </div>
     </header>
-
     <main className="flex flex-col items-start justify-center gap-[5vw] pt-[2vw] pb-[5vw] max-w-[1200px]">
       <div className="flex flex-row justify-between gap-[1vw] my-[2vw]">
         <div className="flex flex-col gap-[1vw] my-[2vw] w-[60%]">
