@@ -76,9 +76,9 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
 
 
   return (
-    <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out z-30 hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"} div-menu`}>
+    <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out hoverSeta ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"} div-menu`}>
       <div className={`absolute flex justify-center items-center w-0 h-0 bg-[#00BFFF] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""} menu-w`}>
-        <div className={`${open ? "flex flex-col justify-start w-[1000px] z-30 gap-[40px]" : "hidden"}`}>
+        <div className={`${open ? "flex flex-col justify-start w-[1000px] gap-[40px]" : "hidden"}`}>
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
             <FallingText text="3XMEND"/>
           </div>
@@ -102,7 +102,7 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
       </div>
       <button
         onClick={() => setOpen(!open)}
-        className="relative w-[30px] h-[30px] cursor-pointer transition-all duration-500 ease-in-out hoverSeta z-40"
+        className="relative w-[30px] h-[30px] transition-all duration-500 ease-in-out hoverSeta"
       >
         <div className="hoverSeta">
           <span

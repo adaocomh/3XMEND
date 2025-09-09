@@ -57,7 +57,7 @@ export default async function PageDinamicasCategorias({
         <div className="flex justify-between w-[100%] p-[40px]">
           <Link href="/"><FallingText text="3XMEND"/></Link>
           <div className="flex gap-[60px] items-center">
-            <div className="relative flex z-30">
+            <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">
                 BR
               </p>

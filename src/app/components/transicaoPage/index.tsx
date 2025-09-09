@@ -33,7 +33,7 @@ export default function TransicaoPage({ children }: { children: React.ReactNode 
     <>
       {show && (
         <div
-          className={`fixed inset-0 z-50 bg-[#00BFFF] transform transition-all duration-500 ease-in-out
+          className={`fixed inset-0 z-40 bg-[#00BFFF] transform transition-all duration-500 ease-in-out
           ${animate ? "translate-y-0 opacity-100" : "-translate-y-full opacity-50"}`}
         />
       )}

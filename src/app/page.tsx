@@ -15,13 +15,13 @@ export default function Home() {
           <Link href="/">
             <FallingText text="3XMEND"/>
           </Link>
-          <div className="flex gap-[60px] items-center z-20">
+          <div className="flex gap-[60px] items-center">
             <div className="relative flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta">BR</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta">EUA</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] hoverSeta">ES</p>
             </div>
-          <div className="flex justify-center items-center z-30"><HamburgerCursor/></div>
+          <div className="flex justify-center items-center"><HamburgerCursor/></div>
         </div>
         </div>
         <div>

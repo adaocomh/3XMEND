@@ -25,7 +25,7 @@ export default function CustomCursor({ open }: { open: boolean }) {
         cursor.style.width = "70px";
         cursor.style.height = "70px";
         cursor.style.boxShadow = "0px 0px 10px #00BFFF20";
-        arrow.style.display ="block";
+        
         arrow.style.width = "30px";
         arrow.style.height = "30px";
       }
@@ -37,6 +37,7 @@ export default function CustomCursor({ open }: { open: boolean }) {
         cursor.style.width = "20px";
         cursor.style.height = "20px";
         cursor.style.boxShadow = "none";
+
         arrow.style.width = "0px";
         arrow.style.height = "0px";
       }
@@ -73,14 +74,13 @@ export default function CustomCursor({ open }: { open: boolean }) {
     cursor.style.height = "20px";
     cursor.style.boxShadow = "none";
 
-    arrow.style.display = "none";
     arrow.style.width = "0px";
     arrow.style.height = "0px";
   }, [pathname]);
   return (
     <div
       ref={cursorRef}
-      className={`fixed flex justify-center w-[20px] h-[20px] items-center rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-[width,height,background-color] duration-150`}
+      className={`fixed flex justify-center w-[20px] h-[20px] items-center rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-[width,height,background-color] duration-150 cursorr`}
     ><img className="transition-[width,height] duration-150" ref={arrowRef} src={open ? "/icons/right-blue.png" : "/icons/right-arrow.png"} alt="seta para direita"/>
     </div>
   );
