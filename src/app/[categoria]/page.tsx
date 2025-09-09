@@ -69,7 +69,7 @@ export default async function PageDinamicasCategorias({
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <HamburgerCursor />
+              <HamburgerCursor/>
             </div>
           </div>
         </div>

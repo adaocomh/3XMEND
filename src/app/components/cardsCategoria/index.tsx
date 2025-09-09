@@ -4,19 +4,6 @@ import Data from "../../data/data.json"
 import Cards from "../CardsOutros";
 
 export default function CardsPageIni() {
-  const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
-    e.currentTarget.play();
-  };
-
-  const handleMouseLeave = (e: React.MouseEvent<HTMLVideoElement>) => {
-    e.currentTarget.pause();
-    e.currentTarget.currentTime = 0.1;
-  };
-
-  const handleLoadedData = (e: React.SyntheticEvent<HTMLVideoElement>) => {
-    e.currentTarget.currentTime = 0.1;
-  };
-  
   return (
     <div className="flex justify-between w-[100%]">
       <div className="flex flex-col gap-[8vw] w-[40%]">
