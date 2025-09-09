@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Loader from "./components/telaDeCarregamento";
+import TransicaoPage from "./components/transicaoPage";
 import CustomCursor from "./components/cursorCustomizado";
 import Footer from "./components/footer";
 
@@ -28,7 +29,9 @@ export default function RootLayout({
       >
         <CustomCursor open/>
         <Loader>
-        {children}
+          <TransicaoPage>
+            {children}
+          </TransicaoPage>
         <Footer/>
         </Loader>
       </body>
