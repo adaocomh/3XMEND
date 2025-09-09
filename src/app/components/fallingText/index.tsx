@@ -77,7 +77,7 @@ export default function FallingText({ text }: { text: string }) {
           <h3
             key={i}
             className={`
-              text-[38px] font-semibold
+              text-[38px] font-semibold z-10
               ${colorClass} duration-300 ease-in-out hoverSeta
               ${
                 visible
