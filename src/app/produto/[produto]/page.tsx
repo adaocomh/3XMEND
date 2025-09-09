@@ -5,15 +5,37 @@ import Link from "next/link"
 import Data from "../../data/dataProd.json"
 import DataOutros from "../../data/data.json"
 import Cards from "@/app/components/CardsOutros"
+import CustomCursor from "@/app/components/cursorCustomizado"
 
 type CardsProps = {
     src: string;
     poster: string;
     ver: string;
     title: string;
+    subTitle: string;
     desc: string;
     produto: string;
   };
+
+  type CordsIconsdprops = {
+    icon: string;
+    icon1: string;
+    icon2: string;
+    icon3: string;
+    icon4: string;
+    icon5: string;
+    icon6: string;
+    icon7: string;
+    descIcon: string;
+    desc1: string;
+    desc2: string;
+    desc3: string;
+    desc4: string;
+    desc5: string;
+    desc6: string;
+    desc7: string;
+    imgs: string;
+  }
 
   type CardsOutrosProps = {
     src: string;
@@ -33,8 +55,13 @@ export default async function PaginaDinamicProd({ params } :
 
   const outros =  DataOutros.outros
 
+  const icons = item.icon
+  const desc = item.descIcon
+  const imgs = item.imgs
+
   return (
     <div className="flex flex-col items-center w-[100vw]">
+      <CustomCursor open/>
     <header className="relative w-[100vw] h-[100vh]">
       { item.src ? <video
         src={item.src}
@@ -75,23 +102,49 @@ export default async function PaginaDinamicProd({ params } :
       </div>
     </header>
 
-    <main className="flex flex-col items-start justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
-      <div className="flex flex-col gap-[1vw] my-[2vw]">
-        <h2 className="text-[50px] text-start font-black">
-          {item.title}
-        </h2>
-        <p className="text-start text-[20px] w-[50%]">{item.desc}</p>
-      </div>
-      <h2 className="text-[30px] self-center font-extrabold">
-            Outros serviços.
-          </h2>
-          <div className="flex justify-center flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
-          {outros.map((card: CardsOutrosProps, index: number) => (
-              <div className="w-[30%]">
-                <Cards key={index} {...card} />
+    <main className="flex flex-col items-start justify-center gap-[5vw] py-[2vw] max-w-[1200px]">
+      <div className="flex flex-row justify-between gap-[1vw] my-[2vw]">
+        <div className="flex flex-col gap-[1vw] my-[2vw] w-[60%]">
+          <h2 className="text-[50px] text-start font-black">{item.title}</h2>
+          <h3 className="text-[35px] text-start font-bold">{item.subTitle}</h3>
+          <p className="text-start text-[18px]">{item.desc}</p>
+        </div>
+        {icons.icon1 && (
+        <div className="flex flex-col justify-between my-[2vw]">
+          {Array.from({ length: 7 }).map((_, i) => {
+            const icon = icons[`icon${i + 1}` as keyof typeof icons];
+            const text = desc[`desc${i + 1}` as keyof typeof desc];
+            const alts = [
+              "icon de localização",
+              "icon de drone",
+              "icon de chroma key",
+              "icon de carteira de dinheiro",
+              "icon de qualidade",
+              "icon de equipamentos de gravação",
+              "icon de localização",
+            ];
+            return (
+              <div key={i} className="flex gap-[20px] items-center">
+                <img className="w-[30px] h-[30px]" src={icon} alt={alts[i]}/>
+                <h6 className="text-[18px] font-medium">{text}</h6>
               </div>
-            ))}
+            );
+          })}
+        </div>)}
+      </div>
+      {imgs ? <div className="flex flex-col gap-[2vw]">
+        {imgs.map((img, i) => (
+            <img key={i} src={`/imgsProdutora/${img}`} alt={`Imagem ${i + 1}`} className="w-full h-auto rounded-[10px]"/>
+          ))} </div> 
+          : ""}
+      <h2 className="text-[30px] self-center font-extrabold">Outros serviços.</h2>
+      <div className="flex justify-center flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
+      {outros.map((card: CardsOutrosProps, index: number) => (
+          <div className="w-[30%]">
+            <Cards key={index} {...card} />
           </div>
+        ))}
+      </div>
     </main>
   </div>
   );
