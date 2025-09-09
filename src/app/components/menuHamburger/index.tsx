@@ -82,7 +82,10 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
             <FallingText text="3XMEND"/>
           </div>
-          <Link href="#servicos" onClick={() => setOpen(false)}><h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min">Serviços</h3></Link>
+          <Link href="/#servicos">
+          <h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min" onClick={() => {
+                const timer = setTimeout(() => setOpen(false), 200);
+                return () => clearTimeout(timer);}}>Serviços</h3></Link>
           <Link href="/sobre"><h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">Sobre</h3></Link>
           <div className="slideMenu3 flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">BR</p>
