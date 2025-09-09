@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import FallingText from "../fallingText";
+import Link from "next/link";
 
 export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
@@ -81,8 +82,8 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
             <FallingText text="3XMEND"/>
           </div>
-          <h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min">Serviços</h3>
-          <h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">Sobre</h3>
+          <Link href="#servicos" onClick={() => setOpen(false)}><h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min">Serviços</h3></Link>
+          <Link href="/sobre"><h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">Sobre</h3></Link>
           <div className="slideMenu3 flex">
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">BR</p>
               <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">EUA</p>

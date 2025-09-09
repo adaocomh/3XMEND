@@ -30,10 +30,10 @@ export default function Home() {
         <div className="self-end"><Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/></div>
       </div>
     </header>
-      <main className="flex flex-col items-center justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
+      <main id="servicos" className="flex flex-col items-center justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
         <h2 className="text-[30px] text-center font-extrabold">Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas.</h2>
         <CardsVideos/>
-        <BtnSobre/>
+        <Link href="/sobre"><BtnSobre/></Link>
       </main>
   </div>
   );
