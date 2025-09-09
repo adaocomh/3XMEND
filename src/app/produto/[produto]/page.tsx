@@ -5,6 +5,7 @@ import Link from "next/link"
 import Data from "../../data/dataProd.json"
 import DataOutros from "../../data/data.json"
 import Cards from "@/app/components/CardsOutros"
+import Slide from "@/app/components/elementosSlides"
 
 type CardsProps = {
     src: string;
@@ -76,9 +77,9 @@ export default async function PaginaDinamicProd({ params } :
     <main className="flex flex-col items-start justify-center gap-[5vw] pt-[2vw] pb-[5vw] max-w-[1200px]">
       <div className="flex flex-row justify-between gap-[1vw] my-[2vw]">
         <div className="flex flex-col gap-[1vw] my-[2vw] w-[60%]">
-          <h2 className="text-[50px] text-start font-black">{item.title}</h2>
-          <h3 className="text-[35px] text-start font-bold">{item.subTitle}</h3>
-          <p className="text-start text-[18px]">{item.desc}</p>
+          <Slide><h2 className="text-[50px] text-start font-black">{item.title}</h2></Slide>
+          <Slide><h3 className="text-[35px] text-start font-bold">{item.subTitle}</h3></Slide>
+          <Slide><p className="text-start text-[18px] text-[#575757]">{item.desc}</p></Slide>
         </div>
         {icons.icon1 && (
         <div className="flex flex-col justify-between my-[2vw]">
@@ -95,10 +96,12 @@ export default async function PaginaDinamicProd({ params } :
               "icon de localização",
             ];
             return (
-              <div key={i} className="flex gap-[20px] items-center">
+              <Slide>
+                <div key={i} className="flex gap-[20px] items-center">
                 <img className="w-[30px] h-[30px]" src={icon} alt={alts[i]}/>
                 <h6 className="text-[18px] font-medium">{text}</h6>
-              </div>
+                </div>
+              </Slide>
             );
           })}
         </div>)}
