@@ -16,27 +16,7 @@ type CardsProps = {
     desc: string;
     produto: string;
   };
-
-  type CordsIconsdprops = {
-    icon: string;
-    icon1: string;
-    icon2: string;
-    icon3: string;
-    icon4: string;
-    icon5: string;
-    icon6: string;
-    icon7: string;
-    descIcon: string;
-    desc1: string;
-    desc2: string;
-    desc3: string;
-    desc4: string;
-    desc5: string;
-    desc6: string;
-    desc7: string;
-    imgs: string;
-  }
-
+  
   type CardsOutrosProps = {
     src: string;
     poster: string;
