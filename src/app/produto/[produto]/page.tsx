@@ -102,7 +102,7 @@ export default async function PaginaDinamicProd({ params } :
       </div>
     </header>
 
-    <main className="flex flex-col items-start justify-center gap-[5vw] py-[2vw] max-w-[1200px]">
+    <main className="flex flex-col items-start justify-center gap-[5vw] pt-[2vw] pb-[5vw] max-w-[1200px]">
       <div className="flex flex-row justify-between gap-[1vw] my-[2vw]">
         <div className="flex flex-col gap-[1vw] my-[2vw] w-[60%]">
           <h2 className="text-[50px] text-start font-black">{item.title}</h2>
