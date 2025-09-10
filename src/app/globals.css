@@ -43,7 +43,7 @@
 }
 
 .slide-up {
-  animation: slide-up 1.6s cubic-bezier(0.65, 0, 0.35, 1);
+  animation: slide-up 1.4s cubic-bezier(0.65, 0, 0.35, 1);
 }
 @keyframes slide-up {
   0% {
