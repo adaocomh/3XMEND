@@ -84,9 +84,9 @@ export default async function PaginaDinamicProd({ params } :
           <Slide><p className="text-start text-[18px] text-[#575757]">{item.desc}</p></Slide>
         </div>
               
-        {icons && (
+        {Array.isArray(desc) && desc.length > 0 ? (
         <div className="flex flex-col justify-between my-[2vw]">
-          {Array.from({ length: 7 }).map((_, i) => {
+          {desc.map((d, i) => {
             const alts = [
               "icon de localização",
               "icon de drone",
@@ -97,15 +97,13 @@ export default async function PaginaDinamicProd({ params } :
               "icon de localização",
             ];
             return (
-              <Slide key={i}>
-              <div className="flex gap-[20px] items-center">
-                <img className="w-[30px] h-[30px]" src={icons[i]} alt={alts[i]}/>
-                <h6 className="text-[18px] font-medium">{desc[i]}</h6>
+              <div key={i} className="flex gap-[20px] items-center">
+                <Slide><img className="w-[30px] h-[30px]" src={icons[i]} alt={alts[i]} /></Slide>
+                <Slide><h6 className="text-[18px] font-medium">{d}</h6></Slide>
               </div>
-              </Slide>
             );
           })}
-        </div>)}
+        </div>) : null}
               
       </div>
       {imgs ? <div className="flex flex-col gap-[2vw]">
