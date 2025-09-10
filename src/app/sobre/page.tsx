@@ -69,7 +69,7 @@ export default async function PageDinamicasCategorias() {
                 </div>
             </div>
         </div>
-        <div className="flex justify-center items-center bg-[#00BFFF] w-[100vw]">
+        <div className="flex justify-center items-center bg-[#00BFFF] w-[100vw] faqCursor">
             <FAQ/>
         </div>
       </main>

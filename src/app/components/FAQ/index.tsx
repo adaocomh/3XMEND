@@ -43,29 +43,29 @@ export default function FAQ() {
   };
 
   return (
-      <div className="flex flex-col bg-[#00BFFF]  w-full max-w-[1200px] text-(--background) gap-[4vw] py-[5vw]">
-        <h2 className="text-[75px] font-bold text-center">
+      <div className="flex flex-col bg-[#00BFFF]  w-full max-w-[1200px] text-(--background) gap-[4vw] py-[5vw] faqCursor">
+        <h2 className="text-[75px] font-bold text-center faqCursor">
           Dúvidas Frequentes
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-4 faqCursor">
           {faqData.map((item, index) => (
-            <div key={index} className="border-b border-[var(--background)] pb-4">
+            <div key={index} className="border-b border-[var(--background)] pb-4 faqCursor">
               <button
                 onClick={() => toggleFAQ(index)}
-                className={`w-full flex justify-between items-center text-left text-[22px] font-semibold`}
+                className={`w-full flex justify-between items-center text-left text-[22px] font-semibold hoverSeta faqCursor`}
               >
                 {item.question}
-                <span className="text-xl">
-                  {openIndex === index ? "−" : "+"}
+                <span className="text-xl faqCursor">
+                  {openIndex === index ? "-" : "+"}
                 </span>
               </button>
 
               <div
-                className={`overflow-hidden transition-all duration-500 ease ${
+                className={`overflow-hidden transition-all duration-500 ease faqCursor ${
                   openIndex === index ? "max-h-40 mt-3" : "max-h-0"
                 }`}
               >
-                <p className="text-[18px]">
+                <p className="text-[18px] faqCursor">
                   {item.answer}
                 </p>
               </div>

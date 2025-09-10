@@ -42,17 +42,63 @@ export default function CustomCursor({ open }: { open: boolean }) {
         arrow.style.height = "0px";
       }
     };
+    const handleMouseOverFaq = (e: MouseEvent) => {
+          const target = e.target as HTMLElement;
+          if (target.classList.contains("faqCursor"))  {
+            cursor.style.backgroundColor = "#F5F5F5";
+            arrow.src = "/icons/right-blue.png";
 
+          }
+        };
+
+        const handleMouseOutFaq = (e: MouseEvent) => {
+          const target = e.target as HTMLElement;
+          if (target.classList.contains("faqCursor")) {
+            if(open){
+              cursor.style.backgroundColor = "#F5F5F5";
+              arrow.src = "/icons/right-blue.png";
+              arrow.style.width = "30px";
+              arrow.style.height = "30px";
+            } else {
+              cursor.style.backgroundColor = "#00BFFF";
+              arrow.src = "/icons/right-arrow.png";
+              arrow.style.width = "0px";
+              arrow.style.height = "0px";
+            }
+          }
+        };
     document.addEventListener("mousemove", moveCursor);
     document.addEventListener("mouseover", handleMouseOver);
     document.addEventListener("mouseout", handleMouseOut);
+    document.addEventListener("mouseover", handleMouseOverFaq);
+    document.addEventListener("mouseout", handleMouseOutFaq);
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);
       document.removeEventListener("mouseover", handleMouseOver);
       document.removeEventListener("mouseout", handleMouseOut);
+      document.removeEventListener("mouseover", handleMouseOverFaq);
+      document.removeEventListener("mouseout", handleMouseOutFaq);
     };
   }, []);
+
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    const arrow = arrowRef.current;
+    if (!cursor || !arrow) return;
+  
+    if(open){
+      cursor.style.backgroundColor = "#F5F5F5";
+      arrow.src = "/icons/right-blue.png";
+      arrow.style.width = "30px";
+      arrow.style.height = "30px";
+    } else {
+      cursor.style.backgroundColor = "#00BFFF";
+      arrow.src = "/icons/right-arrow.png";
+      arrow.style.width = "0px";
+      arrow.style.height = "0px";
+    }
+  }, [open]);
 
   useEffect(()=>{
     const cursor = cursorRef.current;
@@ -76,6 +122,7 @@ export default function CustomCursor({ open }: { open: boolean }) {
 
     arrow.style.width = "0px";
     arrow.style.height = "0px";
+
   }, [pathname]);
   return (
     <div
