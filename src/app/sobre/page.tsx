@@ -2,6 +2,7 @@ import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import Link from "next/link";
 import FAQ from "../components/FAQ";
+import Contador from "../components/contador";
 
 export default async function PageDinamicasCategorias() {
   return (
@@ -44,15 +45,15 @@ export default async function PageDinamicasCategorias() {
             <h1 className="text-[75px] font-black text-(--background) text-center">Impacto da 3XMEND</h1>
                 <div className="flex justify-between">
                     <div className="flex flex-col items-center">
-                        <h1 className="text-[75px] font-black text-(--background)">12</h1>
+                        <h1 className="text-[75px] font-black text-(--background)"><Contador target={12} duration={1500}/></h1>
                         <h6 className="text-[35px] text-(--background) font-bold">Parceiros</h6>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h1 className="text-[75px] font-black text-(--background)">25M</h1>
+                        <h1 className="text-[75px] font-black text-(--background)"><Contador target={25} duration={1500}/>M</h1>
                         <h6 className="text-[35px] text-(--background) font-bold">Gerados em visualização</h6>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h1 className="text-[75px] font-black text-(--background)">4</h1>
+                        <h1 className="text-[75px] font-black text-(--background)"><Contador target={4} duration={1500}/></h1>
                         <h6 className="text-[35px] text-(--background) font-bold">Anos de mercado</h6>
                     </div>
                 </div>
