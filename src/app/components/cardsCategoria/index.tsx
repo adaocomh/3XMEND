@@ -7,14 +7,14 @@ export default function CardsPageIni() {
   return (
     <div className="flex justify-between w-[100%]">
       <div className="flex flex-col gap-[8vw] w-[40%]">
-        {Data.cadsPageIniLeft.map((video, index) => (
-          <Cards key={index} {...video} />
+        {Data.cadsPageIniLeft.map((video) => (
+          <Cards key={video.id} {...video} />
         ))}
       </div>
 
       <div className="flex flex-col gap-[8vw] mt-[13vw] w-[40%]">
-        {Data.cadsPageIniRight.map((video, index) => (
-          <Cards key={index} {...video} />
+        {Data.cadsPageIniRight.map((video) => (
+          <Cards key={video.id} {...video} />
         ))}
       </div>
     </div>

@@ -1,4 +1,4 @@
-{   
+{
   "titlesG": {
     "titleSocial": "Serviços de social media.",
     "titleTi": "Serviços de T.I.",
@@ -6,6 +6,7 @@
   },
   "socialmedia": [
     {
+      "id": 1,
       "src": "/videos/designer.mp4",
       "poster": "/poster/designer.jpeg",
       "title": "Designer",
@@ -14,6 +15,7 @@
       "produto": "designer"
     },
     {
+      "id": 2,
       "src": "/videos/criacao-video.mp4",
       "poster": "/poster/criacao-video.jpeg",
       "title": "Edição de video",
@@ -22,6 +24,7 @@
       "produto": "edicao-de-video"
     },
     {
+      "id": 3,
       "src": "/videos/social-media.mp4",
       "poster": "/poster/social-media.jpeg",
       "title": "Social media",
@@ -30,6 +33,7 @@
       "produto": "social-media"
     },
     {
+      "id": 4,
       "src": "/videos/ads.mp4",
       "poster": "/poster/ads.jpeg",
       "title": "ADS",
@@ -38,6 +42,7 @@
       "produto": "ads"
     },
     {
+      "id": 5,
       "src": "/videos/criacao-curso.mp4",
       "poster": "/poster/criacao-curso.jpeg",
       "title": "Criação de curso",
@@ -46,6 +51,7 @@
       "produto": "criacao-de-curso"
     },
     {
+      "id": 6,
       "src": "/videos/seo.mp4",
       "poster": "/poster/seo.jpeg",
       "title": "SEO",
@@ -54,6 +60,7 @@
       "produto": "seo"
     },
     {
+      "id": 7,
       "src": "/videos/seo.mp4",
       "poster": "/poster/seo.jpeg",
       "title": "Criação de vinheta",
@@ -62,6 +69,7 @@
       "produto": "criacao-de-vinheta"
     },
     {
+      "id": 8,
       "src": "/videos/marca.mp4",
       "poster": "/poster/marca.jpeg",
       "title": "Marca",
@@ -70,6 +78,7 @@
       "produto": "marca"
     },
     {
+      "id": 9,
       "src": "/videos/criacao-fisico-digital.mp4",
       "poster": "/poster/criacao-fisico-digital.jpeg",
       "title": "Criação de produtos físicos e digitais",
@@ -80,6 +89,7 @@
   ],
   "ti": [
     {
+      "id": 1,
       "src": "/videos/site.mp4",
       "poster": "/poster/site.jpeg",
       "title": "Sites e e-commerce",
@@ -88,6 +98,7 @@
       "produto": "sites-e-ecommerce"
     },
     {
+      "id": 2,
       "src": "/videos/banco-dados.mp4",
       "poster": "/poster/banco-dados.jpeg",
       "title": "Banco de dados",
@@ -96,6 +107,7 @@
       "produto": "banco-de-dados"
     },
     {
+      "id": 3,
       "src": "/videos/cripto.mp4",
       "poster": "/poster/cripto.jpeg",
       "title": "Cripto",
@@ -104,6 +116,7 @@
       "produto": "cripto"
     },
     {
+      "id": 4,
       "src": "/videos/ti-automacao.mp4",
       "poster": "/poster/ti-automacao.jpeg",
       "title": "Automação",
@@ -112,24 +125,9 @@
       "produto": "automacao"
     }
   ],
-  "produtora": {
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
-    "title": "Produtora de video",
-    "ver": "Ver mais...",
-    "titleDesc": "Muito mais que um simples",
-    "desc2": "O estúdio 3XMEND é a escolha ideal para quem busca excelência em produções audiovisuais. Com uma estrutura moderna, bem planejada e equipada com tecnologia de ponta, o espaço oferece tudo o que você precisa para gravar vídeos com qualidade profissional, seja para redes sociais, campanhas publicitárias, vídeos institucionais, tutoriais, podcasts ou qualquer outro formato.",
-    "desc3": "O ambiente é totalmente preparado para garantir uma experiência fluida e produtiva, com iluminação adequada, isolamento acústico e equipamentos que elevam o nível das produções. Além disso, a equipe da 3XMEND se destaca pelo atendimento atencioso, suporte técnico eficiente e flexibilidade para atender às necessidades de cada cliente.",
-    "img1": "",
-    "img2": "",
-    "img3": "",
-    "img4": "",
-    "img5": "",
-    "img6": "",
-    "produto": "produtora-de-video"
-  },
   "parceiros": [
     {
+      "id": 1,
       "src": "",
       "poster": "/parceiros/ana.webp",
       "title": "Ana Farias",
@@ -138,6 +136,7 @@
       "produto": "ana"
     },
     {
+      "id": 2,
       "src": "",
       "poster": "/parceiros/diego.webp",
       "title": "Diego Rossato",
@@ -146,6 +145,7 @@
       "produto": "diego"
     },
     {
+      "id": 3,
       "src": "",
       "poster": "/parceiros/douglas.webp",
       "title": "Douglas Flamino",
@@ -154,6 +154,7 @@
       "produto": "douglas"
     },
     {
+      "id": 4,
       "src": "",
       "poster": "/parceiros/fabiana.webp",
       "title": "Fabiana Santos",
@@ -162,6 +163,7 @@
       "produto": "fabiana"
     },
     {
+      "id": 5,
       "src": "",
       "poster": "/parceiros/flavia.webp",
       "title": "Flavia Palheiros (Vinha)",
@@ -170,6 +172,7 @@
       "produto": "flavia"
     },
     {
+      "id": 6,
       "src": "",
       "poster": "/parceiros/tiago.webp",
       "title": "Tiago Mecabo",
@@ -177,170 +180,19 @@
       "desc": "O Instagram de Tiago Mecabo é uma referência para corredores que desejam melhorar seu desempenho. Campeão pela Seleção Brasileira, autor de dois livros e palestrante, Tiago já ajudou mais de 20 mil alunos em 23 países a correrem mais rápido e quebrarem recordes.",
       "produto": "tiago"
     }
-  ]
-  ,"outrosSocial": [
-  {
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
-    "title": "Produtora de video",
-    "ver": "Ver mais...",
-    "href": "/produto/produtora-de-video",
-    "produto": ""
-  },
-  {
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
-    "title": "T.I.",
-    "ver": "Ver mais...",
-    "href": "/ti",
-    "produto": ""
-  },
-  {
-    "src": "/videos/parceiros.mp4",
-    "poster": "/poster/parceiros.jpeg",
-    "title": "Parceiros",
-    "ver": "Ver mais...",
-    "href": "/parceiros",
-    "produto": ""
-  }
-],
-
-"outrosTI": [
-  {
-    "src": "/videos/social-media.mp4",
-    "poster": "/poster/social-media.jpeg",
-    "title": "Social media",
-    "ver": "Ver mais...",
-    "href": "/socialmedia",
-    "produto": ""
-  },
-  {
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
-    "title": "Produtora de video",
-    "ver": "Ver mais...",
-    "href": "produto/produtora-de-video",
-    "produto": ""
-  },
-  {
-    "src": "/videos/parceiros.mp4",
-    "poster": "/poster/parceiros.jpeg",
-    "title": "Parceiros",
-    "ver": "Ver mais...",
-    "href": "/parceiros",
-    "produto": ""
-  }
-],
-"outrosParceiros": [
-  {
-    "src": "/videos/social-media.mp4",
-    "poster": "/poster/social-media.jpeg",
-    "title": "Social media",
-    "ver": "Ver mais...",
-    "href": "/social-media",
-    "produto": ""
-  },
-  {
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
-    "title": "T.I.",
-    "ver": "Ver mais...",
-    "href": "/ti",
-    "produto": ""
-  },
-  {
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
-    "title": "Produtora de video",
-    "ver": "Ver mais...",
-    "href": "produto/produtora-de-video",
-    "produto": ""
-  }
-],
-"outros": [
-  {
-    "src": "/videos/social-media.mp4",
-    "poster": "/poster/social-media.jpeg",
-    "title": "Social media",
-    "ver": "Ver mais...",
-    "href": "/socialmedia",
-    "produto": ""
-  },
-  {
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
-    "title": "T.I.",
-    "ver": "Ver mais...",
-    "href": "/ti",
-    "produto": ""
-  },
-  {
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
-    "title": "Produtora de video",
-    "ver": "Ver mais...",
-    "href": "/produto/produtora-de-video",
-    "produto": ""
-  },
-  {
-    "src": "/videos/parceiros.mp4",
-    "poster": "/poster/parceiros.jpeg",
-    "title": "Parceiros",
-    "ver": "Ver mais...",
-    "href": "/parceiros",
-    "produto": ""
-  }
-],
-  "prosProd": [
-    {
-      "src": "/videos/social-media.mp4",
-      "poster": "/poster/social-media.jpeg",
-      "title": "Social media",
-      "ver": "Ver mais...",
-      "produto": "social-media"
-    },
-    {
-      "src": "/videos/criacao-video.mp4",
-      "poster": "/poster/criacao-video.jpeg",
-      "title": "Produtora de video",
-      "ver": "Ver mais...",
-      "produto": "produtora-de-video"
-    },
-    {
-      "src": "/videos/ti-automacao.mp4",
-      "poster": "/poster/ti-automacao.jpeg",
-      "title": "T.I.",
-      "ver": "Ver mais...",
-      "produto": ""
-    },
-    {
-      "src": "/videos/parceiros.mp4",
-      "poster": "/poster/parceiros.jpeg",
-      "title": "Parceiros",
-      "ver": "Ver mais...",
-      "produto": "parceiros"
-    }
   ],
-  "cadsPageIniLeft": [
+  "outrosSocial": [
     {
-      "src": "/videos/social-media.mp4",
-      "poster": "/poster/social-media.jpeg",
-      "title": "Social media",
-      "ver": "Ver mais...",
-      "href": "/socialmedia",
-      "produto": ""
-    },
-    {
+      "id": 1,
       "src": "/videos/criacao-video.mp4",
       "poster": "/poster/criacao-video.jpeg",
       "title": "Produtora de video",
       "ver": "Ver mais...",
       "href": "/produto/produtora-de-video",
-      "produto": "produtora-de-video"
-    }
-  ],
-  "cadsPageIniRight": [
+      "produto": ""
+    },
     {
+      "id": 2,
       "src": "/videos/ti-automacao.mp4",
       "poster": "/poster/ti-automacao.jpeg",
       "title": "T.I.",
@@ -349,6 +201,179 @@
       "produto": ""
     },
     {
+      "id": 3,
+      "src": "/videos/parceiros.mp4",
+      "poster": "/poster/parceiros.jpeg",
+      "title": "Parceiros",
+      "ver": "Ver mais...",
+      "href": "/parceiros",
+      "produto": ""
+    }
+  ],
+  "outrosTI": [
+    {
+      "id": 4,
+      "src": "/videos/social-media.mp4",
+      "poster": "/poster/social-media.jpeg",
+      "title": "Social media",
+      "ver": "Ver mais...",
+      "href": "/socialmedia",
+      "produto": ""
+    },
+    {
+      "id": 5,
+      "src": "/videos/criacao-video.mp4",
+      "poster": "/poster/criacao-video.jpeg",
+      "title": "Produtora de video",
+      "ver": "Ver mais...",
+      "href": "produto/produtora-de-video",
+      "produto": ""
+    },
+    {
+      "id": 6,
+      "src": "/videos/parceiros.mp4",
+      "poster": "/poster/parceiros.jpeg",
+      "title": "Parceiros",
+      "ver": "Ver mais...",
+      "href": "/parceiros",
+      "produto": ""
+    }
+  ],
+  "outrosParceiros": [
+    {
+      "id": 7,
+      "src": "/videos/social-media.mp4",
+      "poster": "/poster/social-media.jpeg",
+      "title": "Social media",
+      "ver": "Ver mais...",
+      "href": "/social-media",
+      "produto": ""
+    },
+    {
+      "id": 8,
+      "src": "/videos/ti-automacao.mp4",
+      "poster": "/poster/ti-automacao.jpeg",
+      "title": "T.I.",
+      "ver": "Ver mais...",
+      "href": "/ti",
+      "produto": ""
+    },
+    {
+      "id": 9,
+      "src": "/videos/criacao-video.mp4",
+      "poster": "/poster/criacao-video.jpeg",
+      "title": "Produtora de video",
+      "ver": "Ver mais...",
+      "href": "produto/produtora-de-video",
+      "produto": ""
+    }
+  ],
+  "outros": [
+    {
+      "id": 10,
+      "src": "/videos/social-media.mp4",
+      "poster": "/poster/social-media.jpeg",
+      "title": "Social media",
+      "ver": "Ver mais...",
+      "href": "/socialmedia",
+      "produto": ""
+    },
+    {
+      "id": 11,
+      "src": "/videos/ti-automacao.mp4",
+      "poster": "/poster/ti-automacao.jpeg",
+      "title": "T.I.",
+      "ver": "Ver mais...",
+      "href": "/ti",
+      "produto": ""
+    },
+    {
+      "id": 12,
+      "src": "/videos/criacao-video.mp4",
+      "poster": "/poster/criacao-video.jpeg",
+      "title": "Produtora de video",
+      "ver": "Ver mais...",
+      "href": "/produto/produtora-de-video",
+      "produto": ""
+    },
+    {
+      "id": 13,
+      "src": "/videos/parceiros.mp4",
+      "poster": "/poster/parceiros.jpeg",
+      "title": "Parceiros",
+      "ver": "Ver mais...",
+      "href": "/parceiros",
+      "produto": ""
+    }
+  ],
+  "prosProd": [
+    {
+      "id": 14,
+      "src": "/videos/social-media.mp4",
+      "poster": "/poster/social-media.jpeg",
+      "title": "Social media",
+      "ver": "Ver mais...",
+      "produto": "social-media"
+    },
+    {
+      "id": 15,
+      "src": "/videos/criacao-video.mp4",
+      "poster": "/poster/criacao-video.jpeg",
+      "title": "Produtora de video",
+      "ver": "Ver mais...",
+      "produto": "produtora-de-video"
+    },
+    {
+      "id": 16,
+      "src": "/videos/ti-automacao.mp4",
+      "poster": "/poster/ti-automacao.jpeg",
+      "title": "T.I.",
+      "ver": "Ver mais...",
+      "produto": ""
+    },
+    {
+      "id": 17,
+      "src": "/videos/parceiros.mp4",
+      "poster": "/poster/parceiros.jpeg",
+      "title": "Parceiros",
+      "ver": "Ver mais...",
+      "produto": "parceiros"
+    }
+  ],
+
+  "cadsPageIniLeft": [
+    {
+      "id": 18,
+      "src": "/videos/social-media.mp4",
+      "poster": "/poster/social-media.jpeg",
+      "title": "Social media",
+      "ver": "Ver mais...",
+      "href": "/socialmedia",
+      "produto": ""
+    },
+    {
+      "id": 19,
+      "src": "/videos/criacao-video.mp4",
+      "poster": "/poster/criacao-video.jpeg",
+      "title": "Produtora de video",
+      "ver": "Ver mais...",
+      "href": "/produto/produtora-de-video",
+      "produto": "produtora-de-video"
+    }
+  ],
+
+  "cadsPageIniRight": [
+    {
+      "id": 20,
+      "src": "/videos/ti-automacao.mp4",
+      "poster": "/poster/ti-automacao.jpeg",
+      "title": "T.I.",
+      "ver": "Ver mais...",
+      "href": "/ti",
+      "produto": ""
+    },
+    {
+      "id": 21,
       "src": "/videos/parceiros.mp4",
       "poster": "/poster/parceiros.jpeg",
       "title": "Parceiros",

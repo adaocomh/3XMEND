@@ -18,6 +18,7 @@ type CardsProps = {
   };
   
   type CardsOutrosProps = {
+    id: number;
     src: string;
     poster: string;
     title: string;
@@ -81,30 +82,15 @@ export default async function PaginaDinamicProd({ params } :
           <Slide><h3 className="text-[35px] text-start font-bold">{item.subTitle}</h3></Slide>
           <Slide><p className="text-start text-[18px] text-[#575757]">{item.desc}</p></Slide>
         </div>
-        {icons.icon1 && (
-        <div className="flex flex-col justify-between my-[2vw]">
-          {Array.from({ length: 7 }).map((_, i) => {
-            const icon = icons[`icon${i + 1}` as keyof typeof icons];
-            const text = desc[`desc${i + 1}` as keyof typeof desc];
-            const alts = [
-              "icon de localização",
-              "icon de drone",
-              "icon de chroma key",
-              "icon de carteira de dinheiro",
-              "icon de qualidade",
-              "icon de equipamentos de gravação",
-              "icon de localização",
-            ];
-            return (
               <Slide>
-                <div key={i} className="flex gap-[20px] items-center">
-                <img className="w-[30px] h-[30px]" src={icon} alt={alts[i]}/>
-                <h6 className="text-[18px] font-medium">{text}</h6>
-                </div>
+                {icons ? 
+                <div className="flex gap-[20px] items-center">
+                {icons.map((icon, i) =>(
+                <img key={i} className="w-[30px] h-[30px]" src={icon} alt={icon}/>))}
+                {desc.map((des, i) =>(
+                <h6 key={i} className="text-[18px] font-medium">{des}</h6>))}
+                </div> : ""}
               </Slide>
-            );
-          })}
-        </div>)}
       </div>
       {imgs ? <div className="flex flex-col gap-[2vw]">
         {imgs.map((img, i) => (
@@ -113,9 +99,9 @@ export default async function PaginaDinamicProd({ params } :
           : ""}
       <h2 className="text-[30px] self-center font-extrabold">Outros serviços.</h2>
       <div className="flex justify-center flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
-      {outros.map((card: CardsOutrosProps, index: number) => (
+      {outros.map((card: CardsOutrosProps) => (
           <div className="w-[30%]">
-            <Cards key={index} {...card} />
+            <Cards key={card.id} {...card} />
           </div>
         ))}
       </div>

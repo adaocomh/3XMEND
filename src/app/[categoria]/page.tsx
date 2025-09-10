@@ -6,6 +6,7 @@ import Link from "next/link";
 import Data from "../data/data.json";
 
 type CardsOutrosProps = {
+  id: number;
   src: string;
   poster: string;
   title: string;
@@ -14,6 +15,7 @@ type CardsOutrosProps = {
 };
 
 type CardsProps = {
+  id: number;
   src: string;
   poster: string;
   title: string;
@@ -82,8 +84,8 @@ export default async function PageDinamicasCategorias({
 
         <div className="flex flex-col w-[100%] gap-[60px]">
           <div className="flex flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
-          {cards.map((card: CardsProps, index: number) => (
-              <CardsCategoria key={index} {...card} />
+          {cards.map((card: CardsProps) => (
+              <CardsCategoria key={card.id} {...card} />
             ))}
           </div>
 
@@ -91,9 +93,9 @@ export default async function PageDinamicasCategorias({
             Outros serviços.
           </h2>
           <div className="flex flex-row flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
-          {outros.map((card: CardsOutrosProps, index: number) => (
+          {outros.map((card: CardsOutrosProps) => (
               <div className="w-[30%]">
-                <Cards key={index} {...card}/>
+                <Cards key={card.id} {...card}/>
               </div>
             ))}
           </div>
