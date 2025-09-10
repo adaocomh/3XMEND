@@ -8,6 +8,7 @@ import Cards from "@/app/components/CardsOutros"
 import Slide from "@/app/components/elementosSlides"
 
 type CardsProps = {
+    id: number;
     src: string;
     poster: string;
     ver: string;
@@ -96,8 +97,8 @@ export default async function PaginaDinamicProd({ params } :
               "icon de localização",
             ];
             return (
-              <Slide>
-              <div key={i} className="flex gap-[20px] items-center">
+              <Slide key={i}>
+              <div className="flex gap-[20px] items-center">
                 <img className="w-[30px] h-[30px]" src={icons[i]} alt={alts[i]}/>
                 <h6 className="text-[18px] font-medium">{desc[i]}</h6>
               </div>
@@ -109,14 +110,14 @@ export default async function PaginaDinamicProd({ params } :
       </div>
       {imgs ? <div className="flex flex-col gap-[2vw]">
         {imgs.map((img, i) => (
-            <img key={i} src={`/imgsProdutora/${img}`} alt={`Imagem ${i + 1}`} className="w-full h-auto rounded-[10px]"/>
+            <img key={img} src={`/imgsProdutora/${img}`} alt={`Imagem ${i + 1}`} className="w-full h-auto rounded-[10px]"/>
           ))} </div> 
           : ""}
       <h2 className="text-[30px] self-center font-extrabold">Outros serviços.</h2>
       <div className="flex justify-center flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
       {outros.map((card: CardsOutrosProps) => (
-          <div className="w-[30%]">
-            <Cards key={card.id} {...card} />
+          <div key={card.id} className="w-[30%]">
+            <Cards {...card} />
           </div>
         ))}
       </div>

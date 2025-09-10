@@ -85,7 +85,7 @@ export default async function PageDinamicasCategorias({
         <div className="flex flex-col w-[100%] gap-[60px]">
           <div className="flex flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
           {cards.map((card: CardsProps) => (
-              <CardsCategoria key={card.id} {...card} />
+              <CardsCategoria key={card.id} {...card}/>
             ))}
           </div>
 
@@ -94,8 +94,8 @@ export default async function PageDinamicasCategorias({
           </h2>
           <div className="flex flex-row flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
           {outros.map((card: CardsOutrosProps) => (
-              <div className="w-[30%]">
-                <Cards key={card.id} {...card}/>
+              <div key={card.id} className="w-[30%]">
+                <Cards {...card}/>
               </div>
             ))}
           </div>
