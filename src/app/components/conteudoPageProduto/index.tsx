@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Cards from "@/app/components/CardsOutros";
 import Slide from "@/app/components/elementosSlides";
+import AlternadorIdioma from "../alternadorIdioma";
 
 type CardsProps = {
   id: number;
@@ -82,11 +83,7 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
           <div className="flex justify-between w-full">
             <Link href="/"><FallingText text="3XMEND" /></Link>
             <div className="flex gap-[60px] items-center">
-              <div className="relative flex">
-                <p className="hoverSeta">BR</p>
-                <p className="hoverSeta">EUA</p>
-                <p className="hoverSeta">ES</p>
-              </div>
+              <AlternadorIdioma/>
               <div className="flex justify-center items-center">
                 <HamburgerCursor />
               </div>

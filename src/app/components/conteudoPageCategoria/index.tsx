@@ -6,6 +6,7 @@ import HamburgerCursor from "@/app/components/cursorMenu";
 import CardsCategoria from "../../components/cards";
 import Cards from "../../components/CardsOutros";
 import Link from "next/link";
+import AlternadorIdioma from "../alternadorIdioma";
 
 type CardsOutrosProps = {
   id: number;
@@ -54,11 +55,7 @@ export default function ClientPage({ categoria }: { categoria: string }) {
         <div className="flex justify-between w-[100%] p-[40px]">
           <Link href="/"><FallingText text="3XMEND" /></Link>
           <div className="flex gap-[60px] items-center">
-            <div className="relative flex">
-              <p className="hoverSeta">BR</p>
-              <p className="hoverSeta">EUA</p>
-              <p className="hoverSeta">ES</p>
-            </div>
+            <AlternadorIdioma/>
             <div className="flex justify-center items-center">
               <HamburgerCursor />
             </div>
