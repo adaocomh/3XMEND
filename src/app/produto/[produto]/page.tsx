@@ -2,8 +2,7 @@ import FallingText from "../../components/fallingText"
 import HamburgerCursor from "../../components/cursorMenu"
 import Image from "next/image"
 import Link from "next/link"
-import Data from "../../data/dataProd.json"
-import DataOutros from "../../data/data.json"
+import Data from "../../../traducao/pt.json"
 import Cards from "@/app/components/CardsOutros"
 import Slide from "@/app/components/elementosSlides"
 
@@ -31,11 +30,11 @@ export default async function PaginaDinamicProd({ params } :
     { params: Promise<{produto: string}> }){
         const { produto } = await params
         
-        const item = Data.find((obj: CardsProps) => obj.produto === produto);
+        const item = Data.paginaDinamicaServico.find((obj: CardsProps) => obj.produto === produto);
 
   if (!item) return
 
-  const outros =  DataOutros.outros
+  const outros =  Data.paginaDinamicaCategoria.outros
 
   const icons = item.icon
   const desc = item.descIcon

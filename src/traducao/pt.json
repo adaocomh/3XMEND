@@ -1,0 +1,643 @@
+{
+    "home": {
+        "titleHeader": "Agência completa de marketing.",
+        "titleCategoria": "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas.",
+        "btnSobre": "sobre",
+        "cadsPageIniLeft": [
+            {
+            "id": 18,
+            "src": "/videos/social-media.mp4",
+            "poster": "/poster/social-media.jpeg",
+            "title": "Social media",
+            "ver": "Ver mais...",
+            "href": "/socialmedia",
+            "produto": ""
+            },
+            {
+            "id": 19,
+            "src": "/videos/criacao-video.mp4",
+            "poster": "/poster/criacao-video.jpeg",
+            "title": "Produtora de video",
+            "ver": "Ver mais...",
+            "href": "/produto/produtora-de-video",
+            "produto": "produtora-de-video"
+            }
+        ],
+        "cadsPageIniRight": [
+        {
+        "id": 20,
+        "src": "/videos/ti-automacao.mp4",
+        "poster": "/poster/ti-automacao.jpeg",
+        "title": "T.I.",
+        "ver": "Ver mais...",
+        "href": "/ti",
+        "produto": ""
+        },
+        {
+        "id": 21,
+        "src": "/videos/parceiros.mp4",
+        "poster": "/poster/parceiros.jpeg",
+        "title": "Parceiros",
+        "ver": "Ver mais...",
+        "href": "/parceiros",
+        "produto": "parceiros"
+        }
+    ]
+    },
+    "paginaDinamicaCategoria": {
+        "titleCategoria": "Serviços de social media.",
+        "titleOutrosS": "Outros serviços.",
+
+    "titlesG": {
+        "titleSocial": "Serviços de social media.",
+        "titleTi": "Serviços de T.I.",
+        "titleParceiro": "Seja um parceiro da 3XMEND"
+    },
+    "socialmedia": [
+        {
+        "id": 1,
+        "src": "/videos/designer.mp4",
+        "poster": "/poster/designer.jpeg",
+        "title": "Designer",
+        "ver": "Ver mais...",
+        "desc": "Nosso serviço de Designer transforma ideias em artes profissionais, criativas e alinhadas com seus objetivos. Seja para redes sociais, branding, materiais gráficos ou projetos personalizados, entregamos visual que conecta, comunica e vende. Sua marca merece ser vista com personalidade e impacto!",
+        "produto": "designer"
+        },
+        {
+        "id": 2,
+        "src": "/videos/criacao-video.mp4",
+        "poster": "/poster/criacao-video.jpeg",
+        "title": "Edição de video",
+        "ver": "Ver mais...",
+        "desc": "Seus vídeos merecem impacto e profissionalismo! A edição de vídeo da 3XMEND transforma gravações em conteúdos envolventes, com cortes precisos, efeitos na medida certa e uma identidade visual alinhada ao seu propósito. Dê vida às suas ideias e destaque-se com produções que realmente comunicam sua mensagem. Vamos criar algo incrível juntos?",
+        "produto": "edicao-de-video"
+        },
+        {
+        "id": 3,
+        "src": "/videos/social-media.mp4",
+        "poster": "/poster/social-media.jpeg",
+        "title": "Social media",
+        "ver": "Ver mais...",
+        "desc": "Sua marca nas redes sociais com estratégia, criatividade e resultado! Com o serviço de Social Media da 3XMEND, você tem conteúdos planejados, artes profissionais, legendas que engajam e uma presença digital que se destaca. Cuidamos da sua comunicação para atrair, conectar e vender todos os dias. Chega de postar por postar vem crescer com a gente! ",
+        "produto": "social-media"
+        },
+        {
+        "id": 4,
+        "src": "/videos/ads.mp4",
+        "poster": "/poster/ads.jpeg",
+        "title": "ADS",
+        "ver": "Ver mais...",
+        "desc": "Pare de falar com todo mundo e comece a alcançar quem realmente importa! Com o serviço de ADS da 3XMEND, suas campanhas são estrategicamente planejadas, otimizadas e direcionadas para gerar resultados reais. Seja para vender, atrair seguidores ou fortalecer sua marca, criamos anúncios que convertem e fazem seu investimento valer a pena. Anuncie com inteligência, anuncie com a 3XMEND!",
+        "produto": "ads"
+        },
+        {
+        "id": 5,
+        "src": "/videos/criacao-curso.mp4",
+        "poster": "/poster/criacao-curso.jpeg",
+        "title": "Criação de curso",
+        "ver": "Ver mais...",
+        "desc": "Transforme seu conhecimento em um produto digital de sucesso com a criação de cursos da 3XMEND!  Nossa equipe cuida de tudo: estrutura de conteúdo, roteiros, gravação, edição, identidade visual e publicação. Seu curso pronto para vender, com qualidade profissional, didática envolvente e foco nos resultados. Ensinar nunca foi tão fácil e lucrativo. Vamos criar juntos?",
+        "produto": "criacao-de-curso"
+        },
+        {
+        "id": 6,
+        "src": "/videos/seo.mp4",
+        "poster": "/poster/seo.jpeg",
+        "title": "SEO",
+        "ver": "Ver mais...",
+        "desc": "Quer aparecer no Google quando seus clientes te procurarem? A 3XMEND faz isso acontecer!  Com nosso serviço de SEO, seu site ganha mais visibilidade, autoridade e tráfego qualificado. Otimizamos conteúdos, estrutura e palavras-chave para colocar sua marca no topo das buscas e na frente da concorrência. Mais cliques, mais visitas, mais vendas!",
+        "produto": "seo"
+        },
+        {
+        "id": 7,
+        "src": "/videos/seo.mp4",
+        "poster": "/poster/seo.jpeg",
+        "title": "Criação de vinheta",
+        "ver": "Ver mais...",
+        "desc": "Transforme sua marca em uma experiência inesquecível! Com a 3XMEND, suas vinhetas ganham vida com criatividade e impacto, deixando sua mensagem clara e profissional. Destaque-se com animações que marcam presença!",
+        "produto": "criacao-de-vinheta"
+        },
+        {
+        "id": 8,
+        "src": "/videos/marca.mp4",
+        "poster": "/poster/marca.jpeg",
+        "title": "Marca",
+        "ver": "Ver mais...",
+        "desc": "Sua marca precisa ter alma, propósito e presença e é exatamente isso que a 3XMEND entrega! Com nosso serviço de Criação de Marca e Branding, desenvolvemos desde o nome e identidade visual até o posicionamento e a essência da sua marca. Tudo pensado estrategicamente para transmitir seus valores, conectar com o público certo e gerar reconhecimento. Marcas fortes não nascem por acaso elas nascem na 3XMEND! ",
+        "produto": "marca"
+        },
+        {
+        "id": 9,
+        "src": "/videos/criacao-fisico-digital.mp4",
+        "poster": "/poster/criacao-fisico-digital.jpeg",
+        "title": "Criação de produtos físicos e digitais",
+        "ver": "Ver mais...",
+        "desc": "Da ideia ao mercado, a 3XMEND transforma sua visão em realidade! Com nosso serviço de Criação de Produtos Físicos e Digitais, desenvolvemos tudo o que você precisa: identidade visual, design, embalagem, materiais promocionais e até conteúdos para lançamento. Seja um e-book, curso, infoproduto ou produto físico, entregamos soluções completas para você lançar com qualidade, autoridade e resultados. Seu produto começa aqui!",
+        "produto": "criacao-de-produtos-fisicos-e-digitais"
+        }
+    ],
+    "ti": [
+        {
+        "id": 1,
+        "src": "/videos/site.mp4",
+        "poster": "/poster/site.jpeg",
+        "title": "Sites e e-commerce",
+        "ver": "Ver mais...",
+        "desc": "Tenha um site ou e-commerce que realmente trabalha por você!  Na 3XMEND, criamos plataformas modernas, rápidas e responsivas, com design profissional e foco total na experiência do usuário. Seja para apresentar sua marca ou vender seus produtos online, entregamos sites otimizados, seguros e prontos para converter. Chega de presença digital amadora com a 3XMEND, sua vitrine é de alto nível!",
+        "produto": "sites-e-ecommerce"
+        },
+        {
+        "id": 2,
+        "src": "/videos/banco-dados.mp4",
+        "poster": "/poster/banco-dados.jpeg",
+        "title": "Banco de dados",
+        "ver": "Ver mais...",
+        "desc": "Organize, proteja e potencialize suas informações com o serviço de Banco de Dados da 3XMEND!  Criamos estruturas inteligentes e seguras para você armazenar, gerenciar e acessar dados com eficiência. Ideal para empresas que valorizam a organização, automação e tomada de decisões baseadas em dados. Tenha controle total sobre o que realmente importa com tecnologia feita sob medida para o seu negócio!",
+        "produto": "banco-de-dados"
+        },
+        {
+        "id": 3,
+        "src": "/videos/cripto.mp4",
+        "poster": "/poster/cripto.jpeg",
+        "title": "Cripto",
+        "ver": "Ver mais...",
+        "desc": "Esteja à frente do seu tempo com o serviço de recebimento de pagamentos em cripto da 3XMEND!  Facilitamos a integração de criptomoedas ao seu negócio, oferecendo segurança, praticidade e inovação para seus clientes. Expanda suas formas de pagamento, alcance um público mais tech e mostre que sua marca está conectada ao futuro. Simples, moderno e sem fronteiras é assim que a 3XMEND faz!",
+        "produto": "cripto"
+        },
+        {
+        "id": 4,
+        "src": "/videos/ti-automacao.mp4",
+        "poster": "/poster/ti-automacao.jpeg",
+        "title": "Automação",
+        "ver": "Ver mais...",
+        "desc": "Ganhe tempo, escale resultados e foque no que realmente importa com o serviço de Automação da 3XMEND! Automatizamos processos de atendimento, vendas, marketing e muito mais para que seu negócio funcione de forma inteligente, mesmo quando você estiver offline. Chega de tarefas repetitivas com a 3XMEND, seu fluxo de trabalho se torna mais ágil, eficiente e estratégico!",
+        "produto": "automacao"
+        }
+    ],
+    "parceiros": [
+        {
+        "id": 1,
+        "src": "",
+        "poster": "/parceiros/ana.webp",
+        "title": "Ana Farias",
+        "ver": "@anafariasfs",
+        "desc": "O Instagram de Ana Farias é dedicado a promover uma abordagem equilibrada e saudável à nutrição. 'Com o lema Te ajudo a ter resultados com o equilíbrio que você sempre quis', Ana oferece atendimentos online personalizados, visando auxiliar seus seguidores a alcançarem seus objetivos de forma sustentável.",
+        "produto": "ana"
+        },
+        {
+        "id": 2,
+        "src": "",
+        "poster": "/parceiros/diego.webp",
+        "title": "Diego Rossato",
+        "ver": "@diegorossato_",
+        "desc": "O Instagram de Diego Rossato  é dedicado à sua jornada como atleta híbrido, combinando musculação, corrida e jiu-jitsu para ganhar músculo e perder gordura. Ele compartilha treinos, desafios e conquistas, como a conclusão de seu primeiro triatlo olímpico no Triathlon Internacional de Santos.",
+        "produto": "diego"
+        },
+        {
+        "id": 3,
+        "src": "",
+        "poster": "/parceiros/douglas.webp",
+        "title": "Douglas Flamino",
+        "ver": "@flaminodoug",
+        "desc": "O Instagram de Douglas Flamino é um espaço vibrante e bem-humorado onde ele compartilha conteúdos que combinam lifestyle, fitness, reviews de produtos e humor. Conhecido como o “review humano da internet”, Douglas testa e comenta sobre diversos produtos e experiências do cotidiano, sempre com uma abordagem descontraída.",
+        "produto": "douglas"
+        },
+        {
+        "id": 4,
+        "src": "",
+        "poster": "/parceiros/fabiana.webp",
+        "title": "Fabiana Santos",
+        "ver": "@fabianasantosfisio",
+        "desc": "Fabiana é dedicada à promoção da saúde e qualidade de vida por meio da fisioterapia. Com o lema 'O movimento é qualidade de vida', ela compartilha conteúdos que incentivam hábitos saudáveis e a importância da atividade física.",
+        "produto": "fabiana"
+        },
+        {
+        "id": 5,
+        "src": "",
+        "poster": "/parceiros/flavia.webp",
+        "title": "Flavia Palheiros (Vinha)",
+        "ver": "@corro_pra_descansar",
+        "desc": "@corro_pra_descansar é um espaço dedicado a compartilhar a paixão pela corrida como forma de autocuidado e bem-estar. O perfil oferece conteúdos que inspiram e motivam corredores de todos os níveis, promovendo a ideia de que correr é uma maneira de descansar a mente e fortalecer o corpo.",
+        "produto": "flavia"
+        },
+        {
+        "id": 6,
+        "src": "",
+        "poster": "/parceiros/tiago.webp",
+        "title": "Tiago Mecabo",
+        "ver": "@tiagomecabo",
+        "desc": "O Instagram de Tiago Mecabo é uma referência para corredores que desejam melhorar seu desempenho. Campeão pela Seleção Brasileira, autor de dois livros e palestrante, Tiago já ajudou mais de 20 mil alunos em 23 países a correrem mais rápido e quebrarem recordes.",
+        "produto": "tiago"
+        }
+    ],
+    "outrosSocial": [
+        {
+        "id": 1,
+        "src": "/videos/criacao-video.mp4",
+        "poster": "/poster/criacao-video.jpeg",
+        "title": "Produtora de video",
+        "ver": "Ver mais...",
+        "href": "/produto/produtora-de-video",
+        "produto": ""
+        },
+        {
+        "id": 2,
+        "src": "/videos/ti-automacao.mp4",
+        "poster": "/poster/ti-automacao.jpeg",
+        "title": "T.I.",
+        "ver": "Ver mais...",
+        "href": "/ti",
+        "produto": ""
+        },
+        {
+        "id": 3,
+        "src": "/videos/parceiros.mp4",
+        "poster": "/poster/parceiros.jpeg",
+        "title": "Parceiros",
+        "ver": "Ver mais...",
+        "href": "/parceiros",
+        "produto": ""
+        }
+    ],
+    "outrosTI": [
+        {
+        "id": 4,
+        "src": "/videos/social-media.mp4",
+        "poster": "/poster/social-media.jpeg",
+        "title": "Social media",
+        "ver": "Ver mais...",
+        "href": "/socialmedia",
+        "produto": ""
+        },
+        {
+        "id": 5,
+        "src": "/videos/criacao-video.mp4",
+        "poster": "/poster/criacao-video.jpeg",
+        "title": "Produtora de video",
+        "ver": "Ver mais...",
+        "href": "produto/produtora-de-video",
+        "produto": ""
+        },
+        {
+        "id": 6,
+        "src": "/videos/parceiros.mp4",
+        "poster": "/poster/parceiros.jpeg",
+        "title": "Parceiros",
+        "ver": "Ver mais...",
+        "href": "/parceiros",
+        "produto": ""
+        }
+    ],
+    "outrosParceiros": [
+        {
+        "id": 7,
+        "src": "/videos/social-media.mp4",
+        "poster": "/poster/social-media.jpeg",
+        "title": "Social media",
+        "ver": "Ver mais...",
+        "href": "/social-media",
+        "produto": ""
+        },
+        {
+        "id": 8,
+        "src": "/videos/ti-automacao.mp4",
+        "poster": "/poster/ti-automacao.jpeg",
+        "title": "T.I.",
+        "ver": "Ver mais...",
+        "href": "/ti",
+        "produto": ""
+        },
+        {
+        "id": 9,
+        "src": "/videos/criacao-video.mp4",
+        "poster": "/poster/criacao-video.jpeg",
+        "title": "Produtora de video",
+        "ver": "Ver mais...",
+        "href": "produto/produtora-de-video",
+        "produto": ""
+        }
+    ],
+    "outros": [
+        {
+          "id": 10,
+          "src": "/videos/social-media.mp4",
+          "poster": "/poster/social-media.jpeg",
+          "title": "Social media",
+          "ver": "Ver mais...",
+          "href": "/socialmedia",
+          "produto": ""
+        },
+        {
+          "id": 11,
+          "src": "/videos/ti-automacao.mp4",
+          "poster": "/poster/ti-automacao.jpeg",
+          "title": "T.I.",
+          "ver": "Ver mais...",
+          "href": "/ti",
+          "produto": ""
+        },
+        {
+          "id": 12,
+          "src": "/videos/criacao-video.mp4",
+          "poster": "/poster/criacao-video.jpeg",
+          "title": "Produtora de video",
+          "ver": "Ver mais...",
+          "href": "/produto/produtora-de-video",
+          "produto": ""
+        },
+        {
+          "id": 13,
+          "src": "/videos/parceiros.mp4",
+          "poster": "/poster/parceiros.jpeg",
+          "title": "Parceiros",
+          "ver": "Ver mais...",
+          "href": "/parceiros",
+          "produto": ""
+        }
+    ]
+    },
+    "paginaDinamicaServico": [
+        {
+          "id": 1,
+          "src": "/videos/designer.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Designer",
+          "subTitle": "Criamos peças visuais modernas, criativas e alinhadas com sua identidade.",
+          "desc": "Nosso serviço de Designer transforma ideias em artes profissionais, criativas e alinhadas com seus objetivos. Seja para redes sociais, branding, materiais gráficos ou projetos personalizados, entregamos visual que conecta, comunica e vende. Sua marca merece ser vista com personalidade e impacto!",
+          "produto": "designer",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 2,
+          "src": "/videos/criacao-video.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Edição de video",
+          "subTitle": "Transformamos suas ideias em vídeos profissionais, dinâmicos e prontos pra chamar atenção nas redes.",
+          "desc": "Seus vídeos merecem impacto e profissionalismo! A edição de vídeo da 3XMEND transforma gravações em conteúdos envolventes, com cortes precisos, efeitos na medida certa e uma identidade visual alinhada ao seu propósito. Dê vida às suas ideias e destaque-se com produções que realmente comunicam sua mensagem. Vamos criar algo incrível juntos?",
+          "produto": "edicao-de-video",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 3,
+          "src": "/videos/social-media.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Social media",
+          "subTitle": "Cuidamos de tudo: estratégia, conteúdo, design e performance. Você se conecta com o público e foca no que faz de melhor.",
+          "desc": "Sua marca nas redes sociais com estratégia, criatividade e resultado! Com o serviço de Social Media da 3XMEND, você tem conteúdos planejados, artes profissionais, legendas que engajam e uma presença digital que se destaca. Cuidamos da sua comunicação para atrair, conectar e vender todos os dias. Chega de postar por postar vem crescer com a gente! ",
+          "produto": "social-media",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 4,
+          "src": "/videos/ads.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "ADS",
+          "subTitle": "Criamos campanhas estratégicas no Google, Instagram, Facebook e mais pra atrair o público certo e gerar resultado real.",
+          "desc": "Pare de falar com todo mundo e comece a alcançar quem realmente importa! Com o serviço de ADS da 3XMEND, suas campanhas são estrategicamente planejadas, otimizadas e direcionadas para gerar resultados reais. Seja para vender, atrair seguidores ou fortalecer sua marca, criamos anúncios que convertem e fazem seu investimento valer a pena. Anuncie com inteligência, anuncie com a 3XMEND!",
+          "produto": "ads",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 5,
+          "src": "/videos/criacao-curso.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Criação de curso",
+          "subTitle": "Transformamos seu conhecimento em cursos completos, com conteúdo, audiovisual e design de alta qualidade.",
+          "desc": "Transforme seu conhecimento em um produto digital de sucesso com a criação de cursos da 3XMEND!  Nossa equipe cuida de tudo: estrutura de conteúdo, roteiros, gravação, edição, identidade visual e publicação. Seu curso pronto para vender, com qualidade profissional, didática envolvente e foco nos resultados. Ensinar nunca foi tão fácil e lucrativo. Vamos criar juntos?",
+          "produto": "criacao-de-curso",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 6,
+          "src": "/videos/seo.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "SEO",
+          "subTitle": "Otimizamos seu site para o Google e colocamos sua marca no topo das buscas com estratégia, conteúdo e performance.",
+          "desc": "Quer aparecer no Google quando seus clientes te procurarem? A 3XMEND faz isso acontecer!  Com nosso serviço de SEO, seu site ganha mais visibilidade, autoridade e tráfego qualificado. Otimizamos conteúdos, estrutura e palavras-chave para colocar sua marca no topo das buscas e na frente da concorrência. Mais cliques, mais visitas, mais vendas!",
+          "produto": "seo",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 7,
+          "src": "/videos/seo.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Criação de vinheta",
+          "subTitle": "A 3XMEND transforma sua marca em experiências inesquecíveis, criando vinhetas criativas, profissionais e marcantes.",
+          "desc": "Transforme sua marca em uma experiência inesquecível! Com a 3XMEND, suas vinhetas ganham vida com criatividade e impacto, deixando sua mensagem clara e profissional. Destaque-se com animações que marcam presença!",
+          "produto": "criacao-de-vinheta",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 8,
+          "src": "/videos/marca.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Marca",
+          "subTitle": "Criamos identidades únicas e autênticas, feitas para destacar sua marca e representá-la no mercado.",
+          "desc": "Sua marca precisa ter alma, propósito e presença e é exatamente isso que a 3XMEND entrega! Com nosso serviço de Criação de Marca e Branding, desenvolvemos desde o nome e identidade visual até o posicionamento e a essência da sua marca. Tudo pensado estrategicamente para transmitir seus valores, conectar com o público certo e gerar reconhecimento. Marcas fortes não nascem por acaso elas nascem na 3XMEND! ",
+          "produto": "marca",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 9,
+          "src": "/videos/criacao-fisico-digital.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Criação de produtos físicos e digitais",
+          "subTitle": "Transformamos ideias em produtos físicos e digitais de alta qualidade, com foco em inovação, performance e grande potencial de venda. ",
+          "desc": "Da ideia ao mercado, a 3XMEND transforma sua visão em realidade! Com nosso serviço de Criação de Produtos Físicos e Digitais, desenvolvemos tudo o que você precisa: identidade visual, design, embalagem, materiais promocionais e até conteúdos para lançamento. Seja um e-book, curso, infoproduto ou produto físico, entregamos soluções completas para você lançar com qualidade, autoridade e resultados. Seu produto começa aqui!",
+          "produto": "criacao-de-produtos-fisicos-e-digitais",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 10,
+          "src": "/videos/site.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Sites e e-commerce",
+          "subTitle": "Design profissional, navegação rápida e foco em conversão. A gente cria sites que representam sua marca e geram resultado de verdade.",
+          "desc": "Tenha um site ou e-commerce que realmente trabalha por você!  Na 3XMEND, criamos plataformas modernas, rápidas e responsivas, com design profissional e foco total na experiência do usuário. Seja para apresentar sua marca ou vender seus produtos online, entregamos sites otimizados, seguros e prontos para converter. Chega de presença digital amadora com a 3XMEND, sua vitrine é de alto nível!",
+          "produto": "sites-e-ecommerce",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 11,
+          "src": "/videos/banco-dados.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Banco de dados",
+          "subTitle": "Cuidamos da estrutura, gestão e otimização do seu banco de dados para que você tome decisões rápidas, seguras e estratégicas.",
+          "desc": "Organize, proteja e potencialize suas informações com o serviço de Banco de Dados da 3XMEND!  Criamos estruturas inteligentes e seguras para você armazenar, gerenciar e acessar dados com eficiência. Ideal para empresas que valorizam a organização, automação e tomada de decisões baseadas em dados. Tenha controle total sobre o que realmente importa com tecnologia feita sob medida para o seu negócio!",
+          "produto": "banco-de-dados",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 12,
+          "src": "/videos/cripto.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Cripto",
+          "subTitle": "Portal de pagamentos em Criptomoedas. Facilitando pagamentos e inovando no mercado.",
+          "desc": "Esteja à frente do seu tempo com o serviço de recebimento de pagamentos em cripto da 3XMEND!  Facilitamos a integração de criptomoedas ao seu negócio, oferecendo segurança, praticidade e inovação para seus clientes. Expanda suas formas de pagamento, alcance um público mais tech e mostre que sua marca está conectada ao futuro. Simples, moderno e sem fronteiras é assim que a 3XMEND faz!",
+          "produto": "cripto",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 13,
+          "src": "/videos/ti-automacao.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Automação",
+          "subTitle": "Menos tarefas manuais, mais tempo pra crescer. Automatizamos processos, funis e comunicações para você vender no automático.",
+          "desc": "Ganhe tempo, escale resultados e foque no que realmente importa com o serviço de Automação da 3XMEND! Automatizamos processos de atendimento, vendas, marketing e muito mais para que seu negócio funcione de forma inteligente, mesmo quando você estiver offline. Chega de tarefas repetitivas com a 3XMEND, seu fluxo de trabalho se torna mais ágil, eficiente e estratégico!",
+          "produto": "automacao",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 14,
+          "src": "/videos/criacao-video.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Produtora de video",
+          "subTitle": "Nosso estúdio transforma criatividade em produções de qualidade profissional, com tecnologia de ponta e equipe especializada.",
+          "desc": "O estúdio 3XMEND é a escolha ideal para quem busca excelência em produções audiovisuais. Com uma estrutura moderna, bem planejada e equipada com tecnologia de ponta, o espaço oferece tudo o que você precisa para gravar vídeos com qualidade profissional, seja para redes sociais, campanhas publicitárias, vídeos institucionais, tutoriais, podcasts ou qualquer outro formato.",
+          "produto": "produtora-de-video",
+          "icon": ["/icons/location-pin.png", "/icons/camera-drone.png", "/icons/screen.png", "/icons/save-money.png", "/icons/quality-assurance.png", "/icons/photograph.png", "/icons/location.png"],
+          "descIcon": ["Gravação externa", "Gravação com drone", "Gravação com chroma key", "Preço justo", "Qualidade de produção", "Melhores equipamentos", "Bem localizado"],
+          "imgs": [
+            "sala-3xmend-angulo-1.webp",
+            "sala-3xmend-angulo-2.webp",
+            "sala-3xmend-angulo-3.webp",
+            "jornalista-feminina-contando-noticias-ao-ar-livre-scaled.webp",
+            "homem-embacado-de-tiro-medio-com-drone-ao-ar-livre-scaled.webp",
+            "homem-de-tiro-medio-com-drone-ao-ar-livre.webp",
+            "WhatsApp-Image-2025-05-09-at-11.29.44-scaled.webp",
+            "close-no-cameraman-fazendo-seu-trabalho-scaled.webp"
+          ]
+        },
+        {
+          "id": 15,
+          "src": "/videos/parceiros.mp4",
+          "poster": "",
+          "ver": "",
+          "title": "Parceiros",
+          "subTitle": "",
+          "desc": "Ser parceiro da 3xmend é ter ao seu lado uma agência de marketing comprometida com resultados reais. Você conta com uma equipe criativa, estratégica e sempre focada em impulsionar sua marca. Com soluções personalizadas, inovação constante e total transparência",
+          "produto": "parceiros",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 16,
+          "src": "",
+          "poster": "/parceiros/ana.webp",
+          "ver": "@anafariasfs",
+          "title": "Ana Farias",
+          "subTitle": "",
+          "desc": "O Instagram de Ana Farias é dedicado a promover uma abordagem equilibrada e saudável à nutrição. 'Com o lema Te ajudo a ter resultados com o equilíbrio que você sempre quis', Ana oferece atendimentos online personalizados, visando auxiliar seus seguidores a alcançarem seus objetivos de forma sustentável.",
+          "produto": "ana",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 17,
+          "src": "",
+          "poster": "/parceiros/diego.webp",
+          "ver": "@diegorossato_",
+          "title": "Diego Rossato",
+          "subTitle": "",
+          "desc": "O Instagram de Diego Rossato  é dedicado à sua jornada como atleta híbrido, combinando musculação, corrida e jiu-jitsu para ganhar músculo e perder gordura. Ele compartilha treinos, desafios e conquistas, como a conclusão de seu primeiro triatlo olímpico no Triathlon Internacional de Santos.",
+          "produto": "diego",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 18,
+          "src": "",
+          "poster": "/parceiros/douglas.webp",
+          "ver": "@flaminodoug",
+          "title": "Douglas Flamino",
+          "subTitle": "",
+          "desc": "O Instagram de Douglas Flamino é um espaço vibrante e bem-humorado onde ele compartilha conteúdos que combinam lifestyle, fitness, reviews de produtos e humor. Conhecido como o “review humano da internet”, Douglas testa e comenta sobre diversos produtos e experiências do cotidiano, sempre com uma abordagem descontraída.",
+          "produto": "douglas",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 19,
+          "src": "",
+          "poster": "/parceiros/fabiana.webp",
+          "ver": "@fabianasantosfisio",
+          "title": "Fabiana Santos",
+          "subTitle": "",
+          "desc": "Fabiana é dedicada à promoção da saúde e qualidade de vida por meio da fisioterapia. Com o lema 'O movimento é qualidade de vida', ela compartilha conteúdos que incentivam hábitos saudáveis e a importância da atividade física.",
+          "produto": "fabiana",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 20,
+          "src": "",
+          "poster": "/parceiros/flavia.webp",
+          "ver": "@corro_pra_descansar",
+          "title": "Flavia Palheiros (Vinha)",
+          "subTitle": "",
+          "desc": "@corro_pra_descansar é um espaço dedicado a compartilhar a paixão pela corrida como forma de autocuidado e bem-estar. O perfil oferece conteúdos inspiradores e motivadores para corredores de todos os níveis, promovendo a ideia de que correr é uma maneira de descansar a mente e fortalecer o corpo.",
+          "produto": "flavia",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        },
+        {
+          "id": 21,
+          "src": "",
+          "poster": "/parceiros/tiago.webp",
+          "ver": "@tiagomecabo",
+          "title": "Tiago Mecabo",
+          "subTitle": "",
+          "desc": "O Instagram de Tiago Mecabo é uma referência para corredores que desejam melhorar seu desempenho. Campeão pela Seleção Brasileira, autor de dois livros e palestrante, Tiago já ajudou mais de 20 mil alunos em 23 países a correrem mais rápido e quebrarem recordes.",
+          "produto": "tiago",
+          "icon": [],
+          "descIcon": [],
+          "imgs": []
+        }
+      ]
+}

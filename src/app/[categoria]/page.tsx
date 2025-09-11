@@ -3,7 +3,7 @@ import HamburgerCursor from "@/app/components/cursorMenu";
 import CardsCategoria from "../components/cards";
 import Cards from "../components/CardsOutros";
 import Link from "next/link";
-import Data from "../data/data.json";
+import Data from "../../traducao/pt.json"
 
 type CardsOutrosProps = {
   id: number;
@@ -33,21 +33,21 @@ export default async function PageDinamicasCategorias({
   const { categoria } = await params;
 
   const cards =
-  Array.isArray(Data[categoria as keyof typeof Data])
-    ? (Data[categoria as keyof typeof Data] as any[])
-    : [];
+  Array.isArray(Data.paginaDinamicaCategoria[categoria as keyof typeof Data["paginaDinamicaCategoria"]])
+  ? (Data.paginaDinamicaCategoria[categoria as keyof typeof Data["paginaDinamicaCategoria"]] as any[])
+  : [];
   
     const titleMap: Record<string, string> = {
-      socialmedia: Data.titlesG.titleSocial,
-      ti: Data.titlesG.titleTi,
-      parceiros: Data.titlesG.titleParceiro
+      socialmedia: Data.paginaDinamicaCategoria.titlesG.titleSocial,
+      ti: Data.paginaDinamicaCategoria.titlesG.titleTi,
+      parceiros: Data.paginaDinamicaCategoria.titlesG.titleParceiro
     };
     const title = titleMap[categoria] || "Categoria";
 
     const outrosMap: Record<string, any[]> = {
-      socialmedia: Data.outrosSocial,
-      parceiros: Data.outrosParceiros,
-      ti: Data.outrosTI
+      socialmedia: Data.paginaDinamicaCategoria.outrosSocial,
+      parceiros: Data.paginaDinamicaCategoria.outrosParceiros,
+      ti: Data.paginaDinamicaCategoria.outrosTI
     };
     
     const outros = Array.isArray(outrosMap[categoria]) ? outrosMap[categoria]! : [];
