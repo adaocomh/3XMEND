@@ -1,8 +1,8 @@
-import FallingText from "../../components/fallingText"
-import HamburgerCursor from "../../components/cursorMenu"
+import FallingText from "../../../components/fallingText"
+import HamburgerCursor from "../../../components/cursorMenu"
 import Image from "next/image"
 import Link from "next/link"
-import Data from "../../../traducao/pt.json"
+import Data from "../../../../traducao/pt.json"
 import Cards from "@/app/components/CardsOutros"
 import Slide from "@/app/components/elementosSlides"
 

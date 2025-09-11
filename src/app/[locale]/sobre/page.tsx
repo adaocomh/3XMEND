@@ -1,8 +1,8 @@
 import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import Link from "next/link";
-import FAQ from "../components/FAQ";
-import Contador from "../components/contador";
+import FAQ from "../../components/FAQ";
+import Contador from "../../components/contador";
 
 export default async function PageDinamicasCategorias() {
   return (

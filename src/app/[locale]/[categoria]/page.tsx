@@ -1,9 +1,9 @@
 import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
-import CardsCategoria from "../components/cards";
-import Cards from "../components/CardsOutros";
+import CardsCategoria from "../../components/cards";
+import Cards from "../../components/CardsOutros";
 import Link from "next/link";
-import Data from "../../traducao/pt.json"
+import Data from "../../../traducao/pt.json"
 
 type CardsOutrosProps = {
   id: number;
