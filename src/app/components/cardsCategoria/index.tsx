@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Data from "../../../traducao/pt.json"
+import Data from "../../../messages/pt.json"
 import Cards from "../CardsOutros";
 
 type CardsProps = {

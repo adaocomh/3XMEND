@@ -45,7 +45,6 @@
     ]
     },
     "paginaDinamicaCategoria": {
-        "titleCategoria": "Serviços de social media.",
         "titleOutrosS": "Outros serviços.",
 
     "titlesG": {
@@ -642,6 +641,7 @@
       ],
       "footer": {
         "titleFooter" : "Entre em contato.",
-        "copy": "© 2025 3XMEND. Todos os direitos reservados."
+        "copy": "© 2025 3XMEND. Todos os direitos reservados.",
+        "btnContato": "Agencia Mend"
       }
 }

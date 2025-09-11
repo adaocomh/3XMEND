@@ -44,9 +44,10 @@ export default async function RootLayout({
           <TransicaoPage>
           <NextIntlClientProvider>
             {children}
+            <Footer/>
           </NextIntlClientProvider>
           </TransicaoPage>
-        <Footer/>
+        
         </Loader>
       </body>
     </html>

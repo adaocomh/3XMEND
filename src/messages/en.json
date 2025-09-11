@@ -45,7 +45,6 @@
     ]
     },
     "paginaDinamicaCategoria": {
-        "titleCategoria": "Social media services.",
         "titleOutrosS": "Other services.",
 
     "titlesG": {
@@ -357,8 +356,9 @@
     }
 ]
 },
-"paginaDinamicaServico": [
-  {
+"paginaDinamicaServico":
+{
+  "designer": {
     "id": 1,
     "src": "/videos/designer.mp4",
     "poster": "",
@@ -366,12 +366,11 @@
     "title": "Designer",
     "subTitle": "We create modern, creative visuals aligned with your identity.",
     "desc": "Our Designer service transforms ideas into professional, creative artwork aligned with your goals. Whether for social media, branding, graphic materials, or custom projects, we deliver visuals that connect, communicate, and sell. Your brand deserves to be seen with personality and impact!",
-    "produto": "designer",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "edicao-de-video": {
     "id": 2,
     "src": "/videos/criacao-video.mp4",
     "poster": "",
@@ -379,12 +378,11 @@
     "title": "Video editing",
     "subTitle": "We transform your ideas into professional, dynamic videos ready to grab attention on social media.",
     "desc": "Your videos deserve impact and professionalism! 3XMEND’s video editing transforms recordings into engaging content, with precise cuts, just the right effects, and a visual identity aligned with your purpose. Bring your ideas to life and stand out with productions that truly communicate your message. Shall we create something amazing together?",
-    "produto": "edicao-de-video",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "social-media": {
     "id": 3,
     "src": "/videos/social-media.mp4",
     "poster": "",
@@ -392,12 +390,11 @@
     "title": "Social media",
     "subTitle": "We handle everything: strategy, content, design, and performance. You connect with the audience and focus on what you do best.",
     "desc": "Your brand on social media with strategy, creativity, and results! With 3XMEND’s Social Media service, you get planned content, professional designs, engaging captions, and a strong digital presence. We take care of your communication to attract, connect, and sell every day. Stop posting just to post—grow with us!",
-    "produto": "social-media",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "ads": {
     "id": 4,
     "src": "/videos/ads.mp4",
     "poster": "",
@@ -405,12 +402,11 @@
     "title": "ADS",
     "subTitle": "We create strategic campaigns on Google, Instagram, Facebook, and more to attract the right audience and generate real results.",
     "desc": "Stop talking to everyone and start reaching the people who really matter! With 3XMEND’s ADS service, your campaigns are strategically planned, optimized, and targeted to generate real results. Whether to sell, attract followers, or strengthen your brand, we create ads that convert and make your investment worthwhile. Advertise smart, advertise with 3XMEND!",
-    "produto": "ads",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "criacao-de-curso": {
     "id": 5,
     "src": "/videos/criacao-curso.mp4",
     "poster": "",
@@ -418,12 +414,11 @@
     "title": "Course creation",
     "subTitle": "We transform your knowledge into complete courses with high-quality content, audiovisuals, and design.",
     "desc": "Turn your knowledge into a successful digital product with 3XMEND’s course creation service! Our team handles everything: content structure, scripts, recording, editing, visual identity, and publishing. Your course ready to sell, with professional quality, engaging teaching, and a focus on results. Teaching has never been so easy and profitable. Let’s create together?",
-    "produto": "criacao-de-curso",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "seo": {
     "id": 6,
     "src": "/videos/seo.mp4",
     "poster": "",
@@ -431,12 +426,11 @@
     "title": "SEO",
     "subTitle": "We optimize your website for Google and put your brand at the top of search results with strategy, content, and performance.",
     "desc": "Want to appear on Google when your clients search for you? 3XMEND makes it happen! With our SEO service, your site gains more visibility, authority, and qualified traffic. We optimize content, structure, and keywords to put your brand at the top of searches and ahead of the competition. More clicks, more visits, more sales!",
-    "produto": "seo",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "criacao-de-vinheta": {
     "id": 7,
     "src": "/videos/seo.mp4",
     "poster": "",
@@ -444,12 +438,11 @@
     "title": "Intro creation",
     "subTitle": "3XMEND turns your brand into unforgettable experiences by creating creative, professional, and impactful intros.",
     "desc": "Transform your brand into an unforgettable experience! With 3XMEND, your intros come to life with creativity and impact, delivering your message clearly and professionally. Stand out with animations that make a statement!",
-    "produto": "criacao-de-vinheta",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "marca": {
     "id": 8,
     "src": "/videos/marca.mp4",
     "poster": "",
@@ -457,12 +450,11 @@
     "title": "Brand",
     "subTitle": "We create unique and authentic identities designed to make your brand stand out and be represented in the market.",
     "desc": "Your brand needs soul, purpose, and presence—and that’s exactly what 3XMEND delivers! With our Brand Creation and Branding service, we develop everything from the name and visual identity to positioning and brand essence. All strategically designed to convey your values, connect with the right audience, and generate recognition. Strong brands don’t happen by chance—they’re built at 3XMEND!",
-    "produto": "marca",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "criacao-de-produtos-fisicos-e-digitais": {
     "id": 9,
     "src": "/videos/criacao-fisico-digital.mp4",
     "poster": "",
@@ -470,12 +462,11 @@
     "title": "Creation of physical and digital products",
     "subTitle": "We transform ideas into high-quality physical and digital products, with a focus on innovation, performance, and great sales potential.",
     "desc": "From idea to market, 3XMEND turns your vision into reality! With our Physical and Digital Product Creation service, we develop everything you need: visual identity, design, packaging, promotional materials, and even launch content. Whether it’s an e-book, course, infoproduct, or physical product, we deliver complete solutions so you can launch with quality, authority, and results. Your product starts here!",
-    "produto": "criacao-de-produtos-fisicos-e-digitais",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "sites-e-ecommerce": {
     "id": 10,
     "src": "/videos/site.mp4",
     "poster": "",
@@ -483,11 +474,11 @@
     "title": "Websites and e-commerce",
     "subTitle": "Professional design, fast navigation, and a focus on conversion. We create websites that represent your brand and generate real results.",
     "desc": "Have a website or e-commerce that truly works for you! At 3XMEND, we create modern, fast, and responsive platforms with professional design and a total focus on user experience. Whether to present your brand or sell your products online, we deliver optimized, secure websites ready to convert. No more amateur digital presence—with 3XMEND, your showcase is top-level!",
-    "produto": "sites-e-ecommerce",
     "icon": [],
     "descIcon": [],
     "imgs": []
-  },  {
+  },
+  "banco-de-dados": {
     "id": 11,
     "src": "/videos/banco-dados.mp4",
     "poster": "",
@@ -495,12 +486,11 @@
     "title": "Database",
     "subTitle": "We take care of the structure, management, and optimization of your database so you can make fast, secure, and strategic decisions.",
     "desc": "Organize, protect, and enhance your information with 3XMEND’s Database service! We create smart and secure structures for you to store, manage, and access data efficiently. Ideal for companies that value organization, automation, and data-driven decision-making. Gain full control over what really matters with technology tailored to your business!",
-    "produto": "banco-de-dados",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "cripto": {
     "id": 12,
     "src": "/videos/cripto.mp4",
     "poster": "",
@@ -508,12 +498,11 @@
     "title": "Crypto",
     "subTitle": "Cryptocurrency payment portal. Facilitating payments and innovating in the market.",
     "desc": "Stay ahead of your time with 3XMEND’s crypto payment service! We make it easy to integrate cryptocurrencies into your business, offering security, convenience, and innovation for your clients. Expand your payment options, reach a more tech-savvy audience, and show that your brand is connected to the future. Simple, modern, and borderless—that’s how 3XMEND does it!",
-    "produto": "cripto",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "automacao": {
     "id": 13,
     "src": "/videos/ti-automacao.mp4",
     "poster": "",
@@ -521,12 +510,11 @@
     "title": "Automation",
     "subTitle": "Fewer manual tasks, more time to grow. We automate processes, funnels, and communications so you can sell on autopilot.",
     "desc": "Save time, scale results, and focus on what really matters with 3XMEND’s Automation service! 🤖⚙️ We automate customer service, sales, marketing, and much more so your business runs intelligently—even when you’re offline. Say goodbye to repetitive tasks—with 3XMEND, your workflow becomes faster, more efficient, and strategic!",
-    "produto": "automacao",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "produtora-de-video": {
     "id": 14,
     "src": "/videos/criacao-video.mp4",
     "poster": "",
@@ -534,7 +522,6 @@
     "title": "Video production studio",
     "subTitle": "Our studio transforms creativity into professional-quality productions with cutting-edge technology and a specialized team.",
     "desc": "The 3XMEND studio is the ideal choice for those seeking excellence in audiovisual productions. With a modern, well-planned structure and state-of-the-art equipment, the space offers everything you need to record videos with professional quality—whether for social media, advertising campaigns, institutional videos, tutorials, podcasts, or any other format.",
-    "produto": "produtora-de-video",
     "icon": [
       "/icons/location-pin.png",
       "/icons/camera-drone.png",
@@ -564,7 +551,7 @@
       "close-no-cameraman-fazendo-seu-trabalho-scaled.webp"
     ]
   },
-  {
+  "parceiros": {
     "id": 15,
     "src": "/videos/parceiros.mp4",
     "poster": "",
@@ -572,12 +559,11 @@
     "title": "Partners",
     "subTitle": "",
     "desc": "Being a partner of 3XMEND means having a marketing agency by your side committed to real results. You have a creative, strategic team always focused on boosting your brand. With personalized solutions, constant innovation, and total transparency.",
-    "produto": "parceiros",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "ana": {
     "id": 16,
     "src": "",
     "poster": "/parceiros/ana.webp",
@@ -585,12 +571,11 @@
     "title": "Ana Farias",
     "subTitle": "",
     "desc": "Ana Farias’ Instagram is dedicated to promoting a balanced and healthy approach to nutrition. With the motto 'I help you achieve results with the balance you’ve always wanted', Ana offers personalized online consultations to help her followers reach their goals sustainably.",
-    "produto": "ana",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "diego": {
     "id": 17,
     "src": "",
     "poster": "/parceiros/diego.webp",
@@ -598,12 +583,11 @@
     "title": "Diego Rossato",
     "subTitle": "",
     "desc": "Diego Rossato’s Instagram is dedicated to his journey as a hybrid athlete, combining weight training, running, and jiu-jitsu to gain muscle and lose fat. He shares workouts, challenges, and achievements, such as completing his first Olympic triathlon at the Santos International Triathlon.",
-    "produto": "diego",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "douglas": {
     "id": 18,
     "src": "",
     "poster": "/parceiros/douglas.webp",
@@ -611,12 +595,11 @@
     "title": "Douglas Flamino",
     "subTitle": "",
     "desc": "Douglas Flamino’s Instagram is a vibrant and humorous space where he shares content that mixes lifestyle, fitness, product reviews, and humor. Known as the “human review of the internet,” Douglas tests and comments on various everyday products and experiences, always in a relaxed way.",
-    "produto": "douglas",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "fabiana": {
     "id": 19,
     "src": "",
     "poster": "/parceiros/fabiana.webp",
@@ -624,12 +607,11 @@
     "title": "Fabiana Santos",
     "subTitle": "",
     "desc": "Fabiana is dedicated to promoting health and quality of life through physiotherapy. With the motto 'Movement is quality of life', she shares content that encourages healthy habits and highlights the importance of physical activity.",
-    "produto": "fabiana",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "flavia": {
     "id": 20,
     "src": "",
     "poster": "/parceiros/flavia.webp",
@@ -637,12 +619,11 @@
     "title": "Flavia Palheiros (Vinha)",
     "subTitle": "",
     "desc": "@corro_pra_descansar is a space dedicated to sharing a passion for running as a form of self-care and well-being. The profile offers inspiring and motivating content for runners of all levels, promoting the idea that running is a way to rest the mind and strengthen the body.",
-    "produto": "flavia",
     "icon": [],
     "descIcon": [],
     "imgs": []
   },
-  {
+  "tiago": {
     "id": 21,
     "src": "",
     "poster": "/parceiros/tiago.webp",
@@ -650,14 +631,15 @@
     "title": "Tiago Mecabo",
     "subTitle": "",
     "desc": "Tiago Mecabo’s Instagram is a reference for runners who want to improve their performance. A champion with the Brazilian National Team, author of two books, and speaker, Tiago has already helped more than 20,000 students in 23 countries run faster and break records.",
-    "produto": "tiago",
     "icon": [],
     "descIcon": [],
     "imgs": []
   }
-],
+}
+,
 "footer": {
   "titleFooter": "Get in touch.",
-  "copy": "© 2025 3XMEND. All rights reserved."
+  "copy": "© 2025 3XMEND. All rights reserved.",
+  "btnContato": "Mend Agency"
 }
 }
