@@ -14,7 +14,7 @@ export default function TelaDeCarregamentoIni({ children }: { children: React.Re
   return (
     <>
       <div
-        className={`fixed inset-0 z-50 flex items-center justify-center bg-[var(--cor-secundaria)]
+        className={`fixed inset-0 z-50 flex justify-center items-center bg-[var(--cor-secundaria)]
           transition-opacity duration-500
           ${loading ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       >
