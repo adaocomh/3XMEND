@@ -57,7 +57,6 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
 
   return (
     <div className="flex flex-col items-center w-[100vw]">
-      {/* HEADER */}
       <header className="relative w-[100vw] h-[100vh]">
         {item.src ? (
           <video
