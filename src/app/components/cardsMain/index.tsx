@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Cards from "../cardsOutros";
+import CardsOutros from "../cardsOutros";
 import { useTranslations } from "next-intl";
 
 
@@ -22,15 +22,15 @@ export default function cardsMain() {
 
   return (
     <div className="flex flex-col justify-between w-[100%] md:flex-row">
-      <div className="flex flex-col gap-[10vw] md:gap-[8vw] w-[100%] md:w-[40%]">
+      <div className="flex flex-col gap-[10vw] w-[100%] md:gap-[8vw] md:w-[40%]">
         {cardsLeft.map((video: CardsProps) => (
-          <Cards key={video.id} {...video}/>
+          <CardsOutros key={video.id} {...video}/>
         ))}
       </div>
 
-      <div className="flex flex-col gap-[10vw] md:gap-[8vw] mt-[10vw] md:mt-[13vw] w-[100%] md:w-[40%]">
+      <div className="flex flex-col gap-[10vw] w-[100%] mt-[10vw] md:gap-[8vw] md:w-[40%] md:mt-[13vw]">
         {cardsRight.map((video: CardsProps) => (
-          <Cards key={video.id} {...video}/>
+          <CardsOutros key={video.id} {...video}/>
         ))}
       </div>
     </div>
