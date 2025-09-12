@@ -73,7 +73,6 @@ export default async function RootLayout({
             <Footer/>
           </NextIntlClientProvider>
           </TransicaoPage>
-        
         </Loader>
       </body>
     </html>
