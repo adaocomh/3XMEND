@@ -87,7 +87,7 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
           </div>
 
           <div>
-            <p className="text-[48px] font-extrabold text-[#F5F5F5]">{item.title}</p>
+            <p className="text-[48px] font-extrabold text-(--background)">{item.title}</p>
           </div>
 
           <div className="self-center">
@@ -112,7 +112,7 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
               <h3 className="text-[35px] font-bold text-start">{item.subTitle}</h3>
             </Slide>
             <Slide>
-              <p className=" text-[18px] text-start text-[#575757]">{item.desc}</p>
+              <p className=" text-[18px] text-start text-(--foreground)">{item.desc}</p>
             </Slide>
           </div>
 

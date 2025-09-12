@@ -47,7 +47,7 @@ export default function PageCategoria({ categoria }: { categoria: string }) {
   const outros = outrosMap[categoria] || [];
 
   return (
-    <div className="flex flex-col items-center bg-[#F5F5F5] header-page-dinamic">
+    <div className="flex flex-col items-center bg-[var(--background)] header-page-dinamic">
       <header className="w-[100vw]">
         <div className="flex justify-between w-[100%] p-[40px]">
           <Link href="/"><FallingText text="3XMEND" /></Link>

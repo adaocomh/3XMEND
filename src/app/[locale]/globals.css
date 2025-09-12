@@ -8,12 +8,19 @@
   --background: #F5F5F5;
   --foreground: #575757;
   --cor-secundaria: #262626;
+  --cor-terciaria: #00BFFF;
+  --cor-quartenaria: #7e7e7e;
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
 .menu-aberto{
   width: 70px;
   height: 70px;
-  background-color: #F5F5F5;
+  background-color: var(--background);
 }
 
 .bounce{
@@ -103,10 +110,4 @@
   100% {
     width: 100%;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
 }

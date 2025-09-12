@@ -12,7 +12,7 @@ export default function Sobre() {
   const passos: string[] =  t.raw("passosDesc") || [];
 
   return (
-    <div className="flex flex-col items-center bg-[#262626] header-page-dinamic">
+    <div className="flex flex-col items-center bg-[var(--cor-secundaria)] header-page-dinamic">
       <header className="w-[100vw]">
         <div className="flex justify-between w-[100%] p-[40px]">
           <Link href="/"><FallingText text="3XMEND"/></Link>
@@ -26,17 +26,17 @@ export default function Sobre() {
       </header>
 
       <main className="flex flex-col justify-center items-center">
-        <div className="flex flex-col gap-[4vw] w-[95%] py-[10vw] bg-[#262626] md:max-w-[1200px] md:py-[5vw]">
+        <div className="flex flex-col gap-[4vw] w-[95%] py-[10vw] bg-[var(--cor-secundaria)] md:max-w-[1200px] md:py-[5vw]">
             <h1 className="text-[50px] font-black text-(--background) leading-tight md:text-[75px]">{t("desc")}</h1>
             <div className="flex flex-col">
             {passos.map((passo, i) => (
-                <h2 key={i} className="text-[40px] font-black text-[#00BFFF] md:text-[60px]">
+                <h2 key={i} className="text-[40px] font-black text-(--cor-terciaria) md:text-[60px]">
                   {passo}
                 </h2>
               ))}
             </div>
             <h1 className="text-[50px] font-black text-(--background) leading-tight md:text-[75px]">{t("desc2")}</h1>
-            <h1 className="text-[50px] font-black text-[#00BFFF] leading-tight md:text-[75px]">{t("desc3")}</h1>
+            <h1 className="text-[50px] font-black text-(--cor-terciaria) leading-tight md:text-[75px]">{t("desc3")}</h1>
             <div className="flex flex-col gap-[3vw]">
             <h1 className="text-[50px] font-black text-(--background) text-center md:text-[75px]">{t("impacto")}</h1>
                 <div className="flex justify-between">
@@ -57,15 +57,15 @@ export default function Sobre() {
         </div>
         <div className="flex justify-center items-center w-[100vw] py-[10vw] bg-[var(--background)] md:py-[5vw]">
             <div className="flex flex-col gap-[5px] w-[95%] md:max-w-[1200px]">
-                <h1 className="text-[50px] font-semibold text-[#262626] leading-tight md:text-[75px]">{t("titleAgen1")}</h1>
-                <h2 className="text-[30px] font-semibold text-[#262626] leading-tight md:text-[55px]">{t("titleAgen2")}</h2>
+                <h1 className="text-[50px] font-semibold text-(--cor-secundaria) leading-tight md:text-[75px]">{t("titleAgen1")}</h1>
+                <h2 className="text-[30px] font-semibold text-(--cor-secundaria) leading-tight md:text-[55px]">{t("titleAgen2")}</h2>
                 <div className="flex flex-col gap-[8px]">
                     <p className="text-[16px] md:text-[18px]">{t("pAgen1")}</p>
                     <p className="text-[16px] md:text-[18px]">{t("pAgen2")}</p>
                 </div>
             </div>
         </div>
-        <div className="flex justify-center items-center w-[100vw] bg-[#00BFFF] faqCursor">
+        <div className="flex justify-center items-center w-[100vw] bg-[var(--cor-terciaria)] faqCursor">
             <FAQ/>
         </div>
       </main>

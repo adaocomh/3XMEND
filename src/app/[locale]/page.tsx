@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         </div>
         <div>
-          <p className="text-[48px] font-extrabold text-[#F5F5F5] text-center">{t('titleHeader')}</p>
+          <p className="text-[48px] font-extrabold text-(--background) text-center">{t('titleHeader')}</p>
         </div>
         <div className="self-end"><Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/></div>
       </div>
