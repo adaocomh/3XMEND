@@ -34,8 +34,8 @@ export default function CustomCursor({ open }: { open: boolean }) {
     const handleMouseOut = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (target.classList.contains("hoverSeta")) {
-        cursor.style.width = "20px";
-        cursor.style.height = "20px";
+        cursor.style.width = "15px";
+        cursor.style.height = "15px";
         cursor.style.boxShadow = "none";
 
         arrow.style.width = "0px";
@@ -116,8 +116,8 @@ export default function CustomCursor({ open }: { open: boolean }) {
     if (!cursor || !arrow) return;
     
     cursor.classList.remove("menu-aberto");
-    cursor.style.width = "20px";
-    cursor.style.height = "20px";
+    cursor.style.width = "15px";
+    cursor.style.height = "15px";
     cursor.style.boxShadow = "none";
 
     arrow.style.width = "0px";
@@ -127,7 +127,7 @@ export default function CustomCursor({ open }: { open: boolean }) {
   return (
     <div
       ref={cursorRef}
-      className={`fixed flex justify-center w-[20px] h-[20px] items-center rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-[width,height,background-color] duration-150 cursorr`}
+      className={`fixed flex justify-center w-[15px] h-[15px] items-center rounded-full bg-[#00BFFF] pointer-events-none z-50 transition-[width,height,background-color] duration-150 cursorr`}
     ><img className="transition-[width,height] duration-150" ref={arrowRef} src={open ? "/icons/right-blue.png" : "/icons/right-arrow.png"} alt="seta para direita"/>
     </div>
   );
