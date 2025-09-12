@@ -54,7 +54,7 @@ export default function AlternadorIdioma() {
       </button>
       <button
         onClick={() => handleSelectOnChange("es")}
-        className="flex items-center h-[16px] p-[8px] px-[15px] text-[16px] font-medium  text-centertext-(--background) hoverSeta alternador"
+        className="flex items-center h-[16px] p-[8px] px-[15px] text-[16px] font-medium  text-center text-(--background) hoverSeta alternador"
       >
         ES
       </button>
