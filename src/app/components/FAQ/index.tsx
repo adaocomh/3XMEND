@@ -21,16 +21,16 @@ const faq: FAQItem[] =  t.raw("faq") || [];
   };
 
   return (
-      <div className="flex flex-col bg-[#00BFFF]  w-[95%] md:max-w-[1200px] text-(--background) gap-[4vw] py-[10vw] md:py-[5vw] faqCursor">
-        <h2 className="text-[50px] md:text-[75px] font-bold text-center faqCursor">
+      <div className="flex flex-col gap-[4vw] w-[95%] py-[10vw] bg-[#00BFFF] text-(--background) md:max-w-[1200px] md:py-[5vw] faqCursor">
+        <h2 className="text-[50px] font-bold text-center md:text-[75px] faqCursor">
           {t('titleFaq')}
         </h2>
         <div className="space-y-4 faqCursor">
           {faq.map((item, index) => (
-            <div key={index} className="border-b border-[var(--background)] pb-4 faqCursor">
+            <div key={index} className="pb-4 border-b border-[var(--background)] faqCursor">
               <button
                 onClick={() => toggleFAQ(index)}
-                className={`w-full flex justify-between items-center text-left text-[22px] font-semibold hoverSeta faqCursor`}
+                className={`flex justify-between items-center w-full text-[22px] font-semibold text-left hoverSeta faqCursor`}
               >
                 {item.questao}
                 <span className="text-xl faqCursor">
