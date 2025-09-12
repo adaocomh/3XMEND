@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import FallingText from "../fallingText";
 import Link from "next/link";
 import AlternadorIdiomaMenu from "../alternadorMenu";
-import LinksContatoMenu from "../linksContatosMenu/inde";
+import LinksContatosMenu from "../linksContatosMenu/inde";
 import { useTranslations } from "next-intl";
 
 export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
@@ -79,21 +79,21 @@ export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpe
 
 
   return (
-    <div className={`fixed right-[40px] w-[50px] h-[50px] justify-center items-center rounded-full cursor-pointer flex transition-all duration-300 ease-in-out hoverSeta z-40  ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"} div-menu`}>
+    <div className={`fixed right-[40px] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer transition-all duration-300 ease-in-out hoverSeta z-40  ${scrolled ? "bg-[#00BFFF]" : "bg-transparent"} div-menu`}>
       <div className={`absolute flex justify-center items-center w-0 h-0 bg-[#00BFFF] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""} menu-w`}>
-        <div className={`${open ? "flex flex-col justify-start w-[80%] md:w-[1000px] gap-[40px]" : "hidden"}`}>
+        <div className={`${open ? "flex flex-col justify-start gap-[40px] w-[80%] md:w-[1000px]" : "hidden"}`}>
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
             <FallingText text="3XMEND"/>
           </div>
           <Link href="/#servicos">
-          <h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min" onClick={() => {
+          <h3 className="max-w-min text-[60px] font-black text-(--background) hoverSeta slideMenu1" onClick={() => {
                 const timer = setTimeout(() => setOpen(false), 200);
                 return () => clearTimeout(timer);}}>{t('servicos')}</h3></Link>
-          <Link href="/sobre"><h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">{t('sobreTitle')}</h3></Link>
-          <div className="slideMenu3 flex">
+          <Link href="/sobre"><h3 className="max-w-min text-[60px] font-black text-(--background) hoverSeta slideMenu2">{t('sobreTitle')}</h3></Link>
+          <div className="flex slideMenu3">
               <AlternadorIdiomaMenu/>
           </div>
-          <LinksContatoMenu/>
+          <LinksContatosMenu/>
         </div>
       </div>
       <button
