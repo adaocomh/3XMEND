@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import FallingText from "../fallingText";
 import Link from "next/link";
 import AlternadorIdiomaMenu from "../alternadorMenu";
+import LinksContatoMenu from "../linksContatosMenu/inde";
 
 export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
@@ -91,12 +91,7 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
           <div className="slideMenu3 flex">
               <AlternadorIdiomaMenu/>
           </div>
-          <div className="slideMenu4 flex gap-[10px]">
-            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/instagram-blue.png" alt="Icon do instagram" width={20} height={20}/></div>
-            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/whatsapp-blue.png" alt="Icon do whatsapp" width={20} height={20}/></div>
-            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/telephone-blue.png" alt="Icon do telefone" width={20} height={20}/></div>
-            <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/email-blue.png" alt="Icon do email" width={20} height={20}/></div>
-        </div>
+          <LinksContatoMenu/>
         </div>
       </div>
       <button
