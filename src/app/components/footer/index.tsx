@@ -5,6 +5,7 @@ import FadeIn from "../elementosFadeIn"
 import Line from "../linhaCrescente"
 import {useTranslations} from 'next-intl';
 import LinksContato from "../linksContatos"
+import AlternadorIdiomaFooter from "../alternadorFooter"
 
 export default function Footer(){
     const t = useTranslations('footer');
@@ -35,11 +36,7 @@ export default function Footer(){
                     <div className="flex justify-between items-center w-full">
                         <p className="text-[16px] text-(--foreground)) text-center text-(--foreground) font-light  w-[350px]">{t('copy')}</p>
                         <LinksContato/>
-                        <div className="flex w-[350px]">
-                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">Português</p>
-                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">English</p>
-                            <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] hoverSeta">Español</p>
-                        </div>
+                        <AlternadorIdiomaFooter/>
                     </div>
                     </FadeIn>
                 </div>

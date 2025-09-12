@@ -42,7 +42,7 @@ export default function LinksContatoMenu() {
   }
 
   return (
-    <div className="flex gap-[10px]">
+    <div className="slideMenu4 flex gap-[10px]">
       <a href="https://www.instagram.com/3xmend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="flex justify-center items-center w-[50px] h-[50px] bg-[var(--background)] rounded-full hoverSeta" target="_blank" rel="noopener noreferrer">
         <Image className='hoverSeta' src="/icons/instagram-blue.png" alt="Icon do instagram" width={30} height={30} />
       </a>
