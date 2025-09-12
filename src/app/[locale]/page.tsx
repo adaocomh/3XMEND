@@ -24,12 +24,12 @@ export default function Home() {
         </div>
         </div>
         <div>
-          <p className="text-[48px] font-extrabold text-[#F5F5F5]">{t('titleHeader')}</p>
+          <p className="text-[48px] text-center font-extrabold text-[#F5F5F5]">{t('titleHeader')}</p>
         </div>
         <div className="self-end"><Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/></div>
       </div>
     </header>
-      <main id="servicos" className="flex flex-col items-center justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
+      <main id="servicos" className="flex flex-col items-center justify-center gap-[10vw] py-[10vw] md:gap-[5vw] md:py-[5vw] w-[95%] md:max-w-[1200px]">
         <h2 className="text-[30px] text-center font-extrabold">{t('titleCategoria')}</h2>
         <CardsCategoria/>
         <Link href="/sobre"><BtnSobre/></Link>

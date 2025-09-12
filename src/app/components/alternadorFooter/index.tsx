@@ -16,7 +16,7 @@ export default function AlternadorIdiomaFooter() {
   }
 
   return (
-    <div className="flex w-[350px]">
+    <div className="flex w-[350px] justify-center">
       <button
         onClick={() => handleSelectOnChange("pt")}
         className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)] hoverSeta"

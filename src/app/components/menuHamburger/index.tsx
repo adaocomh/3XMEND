@@ -5,10 +5,12 @@ import FallingText from "../fallingText";
 import Link from "next/link";
 import AlternadorIdiomaMenu from "../alternadorMenu";
 import LinksContatoMenu from "../linksContatosMenu/inde";
+import { useTranslations } from "next-intl";
 
 export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
   const [isBgLight, setIsBgLight] = useState(false);
+  const t = useTranslations('menu')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -86,8 +88,8 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
           <Link href="/#servicos">
           <h3 className="slideMenu1 text-[60px] text-(--background) font-black hoverSeta max-w-min" onClick={() => {
                 const timer = setTimeout(() => setOpen(false), 200);
-                return () => clearTimeout(timer);}}>Serviços</h3></Link>
-          <Link href="/sobre"><h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">Sobre</h3></Link>
+                return () => clearTimeout(timer);}}>{t('servicos')}</h3></Link>
+          <Link href="/sobre"><h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">{t('sobreTitle')}</h3></Link>
           <div className="slideMenu3 flex">
               <AlternadorIdiomaMenu/>
           </div>
