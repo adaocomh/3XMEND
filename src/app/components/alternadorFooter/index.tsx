@@ -16,22 +16,22 @@ export default function AlternadorIdiomaFooter() {
   }
 
   return (
-    <div className="flex w-[350px] justify-center">
+    <div className="flex justify-center w-[350px]">
       <button
         onClick={() => handleSelectOnChange("pt")}
-        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)] hoverSeta"
+        className="flex items-center h-[16px] p-[8px] border-r-[1px] border-[var(--background)] text-[16px] font-light text-center text-(--background) hoverSeta"
       >
         Português
       </button>
       <button
         onClick={() => handleSelectOnChange("en")}
-        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] border-r-[1px] border-[var(--background)] hoverSeta"
+        className="flex items-center h-[16px] p-[8px] border-r-[1px] border-[var(--background)] text-[16px] font-light text-center text-(--background) hoverSeta"
       >
         English
       </button>
       <button
         onClick={() => handleSelectOnChange("es")}
-        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-light p-[8px] hoverSeta"
+        className="flex items-center h-[16px] p-[8px] text-[16px] font-light text-center text-(--background) hoverSeta"
       >
         Español
       </button>
