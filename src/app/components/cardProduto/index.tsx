@@ -43,7 +43,7 @@ export default function cardProduto({ src, poster, title, ver, desc, produto }: 
         Seu navegador não suporta vídeos HTML5.
       </video> : <img src={poster} alt="imagem de perfil do parceiro" className="w-[100%] h-[100%] rounded-[10px] mb-[10px] hoverSeta"/>}
       <h4 className="text-[18px] font-bold hoverSeta">{title}</h4>
-      <p className="text-[12px] text-[#7e7e7e] hoverSeta">{ver}</p>
+      <p className="text-[12px] text-(--cor-quartenaria) hoverSeta">{ver}</p>
     </Link>
   );
 }
