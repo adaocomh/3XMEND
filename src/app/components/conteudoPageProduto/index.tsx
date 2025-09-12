@@ -60,9 +60,9 @@ export default function PaginaProduto({ title }: {
     );
   }
 
-const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
+  const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
 
-const parceiros: ParceiroProps[] = Data.paginaDinamicaCategoria.parceiros || [];
+  const parceiros: ParceiroProps[] = Data.paginaDinamicaCategoria.parceiros || [];
   const parceiro = parceiros.find((p) => p.produto === title);
 
   const icons = Array.isArray(item.icon) ? item.icon : [];
