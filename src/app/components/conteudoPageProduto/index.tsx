@@ -148,6 +148,7 @@ export default function PaginaProduto({ title }: {
               ))}
             </div>
           )}
+          </div>
           {parceiro && (
             <Slide>
             <div className="hoverSeta">
@@ -167,7 +168,6 @@ export default function PaginaProduto({ title }: {
               </a>
             </div></Slide>
           )}
-          </div>
 
         {imgs.length > 0 && (
           <div className="flex flex-col gap-[4vw] md:gap-[2vw]">
