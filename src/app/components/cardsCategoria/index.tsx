@@ -29,4 +29,4 @@ export default function CardsPageIni() {
       </div>
     </div>
   );
-}
+};

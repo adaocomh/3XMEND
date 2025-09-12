@@ -638,6 +638,49 @@
   "titleFooter": "Ponte en contacto.",
   "copy": "© 2025 3XMEND. Todos los derechos reservados.",
   "btnContato": "Agencia Mend"
+},
+"sobre": {
+  "desc": "3XMEND es tu agencia digital donde cuidamos de tu negocio, desde el posicionamiento hasta el clic que genera ventas.",
+  "passosDesc": [
+    "1. Diagnóstico e Inmersión",
+    "2. Estrategia a medida",
+    "3. Ejecución creativa y enfocada",
+    "4. Seguimiento y optimización",
+    "5. Informes y reuniones estratégicas"
+  ],
+  "desc2": "Nuestra forma de trabajar es simple: entender tu negocio, crear estrategias personalizadas y ejecutar con excelencia. Nos sumergimos en tu universo, estudiamos tu mercado y ponemos en práctica acciones que realmente marcan la diferencia en lo digital.",
+  "desc3": "Planificación, acción y resultados. Sin suposiciones, sin rodeos.",
+  "impacto": "Impacto de 3XMEND",
+  "parceiros": "Socios",
+  "visualizacao": "Generados en visualizaciones",
+  "carreira": "Años en el mercado",
+  "titleAgen1": "Gestión de influencers",
+  "titleAgen2": "Tú eres el talento. Nosotros somos el equipo detrás del éxito.",
+  "pAgen1": "Tienes el potencial, el carisma, el conocimiento o la influencia. Y nosotros tenemos las estrategias correctas para convertir todo eso en una marca fuerte, deseada y profesional.",
+  "pAgen2": "Te Agenciamos es nuestro brazo estratégico dirigido a quienes quieren ser más que vistos — quieren ser recordados, reconocidos y valorados en lo digital. Entramos en acción para cuidar tu imagen, posicionamiento, contenido, oportunidades de negocio y presencia online con visión estratégica, creatividad y consistencia.",
+  "titleFaq": "Preguntas Frecuentes",
+  "faq": [
+    {
+      "questao": "¿Cómo puedo crear un curso online con 3xMend?",
+      "resposta": "3xMend ofrece soporte completo en la creación de cursos online. Esto incluye desde la planificación del contenido, desarrollo de guiones, grabación de clases, edición de videos, hasta la publicación en plataformas educativas."
+    },
+    {
+      "questao": "¿Cómo funciona el servicio de redes sociales de 3XMEND?",
+      "resposta": "El servicio de redes sociales de 3XMEND se enfoca en posicionar tu marca de forma estratégica en las redes sociales, con contenido relevante, creativo y alineado a tus objetivos. El equipo se encarga de todo el proceso: planificación de temas, creación de artes y textos, programación de publicaciones y análisis de resultados. El objetivo es aumentar tu engagement, atraer nuevos seguidores y convertir tu presencia digital en un canal de ventas eficaz."
+    },
+    {
+      "questao": "¿Los sitios web de 3XMEND siguen las tendencias del mercado?",
+      "resposta": "Sí, los sitios desarrollados por 3XMEND siguen las principales tendencias del mercado digital. El equipo utiliza diseño moderno, responsivo (adaptable a móvil, tablet y escritorio), enfoque en la experiencia del usuario (UX/UI) y optimización para motores de búsqueda (SEO). Además, los sitios se crean con tecnología actualizada y están diseñados para ofrecer rendimiento, seguridad y escalabilidad, garantizando que tu negocio siempre esté alineado con las mejores prácticas del mercado."
+    },
+    {
+      "questao": "¿Qué servicios de diseño desarrolla 3XMEND?",
+      "resposta": "3XMEND ofrece una variedad de servicios de diseño orientados a fortalecer la identidad visual de tu marca y mejorar la comunicación con el público. Entre los principales servicios están: creación de logotipos, identidad visual completa, artes para redes sociales, materiales gráficos (como tarjetas, banners y presentaciones), además de diseños personalizados para sitios web y cursos. Todo se desarrolla con foco en la creatividad, la estrategia y la alineación con los objetivos del cliente."
+    },
+    {
+      "questao": "¿Cómo me ayuda 3XMEND en la creación de productos físicos o digitales?",
+      "resposta": "3XMEND te ayuda en la creación de productos físicos y digitales ofreciendo soporte completo, desde la concepción de la idea hasta el diseño y material promocional. Para productos digitales, como e-books, cursos o infoproductos, el equipo se encarga de la planificación, identidad visual, diagramación, grabación y edición de contenidos. Para productos físicos, ayuda en el desarrollo de la marca, etiquetas, empaques y comunicación visual. Todo está pensado estratégicamente para que tu producto sea profesional, atractivo y listo para el mercado."
+    }
+  ]
 }
   }
   

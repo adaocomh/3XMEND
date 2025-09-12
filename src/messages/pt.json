@@ -639,5 +639,53 @@
         "titleFooter" : "Entre em contato.",
         "copy": "© 2025 3XMEND. Todos os direitos reservados.",
         "btnContato": "Agencia Mend"
+      },
+      "sobre":{
+        "desc": "A 3XMEND é sua agência digital onde cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas.",
+        "passosDesc": [
+          "1. Diagnóstico e Imersão",
+          "2. Estratégia sob medida",
+          "3. Execução criativa e focada",
+          "4. Acompanhamento e otimização",
+          "5. Relatórios e reuniões estratégicas"
+        ],
+        "desc2": "Nosso jeito de trabalhar é simples: entender o seu negócio, criar estratégias personalizadas e executar com excelência. A gente mergulha no seu universo, estuda o seu mercado e coloca em prática ações que realmente fazem diferença no digital.",
+        "desc3": "Planejamento, ação e resultado. Sem achismo, sem enrolação.",
+        "impacto": "Impacto da 3XMEND",
+        "parceiros": "Parceiros",
+        "visualizacao": "Gerados em visualização",
+        "carreira": "Anos de mercado",
+        "titleAgen1": "Agenciamento de influencers",
+        "titleAgen2": "Você é o talento. A gente é o time por trás do sucesso.",
+        "pAgen1": "Você tem o potencial, o carisma, o conhecimento ou a influência. E nós temos as estratégias certas pra transformar isso tudo em uma marca forte, desejada e profissional.",
+        "pAgen2": "Te Agenciamos é o nosso braço estratégico voltado para quem quer ser mais do que visto — quer ser lembrado, reconhecido e valorizado no digital. A gente entra em campo pra cuidar da sua imagem, posicionamento, conteúdo, oportunidades de negócio e presença online com visão estratégica, criatividade e consistência.",
+        "titleFaq": "Dúvidas Frequentes",
+        "faq": [
+          {
+            "questao": "Como posso criar um curso online com a 3xMend?",
+            "resposta":
+              "A 3xMend oferece suporte completo na criação de cursos online. Isso inclui desde o planejamento do conteúdo, desenvolvimento de roteiros, gravação de aulas, edição de vídeos, até a publicação em plataformas de ensino."
+          },
+          {
+            "questao": "Como funciona o social media da 3XMEND?",
+            "resposta":
+              "O serviço de social media da 3XMEND é focado em posicionar sua marca de forma estratégica nas redes sociais, com conteúdo relevante, criativo e alinhado aos seus objetivos. A equipe cuida de todo o processo: planejamento de pautas, criação de artes e textos, agendamento de postagens e análise de resultados. O objetivo é aumentar seu engajamento, atrair novos seguidores e transformar sua presença digital em um canal de vendas eficaz."
+          },
+          {
+            "questao": "Os sites da 3XMEND acompanham as tendências do mercado?",
+            "resposta":
+              "Sim, os sites desenvolvidos pela 3XMEND acompanham as principais tendências do mercado digital. A equipe utiliza design moderno, responsivo (adaptável a celular, tablet e desktop), foco na experiência do usuário (UX/UI) e otimização para mecanismos de busca (SEO). Além disso, os sites são criados com tecnologia atualizada e pensados para oferecer performance, segurança e escalabilidade, garantindo que seu negócio esteja sempre alinhado às melhores práticas do mercado."
+          },
+          {
+            "questao": "Quais serviços de Design a 3XMEND desenvolve?",
+            "resposta":
+              "A 3XMEND oferece uma variedade de serviços de Design voltados para fortalecer a identidade visual da sua marca e melhorar a comunicação com o público. Entre os principais serviços estão: criação de logotipos, identidade visual completa, artes para redes sociais, materiais gráficos (como cartões, banners e apresentações), além de layouts personalizados para sites e cursos. Tudo é desenvolvido com foco em criatividade, estratégia e alinhamento com os objetivos do cliente."
+          },
+          {
+            "questao": "Como a 3XMEND me ajuda na criação de produtos físicos ou digitais?",
+            "resposta":
+              "A 3XMEND te ajuda na criação de produtos físicos e digitais oferecendo suporte completo, desde a concepção da ideia até o design e material promocional. Para produtos digitais, como e-books, cursos ou infoprodutos, a equipe cuida do planejamento, identidade visual, diagramação, gravação e edição de conteúdos. Já para produtos físicos, auxilia no desenvolvimento da marca, rótulos, embalagens e comunicação visual. Tudo é pensado estrategicamente para tornar seu produto profissional, atrativo e pronto para o mercado."
+          }
+        ]
       }
 }

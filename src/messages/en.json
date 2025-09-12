@@ -641,5 +641,48 @@
   "titleFooter": "Get in touch.",
   "copy": "© 2025 3XMEND. All rights reserved.",
   "btnContato": "Mend Agency"
+},
+"sobre": {
+  "desc": "3XMEND is your digital agency where we take care of your business, from positioning to the click that generates sales.",
+  "passosDesc": [
+    "1. Diagnosis and Immersion",
+    "2. Tailor-made strategy",
+    "3. Creative and focused execution",
+    "4. Monitoring and optimization",
+    "5. Reports and strategic meetings"
+  ],
+  "desc2": "Our way of working is simple: understand your business, create personalized strategies, and execute with excellence. We dive into your universe, study your market, and put into practice actions that really make a difference in digital.",
+  "desc3": "Planning, action, and results. No guessing, no beating around the bush.",
+  "impacto": "3XMEND Impact",
+  "parceiros": "Partners",
+  "visualizacao": "Generated in views",
+  "carreira": "Years in the market",
+  "titleAgen1": "Influencer management",
+  "titleAgen2": "You are the talent. We are the team behind the success.",
+  "pAgen1": "You have the potential, charisma, knowledge, or influence. And we have the right strategies to turn all of that into a strong, desirable, and professional brand.",
+  "pAgen2": "Te Agenciamos is our strategic arm aimed at those who want to be more than just seen — they want to be remembered, recognized, and valued in digital. We step in to take care of your image, positioning, content, business opportunities, and online presence with strategic vision, creativity, and consistency.",
+  "titleFaq": "Frequently Asked Questions",
+  "faq": [
+    {
+      "questao": "How can I create an online course with 3xMend?",
+      "resposta": "3xMend offers full support in creating online courses. This includes everything from content planning, script development, class recording, video editing, to publishing on learning platforms."
+    },
+    {
+      "questao": "How does 3XMEND’s social media service work?",
+      "resposta": "3XMEND’s social media service focuses on strategically positioning your brand on social networks with relevant, creative, and goal-aligned content. The team handles the entire process: topic planning, creating artwork and texts, scheduling posts, and analyzing results. The goal is to increase your engagement, attract new followers, and turn your digital presence into an effective sales channel."
+    },
+    {
+      "questao": "Do 3XMEND’s websites follow market trends?",
+      "resposta": "Yes, websites developed by 3XMEND follow the main trends in the digital market. The team uses modern, responsive design (adaptable to mobile, tablet, and desktop), focus on user experience (UX/UI), and search engine optimization (SEO). In addition, the websites are built with updated technology and designed to offer performance, security, and scalability, ensuring that your business is always aligned with best market practices."
+    },
+    {
+      "questao": "What design services does 3XMEND provide?",
+      "resposta": "3XMEND offers a variety of design services aimed at strengthening your brand’s visual identity and improving communication with your audience. The main services include: logo creation, complete visual identity, artwork for social media, graphic materials (such as cards, banners, and presentations), as well as custom layouts for websites and courses. Everything is developed with a focus on creativity, strategy, and alignment with the client’s goals."
+    },
+    {
+      "questao": "How does 3XMEND help me create physical or digital products?",
+      "resposta": "3XMEND helps you create physical and digital products by offering full support, from the idea’s conception to design and promotional material. For digital products, such as e-books, courses, or info products, the team handles planning, visual identity, layout, recording, and content editing. For physical products, they assist in brand development, labels, packaging, and visual communication. Everything is strategically designed to make your product professional, attractive, and market-ready."
+    }
+  ]
 }
 }
