@@ -63,7 +63,7 @@ export default function ClientPage({ categoria }: { categoria: string }) {
         </div>
       </header>
 
-      <main className="flex flex-col items-center justify-center gap-[5vw] py-[5vw] max-w-[1200px]">
+      <main className="flex flex-col items-center justify-center gap-[5vw] md:gap-[5vw] py-[10vw] md:py-[5vw] w-[95%] md:max-w-[1200px]">
         <h2 className="text-[80px] text-center font-black">{title}</h2>
 
         <div className="flex flex-col w-[100%] gap-[60px]">
@@ -78,7 +78,7 @@ export default function ClientPage({ categoria }: { categoria: string }) {
           </h2>
           <div className="flex flex-row flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
             {outros.map((card) => (
-              <div key={card.id} className="w-[30%]">
+              <div key={card.id} className="w-[100%] md:w-[30%]">
                 <Cards {...card} />
               </div>
             ))}

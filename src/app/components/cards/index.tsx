@@ -29,7 +29,7 @@ export default function CardsCategoria({ src, poster, title, ver, desc, produto 
   };
 
   return (
-    <Link href={`produto/${produto}`} className="flex flex-col items-center w-[30%]">
+    <Link href={`produto/${produto}`} className="flex flex-col items-center w-[100%] md:w-[30%]">
       {src ? <video
         className="w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta"
         onMouseEnter={handleMouseEnter}
