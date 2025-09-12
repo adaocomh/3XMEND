@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import FallingText from "../fallingText";
 import Link from "next/link";
+import AlternadorIdiomaMenu from "../alternadorMenu";
 
 export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
@@ -88,9 +89,7 @@ export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (
                 return () => clearTimeout(timer);}}>Serviços</h3></Link>
           <Link href="/sobre"><h3 className="slideMenu2 text-[60px] text-(--background) font-black hoverSeta max-w-min">Sobre</h3></Link>
           <div className="slideMenu3 flex">
-              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">BR</p>
-              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] border-r-[1px] border-[var(--background)] hoverSeta">EUA</p>
-              <p className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-semibold p-[8px] hoverSeta">ES</p>
+              <AlternadorIdiomaMenu/>
           </div>
           <div className="slideMenu4 flex gap-[10px]">
             <div className="flex justify-center items-center w-[40px] h-[40px] bg-[var(--background)] rounded-[50px] hoverSeta"><Image className="hoverSeta" src="/icons/instagram-blue.png" alt="Icon do instagram" width={20} height={20}/></div>

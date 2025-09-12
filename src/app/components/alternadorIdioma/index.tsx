@@ -32,6 +32,8 @@ export default function AlternadorIdioma() {
 
     alternador.forEach(linguagem => {
       linguagem.style.color = corListras;
+      linguagem.style.borderColor = corListras;
+      
     });
 
   })
