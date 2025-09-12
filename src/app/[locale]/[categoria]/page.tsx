@@ -1,9 +1,9 @@
-import ClientPage from "../../components/conteudoPageCategoria";
+import PageCategoria from "@/app/components/conteudoPageCategoria";
 
 export default async function PageDinamicasCategorias({
   params,
 }: {
   params: { categoria: string };
 }) {
-  return <ClientPage categoria={params.categoria} />;
+  return <PageCategoria categoria={params.categoria} />;
 }
