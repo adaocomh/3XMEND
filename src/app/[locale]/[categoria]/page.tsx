@@ -3,7 +3,9 @@ import PageCategoria from "@/app/components/conteudoPageCategoria";
 export default async function PageDinamicasCategorias({
   params,
 }: {
-  params: { categoria: string };
+  params: Promise<{ categoria: string }>;
 }) {
-  return <PageCategoria categoria={params.categoria} />;
+  const { categoria } = await params;
+
+  return <PageCategoria categoria={categoria} />;
 }

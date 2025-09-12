@@ -1,9 +1,11 @@
 import PaginaProduto from "../../../components/conteudoPageProduto";
 
-export default function PageProduto({
+export default async function PageProduto({
   params,
 }: {
-  params: { produto: string };
+  params: Promise<{ produto: string }>;
 }) {
-  return <PaginaProduto title={params.produto} />;
+  const { produto } = await params;
+
+  return <PaginaProduto title={produto} />;
 }
