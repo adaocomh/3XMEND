@@ -10,7 +10,7 @@ type CardsProps = {
     href: string;
   };
 
-export default function Cards({ src, poster, title, ver, href }: CardsProps){
+export default function CardsOutros({ src, poster, title, ver, href }: CardsProps){
     const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
         e.currentTarget.play();
       };

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Hamburger from "../menuHamburger";
 import CustomCursor from "../cursorCustomizado";
 
-export default function HamburgerCursor() {
+export default function CursorMenu() {
   const [open, setOpen] = useState(false);
 
   return (

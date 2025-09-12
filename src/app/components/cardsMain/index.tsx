@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Cards from "../CardsOutros";
+import Cards from "../cardsOutros";
 import { useTranslations } from "next-intl";
 
 
@@ -14,7 +14,7 @@ type CardsProps = {
   produto: string;
 };
 
-export default function CardsMais() {
+export default function cardsMain() {
   const t = useTranslations('home')
 
   const cardsLeft: CardsProps[] = t.raw('cadsPageIniLeft') || []

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import FallingTextCarregamento from "../fallingTextCarregamento";
 
-export default function Loader({ children }: { children: React.ReactNode }) {
+export default function TelaDeCarregamentoIni({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

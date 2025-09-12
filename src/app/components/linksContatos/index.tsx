@@ -30,7 +30,7 @@ const EmailLink: React.FC<EmailProps> = ({
   )
 }
 
-export default function LinksContato() {
+export default function LinksContatos() {
   const [copiado, setCopiado] = useState(false)
   const emailRef = useRef<HTMLAnchorElement | null>(null)
 

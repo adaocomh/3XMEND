@@ -7,7 +7,7 @@ import AlternadorIdiomaMenu from "../alternadorMenu";
 import LinksContatoMenu from "../linksContatosMenu/inde";
 import { useTranslations } from "next-intl";
 
-export default function Hamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
+export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
   const [isBgLight, setIsBgLight] = useState(false);
   const t = useTranslations('menu')

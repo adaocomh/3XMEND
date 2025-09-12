@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Loader from "../components/telaDeCarregamento";
+import Loader from "../components/telaDeCarregamentoIni";
 import TransicaoPage from "../components/transicaoPage";
 import CustomCursor from "../components/cursorCustomizado";
 import Footer from "../components/footer";

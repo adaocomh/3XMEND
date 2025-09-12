@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
-export default function CustomCursor({ open }: { open: boolean }) {
+export default function CursorCustomizado({ open }: { open: boolean }) {
   const cursorRef = useRef<HTMLDivElement>(null);
   const arrowRef = useRef<HTMLImageElement>(null)
   const pathname = usePathname();

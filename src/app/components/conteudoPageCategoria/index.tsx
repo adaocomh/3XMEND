@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import AlternadorIdioma from "../alternadorIdioma";
-import CardsCategoria from "../../components/cards";
-import Cards from "../../components/CardsOutros";
+import CardProduto from "../cardProduto";
+import CardsOutros from "../cardsOutros";
 import Link from "next/link";
 
 type CardsOutrosProps = {
@@ -66,7 +66,7 @@ export default function PageCategoria({ categoria }: { categoria: string }) {
         <div className="flex flex-col gap-[60px] w-[100%]">
           <div className="flex gap-x-[5%] gap-y-[60px] flex-wrap w-[100%]">
             {cards.map((card) => (
-              <CardsCategoria key={card.id} {...card} />
+              <CardProduto key={card.id} {...card} />
             ))}
           </div>
 
@@ -76,7 +76,7 @@ export default function PageCategoria({ categoria }: { categoria: string }) {
           <div className="flex flex-row gap-x-[5%] gap-y-[60px] flex-wrap w-[100%]">
             {outros.map((card) => (
               <div key={card.id} className="w-[100%] md:w-[30%]">
-                <Cards {...card} />
+                <CardsOutros {...card} />
               </div>
             ))}
           </div>

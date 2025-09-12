@@ -12,7 +12,7 @@ type CardsProps = {
   produto: string;
 };
 
-export default function CardsCategoria({ src, poster, title, ver, desc, produto }: CardsProps) {
+export default function cardProduto({ src, poster, title, ver, desc, produto }: CardsProps) {
 
 
   const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {

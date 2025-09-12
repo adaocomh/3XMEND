@@ -6,7 +6,7 @@ import AlternadorIdioma from "../alternadorIdioma";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import Image from "next/image";
 import Link from "next/link";
-import Cards from "@/app/components/CardsOutros";
+import Cards from "@/app/components/cardsOutros";
 import Slide from "@/app/components/elementosSlides";
 
 type CardsProps = {

@@ -1,5 +1,5 @@
 import AlternadorIdiomaFooter from "../alternadorFooter"
-import BtnAgencia from "../btnContatoFooter"
+import BtnAgencia from "../BtnAgencia"
 import Slide from "../elementosSlides"
 import FadeIn from "../elementosFadeIn"
 import Line from "../linhaCrescente"
