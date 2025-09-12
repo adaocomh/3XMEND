@@ -1,9 +1,9 @@
-import ClientPage from "../../../components/conteudoPageProduto";
+import PaginaProduto from "../../../components/conteudoPageProduto";
 
-export default function PageDinamicasProduto({
+export default function PageProduto({
   params,
 }: {
   params: { produto: string };
 }) {
-  return <ClientPage title={params.produto} />;
+  return <PaginaProduto title={params.produto} />;
 }

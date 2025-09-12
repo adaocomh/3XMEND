@@ -2,12 +2,12 @@
 
 import { useTranslations } from "next-intl";
 import FallingText from "@/app/components/fallingText";
+import AlternadorIdioma from "../alternadorIdioma";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import Image from "next/image";
 import Link from "next/link";
 import Cards from "@/app/components/CardsOutros";
 import Slide from "@/app/components/elementosSlides";
-import AlternadorIdioma from "../alternadorIdioma";
 
 type CardsProps = {
   id: number;
@@ -31,12 +31,11 @@ type CardsOutrosProps = {
   href: string;
 };
 
-export default function PaginaDinamicProdClient({ title }: { 
+export default function PaginaProduto({ title }: { 
     title: string; }) {
   const t = useTranslations("paginaDinamicaServico");
   const tc = useTranslations("paginaDinamicaCategoria")
 
-  // 🔹 Pega o produto dinamicamente do JSON
   const item = t.raw(title) as CardsProps | undefined;
 
   
@@ -51,8 +50,6 @@ export default function PaginaDinamicProdClient({ title }: {
 
 const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
   
-
-  // 🔹 Garante que "outros" seja array
 
   const icons = Array.isArray(item.icon) ? item.icon : [];
   const desc = Array.isArray(item.descIcon) ? item.descIcon : [];
@@ -79,10 +76,10 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
           />
         )}
 
-        <div className="absolute inset-0 flex flex-col items-center justify-between bg-[rgba(0,0,0,0.8)] p-[40px]">
+        <div className="absolute inset-0 flex flex-col justify-between items-center bg-[rgba(0,0,0,0.8)] p-[40px]">
           <div className="flex justify-between w-full">
             <Link href="/"><FallingText text="3XMEND" /></Link>
-            <div className="flex gap-[60px] items-center">
+            <div className="flex items-center gap-[60px]">
               <AlternadorIdioma/>
               <div className="flex justify-center items-center">
                 <HamburgerCursor />
@@ -106,26 +103,24 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
         </div>
       </header>
 
-      {/* MAIN */}
-      <main className="flex flex-col items-start justify-center gap-[10vw] md:gap-[5vw] pt-[2vw] pb-[5vw] w-[95%] md:max-w-[1200px]">
-        {/* INFO */}
-        <div className="flex flex-col md:flex-row justify-between gap-[1vw] my-[2vw]">
-          <div className="flex flex-col gap-[1vw] my-[2vw] w-[100%] md:w-[60%]">
+      <main className="flex flex-col justify-center items-start gap-[10vw] w-[95%] pt-[2vw] pb-[5vw] md:gap-[5vw] md:max-w-[1200px]">
+        <div className="flex flex-col justify-between gap-[1vw] my-[2vw] md:flex-row">
+          <div className="flex flex-col gap-[1vw] w-[100%] my-[2vw] md:w-[60%]">
             <Slide>
-              <h2 className="text-[50px] text-start font-black">{item.title}</h2>
+              <h2 className="text-[50px] font-black text-start">{item.title}</h2>
             </Slide>
             <Slide>
-              <h3 className="text-[35px] text-start font-bold">{item.subTitle}</h3>
+              <h3 className="text-[35px] font-bold text-start">{item.subTitle}</h3>
             </Slide>
             <Slide>
-              <p className="text-start text-[18px] text-[#575757]">{item.desc}</p>
+              <p className=" text-[18px] text-start text-[#575757]">{item.desc}</p>
             </Slide>
           </div>
 
           {desc.length > 0 && (
-            <div className="flex flex-col justify-between md:gap-0 gap-[3vw] my-[5vw] md:my-[2vw]">
+            <div className="flex flex-col justify-between gap-[3vw] my-[5vw] md:gap-0md :my-[2vw]">
               {desc.map((d, i) => (
-                <div key={i} className="flex gap-[20px] items-center">
+                <div key={i} className="flex items-center gap-[20px]">
                   <Slide>
                     <img
                       className="w-[30px] h-[30px]"
@@ -157,10 +152,10 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
 
         {outros.length > 0 && (
           <>
-            <h2 className="text-[30px] self-center font-extrabold">
+            <h2 className="text-[30px] font-extrabold self-center">
               {tc("titleOutrosS")}
             </h2>
-            <div className="flex justify-center flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
+            <div className="flex justify-center gap-x-[5%] gap-y-[60px] flex-wrap w-[100%]">
               {outros.map((card) => (
                 <div key={card.id} className="w-[100%] md:w-[30%]">
                   <Cards {...card} />
