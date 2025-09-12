@@ -39,22 +39,22 @@ export default function AlternadorIdioma() {
   })
 
   return (
-    <div className="relative flex">
+    <div className="relative flex px-[5px]">
       <button
         onClick={() => handleSelectOnChange("pt")}
-        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta alternador"
+        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] px-[15px] border-r border-[var(--background)] hoverSeta alternador"
       >
         BR
       </button>
       <button
         onClick={() => handleSelectOnChange("en")}
-        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] border-r border-[var(--background)] hoverSeta alternador"
+        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] px-[15px] border-r border-[var(--background)] hoverSeta alternador"
       >
         EUA
       </button>
       <button
         onClick={() => handleSelectOnChange("es")}
-        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] hoverSeta alternador"
+        className="flex items-center text-[16px] text-(--background) h-[16px] text-center font-medium p-[8px] px-[15px] hoverSeta alternador"
       >
         ES
       </button>
