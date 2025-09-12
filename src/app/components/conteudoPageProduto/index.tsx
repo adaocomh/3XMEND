@@ -117,7 +117,7 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
           </div>
 
           {desc.length > 0 && (
-            <div className="flex flex-col justify-between my-[2vw] gap-none md:gap-[3vw] md:my-none">
+            <div className="flex flex-col justify-between gap-6 my-[2vw] md:gap-none md:my-none">
               {desc.map((d, i) => (
                 <div key={i} className="flex items-center gap-[20px]">
                   <Slide>
