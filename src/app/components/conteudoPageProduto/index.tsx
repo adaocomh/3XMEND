@@ -107,10 +107,10 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
       </header>
 
       {/* MAIN */}
-      <main className="flex flex-col items-start justify-center gap-[5vw] pt-[2vw] pb-[5vw] max-w-[1200px]">
+      <main className="flex flex-col items-start justify-center gap-[10vw] md:gap-[5vw] pt-[2vw] pb-[5vw] w-[95%] md:max-w-[1200px]">
         {/* INFO */}
-        <div className="flex flex-row justify-between gap-[1vw] my-[2vw]">
-          <div className="flex flex-col gap-[1vw] my-[2vw] w-[60%]">
+        <div className="flex flex-col md:flex-row justify-between gap-[1vw] my-[2vw]">
+          <div className="flex flex-col gap-[1vw] my-[2vw] w-[100%] md:w-[60%]">
             <Slide>
               <h2 className="text-[50px] text-start font-black">{item.title}</h2>
             </Slide>
@@ -122,9 +122,8 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
             </Slide>
           </div>
 
-          {/* ÍCONES */}
           {desc.length > 0 && (
-            <div className="flex flex-col justify-between my-[2vw]">
+            <div className="flex flex-col justify-between md:gap-0 gap-[3vw] my-[5vw] md:my-[2vw]">
               {desc.map((d, i) => (
                 <div key={i} className="flex gap-[20px] items-center">
                   <Slide>
@@ -144,7 +143,7 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
         </div>
 
         {imgs.length > 0 && (
-          <div className="flex flex-col gap-[2vw]">
+          <div className="flex flex-col gap-[4vw] md:gap-[2vw]">
             {imgs.map((img, i) => (
               <img
                 key={img}
@@ -163,7 +162,7 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
             </h2>
             <div className="flex justify-center flex-wrap gap-x-[5%] gap-y-[60px] w-[100%]">
               {outros.map((card) => (
-                <div key={card.id} className="w-[30%]">
+                <div key={card.id} className="w-[100%] md:w-[30%]">
                   <Cards {...card} />
                 </div>
               ))}
