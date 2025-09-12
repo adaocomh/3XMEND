@@ -8,11 +8,6 @@ export const routing = defineRouting({
       pt: "/sobre",
       en: "/about",
       es: "/en"
-    },
-    "/produto": {
-      pt: "/produto",
-      en: "/product",
-      es: "/producto"
     }
   },
   defaultLocale: 'pt'
