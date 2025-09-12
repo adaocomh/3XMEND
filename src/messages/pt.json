@@ -181,7 +181,8 @@
         "title": "Ana Farias",
         "ver": "@anafariasfs",
         "desc": "O Instagram de Ana Farias é dedicado a promover uma abordagem equilibrada e saudável à nutrição. 'Com o lema Te ajudo a ter resultados com o equilíbrio que você sempre quis', Ana oferece atendimentos online personalizados, visando auxiliar seus seguidores a alcançarem seus objetivos de forma sustentável.",
-        "produto": "ana"
+        "produto": "ana",
+        "insta": "https://www.instagram.com/anafariasfs?igsh=MTIxZHJnaHJoM3M2OA%3D%3D"
         },
         {
         "id": 2,
@@ -190,7 +191,8 @@
         "title": "Diego Rossato",
         "ver": "@diegorossato_",
         "desc": "O Instagram de Diego Rossato  é dedicado à sua jornada como atleta híbrido, combinando musculação, corrida e jiu-jitsu para ganhar músculo e perder gordura. Ele compartilha treinos, desafios e conquistas, como a conclusão de seu primeiro triatlo olímpico no Triathlon Internacional de Santos.",
-        "produto": "diego"
+        "produto": "diego",
+        "insta": "https://www.instagram.com/diegorossato_?igsh=MTE2OXkybGdyNmdzaw%3D%3D"
         },
         {
         "id": 3,
@@ -199,7 +201,8 @@
         "title": "Douglas Flamino",
         "ver": "@flaminodoug",
         "desc": "O Instagram de Douglas Flamino é um espaço vibrante e bem-humorado onde ele compartilha conteúdos que combinam lifestyle, fitness, reviews de produtos e humor. Conhecido como o “review humano da internet”, Douglas testa e comenta sobre diversos produtos e experiências do cotidiano, sempre com uma abordagem descontraída.",
-        "produto": "douglas"
+        "produto": "douglas",
+        "insta": "https://www.instagram.com/flaminodoug?igsh=Y3NoeHRuMGRoaDdr"
         },
         {
         "id": 4,
@@ -208,7 +211,8 @@
         "title": "Fabiana Santos",
         "ver": "@fabianasantosfisio",
         "desc": "Fabiana é dedicada à promoção da saúde e qualidade de vida por meio da fisioterapia. Com o lema 'O movimento é qualidade de vida', ela compartilha conteúdos que incentivam hábitos saudáveis e a importância da atividade física.",
-        "produto": "fabiana"
+        "produto": "fabiana",
+        "insta": "https://www.instagram.com/fabianasantosfisio?igsh=MWF2dHZwcGZ6YXMxNQ%3D%3D"
         },
         {
         "id": 5,
@@ -217,7 +221,8 @@
         "title": "Flavia Palheiros (Vinha)",
         "ver": "@corro_pra_descansar",
         "desc": "@corro_pra_descansar é um espaço dedicado a compartilhar a paixão pela corrida como forma de autocuidado e bem-estar. O perfil oferece conteúdos que inspiram e motivam corredores de todos os níveis, promovendo a ideia de que correr é uma maneira de descansar a mente e fortalecer o corpo.",
-        "produto": "flavia"
+        "produto": "flavia",
+        "insta": "https://www.instagram.com/corro_pra_descansar?igsh=MWlpeXgxcGhzZzM5aQ%3D%3D"
         },
         {
         "id": 6,
@@ -226,7 +231,8 @@
         "title": "Tiago Mecabo",
         "ver": "@tiagomecabo",
         "desc": "O Instagram de Tiago Mecabo é uma referência para corredores que desejam melhorar seu desempenho. Campeão pela Seleção Brasileira, autor de dois livros e palestrante, Tiago já ajudou mais de 20 mil alunos em 23 países a correrem mais rápido e quebrarem recordes.",
-        "produto": "tiago"
+        "produto": "tiago",
+        "insta": "https://www.instagram.com/tiagomecabo?igsh=bm9oeDZiNWYxcThz"
         }
     ],
     "outrosSocial": [
@@ -237,7 +243,8 @@
         "title": "Produtora de video",
         "ver": "Ver mais...",
         "href": "/produto/produtora-de-video",
-        "produto": ""
+        "produto": "",
+        "insta": ""
         },
         {
         "id": 2,
@@ -246,7 +253,8 @@
         "title": "T.I.",
         "ver": "Ver mais...",
         "href": "/ti",
-        "produto": ""
+        "produto": "",
+        "insta": ""
         },
         {
         "id": 3,
@@ -255,7 +263,8 @@
         "title": "Parceiros",
         "ver": "Ver mais...",
         "href": "/parceiros",
-        "produto": ""
+        "produto": "",
+        "insta": ""
         }
     ],
     "outrosTI": [

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Data from "../../../messages/pt.json"
 import FallingText from "@/app/components/fallingText";
 import AlternadorIdioma from "../alternadorIdioma";
 import HamburgerCursor from "@/app/components/cursorMenu";
@@ -31,6 +32,17 @@ type CardsOutrosProps = {
   href: string;
 };
 
+type ParceiroProps = {
+  id: number;
+  src: string;
+  poster: string;
+  title: string;
+  ver: string;
+  desc: string;
+  produto: string;
+  insta: string;
+};
+
 export default function PaginaProduto({ title }: { 
     title: string; }) {
   const t = useTranslations("paginaDinamicaServico");
@@ -49,7 +61,9 @@ export default function PaginaProduto({ title }: {
   }
 
 const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
-  
+
+const parceiros: ParceiroProps[] = Data.paginaDinamicaCategoria.parceiros || [];
+  const parceiro = parceiros.find((p) => p.produto === title);
 
   const icons = Array.isArray(item.icon) ? item.icon : [];
   const desc = Array.isArray(item.descIcon) ? item.descIcon : [];
@@ -134,7 +148,26 @@ const outros: CardsOutrosProps[] =  tc.raw("outros") || [];
               ))}
             </div>
           )}
-        </div>
+          {parceiro && (
+            <Slide>
+            <div className="hoverSeta">
+              <a
+                href={parceiro.insta}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-[20px] text-[18px] font-medium text-(--cor-secundaria) hoverSeta"
+              >
+                <Image className="hoverSeta"
+                  src="/icons/instagram.png"
+                  alt="Instagram"
+                  width={30}
+                  height={30}
+                />
+                {parceiro.ver}
+              </a>
+            </div></Slide>
+          )}
+          </div>
 
         {imgs.length > 0 && (
           <div className="flex flex-col gap-[4vw] md:gap-[2vw]">
