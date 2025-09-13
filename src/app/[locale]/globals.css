@@ -89,7 +89,7 @@ body {
 
 
 .fade-in {
-  animation: fade-in 2.3s cubic-bezier(0, 0, 2, 1);
+  animation: fade-in 2.3s cubic-bezier(0, 0, 0.35, 1);
 }
 @keyframes fade-in {
   0% {

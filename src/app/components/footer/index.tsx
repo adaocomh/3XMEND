@@ -33,7 +33,7 @@ export default function Footer(){
                         <p className="h-[50px] text-[16px] font-light text-center text-(--background) fade-in">Av. das Nações Unidas, 18801 - Santo Amaro, São Paulo - SP, 04753-100, Brasil</p>
                     </div>
                     <div className="flex flex-col justify-between items-center gap-[40px] w-full md:flex-row">
-                        <p className="order-3  w-[350px] text-[16px] font-light text-center text-(--foreground) md:order-0">{t('copy')}</p>
+                        <p className="order-3 w-[350px] text-[16px] font-light text-center text-(--foreground) md:order-0">{t('copy')}</p>
                         <LinksContato/>
                         <AlternadorIdiomaFooter/>
                     </div>
