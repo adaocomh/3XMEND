@@ -42,8 +42,9 @@ export const metadata: Metadata = {
     images: ["https://www.3xmend.com/sala-3xmend-angulo-1.webp"],
   },
   icons: {
-    icon: "/favicon.ico"
-  }
+    icon: "/iconsLogo/icon3MEND.webp",
+    apple: "/iconsLogo/icon-apple3XMEND.webp",
+  },
 };
 
 export default async function RootLayout({
