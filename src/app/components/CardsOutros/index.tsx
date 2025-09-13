@@ -11,18 +11,26 @@ type CardsProps = {
   };
 
 export default function CardsOutros({ src, poster, title, ver, href }: CardsProps){
-    const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
-        e.currentTarget.play();
-      };
-    
-      const handleMouseLeave = (e: React.MouseEvent<HTMLVideoElement>) => {
-        e.currentTarget.pause();
-        e.currentTarget.currentTime = 0.1;
-      };
-    
-      const handleLoadedData = (e: React.SyntheticEvent<HTMLVideoElement>) => {
-        e.currentTarget.currentTime = 0.1;
-      };
+  const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
+    const video = e.currentTarget;
+    if (video.paused) {
+      video.play().catch((err) => {
+        console.warn("Erro ao tentar reproduzir o vídeo:", err);
+      });
+    }
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent<HTMLVideoElement>) => {
+    const video = e.currentTarget;
+    if (!video.paused) {
+      video.pause();
+      video.currentTime = 0.1;
+    }
+  };
+
+  const handleLoadedData = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    e.currentTarget.currentTime = 0.1;
+  };
 
     return(
     <Link href={href} className="flex flex-col items-center w-[100%]">

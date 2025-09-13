@@ -13,20 +13,27 @@ type CardsProps = {
 };
 
 export default function cardProduto({ src, poster, title, ver, desc, produto }: CardsProps) {
-
-
   const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
-    e.currentTarget.play();
+    const video = e.currentTarget;
+    if (video.paused) {
+      video.play().catch((err) => {
+        console.warn("Erro ao tentar reproduzir o vídeo:", err);
+      });
+    }
   };
 
   const handleMouseLeave = (e: React.MouseEvent<HTMLVideoElement>) => {
-    e.currentTarget.pause();
-    e.currentTarget.currentTime = 0.1;
+    const video = e.currentTarget;
+    if (!video.paused) {
+      video.pause();
+      video.currentTime = 0.1;
+    }
   };
 
   const handleLoadedData = (e: React.SyntheticEvent<HTMLVideoElement>) => {
     e.currentTarget.currentTime = 0.1;
   };
+
 
   return (
     <Link href={`produto/${produto}`} className="flex flex-col items-center w-[100%] md:w-[30%]">
