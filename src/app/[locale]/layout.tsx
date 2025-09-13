@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/iconsLogo/icon3MEND.webp",
     apple: "/iconsLogo/icon-apple3XMEND.webp",
-  },
+  }
 };
 
 export default async function RootLayout({
