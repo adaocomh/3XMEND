@@ -187,16 +187,6 @@
         {
         "id": 2,
         "src": "",
-        "poster": "/parceiros/diego.webp",
-        "title": "Diego Rossato",
-        "ver": "@diegorossato_",
-        "desc": "O Instagram de Diego Rossato  é dedicado à sua jornada como atleta híbrido, combinando musculação, corrida e jiu-jitsu para ganhar músculo e perder gordura. Ele compartilha treinos, desafios e conquistas, como a conclusão de seu primeiro triatlo olímpico no Triathlon Internacional de Santos.",
-        "produto": "diego",
-        "insta": "https://www.instagram.com/diegorossato_?igsh=MTE2OXkybGdyNmdzaw%3D%3D"
-        },
-        {
-        "id": 3,
-        "src": "",
         "poster": "/parceiros/douglas.webp",
         "title": "Douglas Flamino",
         "ver": "@flaminodoug",
@@ -205,7 +195,7 @@
         "insta": "https://www.instagram.com/flaminodoug?igsh=Y3NoeHRuMGRoaDdr"
         },
         {
-        "id": 4,
+        "id": 3,
         "src": "",
         "poster": "/parceiros/fabiana.webp",
         "title": "Fabiana Santos",
@@ -215,7 +205,7 @@
         "insta": "https://www.instagram.com/fabianasantosfisio?igsh=MWF2dHZwcGZ6YXMxNQ%3D%3D"
         },
         {
-        "id": 5,
+        "id": 4,
         "src": "",
         "poster": "/parceiros/flavia.webp",
         "title": "Flavia Palheiros (Vinha)",
@@ -225,7 +215,7 @@
         "insta": "https://www.instagram.com/corro_pra_descansar?igsh=MWlpeXgxcGhzZzM5aQ%3D%3D"
         },
         {
-        "id": 6,
+        "id": 5,
         "src": "",
         "poster": "/parceiros/tiago.webp",
         "title": "Tiago Mecabo",
