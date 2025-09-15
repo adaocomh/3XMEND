@@ -42,41 +42,68 @@ export default function CursorCustomizado({ open }: { open: boolean }) {
         arrow.style.height = "0px";
       }
     };
-    const handleMouseOverFaq = (e: MouseEvent) => {
-          const target = e.target as HTMLElement;
-          if (target.classList.contains("faqCursor"))  {
+
+    const handleMouseOverAlternador = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      
+      if (target.classList.contains("hoverSetaAlternador"))  {
+        cursor.style.width = "20px";
+        cursor.style.height = "20px";
+        cursor.style.boxShadow = "0px 0px 10px #00BFFF20";
+        arrow.style.width = "0px"
+      }
+    };
+
+    const handleMouseOutAlternador = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.classList.contains("hoverSetaAlternador")) {
+        cursor.style.width = "15px";
+        cursor.style.height = "15px";
+        cursor.style.boxShadow = "none";
+        arrow.style.width = "0px";
+      }
+    };
+
+  const handleMouseOverFaq = (e: MouseEvent) => {
+        const target = e.target as HTMLElement;
+        if (target.classList.contains("faqCursor"))  {
+          cursor.style.backgroundColor = "#F5F5F5";
+          arrow.src = "/icons/right-blue.png";
+
+        }
+      };
+
+      const handleMouseOutFaq = (e: MouseEvent) => {
+        const target = e.target as HTMLElement;
+        if (target.classList.contains("faqCursor")) {
+          if(open){
             cursor.style.backgroundColor = "#F5F5F5";
             arrow.src = "/icons/right-blue.png";
-
+            arrow.style.width = "30px";
+            arrow.style.height = "30px";
+          } else {
+            cursor.style.backgroundColor = "#00BFFF";
+            arrow.src = "/icons/right-arrow.png";
+            arrow.style.width = "0px";
+            arrow.style.height = "0px";
           }
-        };
-
-        const handleMouseOutFaq = (e: MouseEvent) => {
-          const target = e.target as HTMLElement;
-          if (target.classList.contains("faqCursor")) {
-            if(open){
-              cursor.style.backgroundColor = "#F5F5F5";
-              arrow.src = "/icons/right-blue.png";
-              arrow.style.width = "30px";
-              arrow.style.height = "30px";
-            } else {
-              cursor.style.backgroundColor = "#00BFFF";
-              arrow.src = "/icons/right-arrow.png";
-              arrow.style.width = "0px";
-              arrow.style.height = "0px";
-            }
-          }
-        };
-    document.addEventListener("mousemove", moveCursor);
-    document.addEventListener("mouseover", handleMouseOver);
-    document.addEventListener("mouseout", handleMouseOut);
-    document.addEventListener("mouseover", handleMouseOverFaq);
-    document.addEventListener("mouseout", handleMouseOutFaq);
+        }
+      };
+      
+      document.addEventListener("mousemove", moveCursor);
+      document.addEventListener("mouseover", handleMouseOver);
+      document.addEventListener("mouseout", handleMouseOut);
+      document.addEventListener("mouseover", handleMouseOverAlternador);
+      document.addEventListener("mouseout", handleMouseOutAlternador);
+      document.addEventListener("mouseover", handleMouseOverFaq);
+      document.addEventListener("mouseout", handleMouseOutFaq);
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);
       document.removeEventListener("mouseover", handleMouseOver);
       document.removeEventListener("mouseout", handleMouseOut);
+      document.removeEventListener("mouseover", handleMouseOverAlternador);
+      document.removeEventListener("mouseout", handleMouseOutAlternador);
       document.removeEventListener("mouseover", handleMouseOverFaq);
       document.removeEventListener("mouseout", handleMouseOutFaq);
     };
