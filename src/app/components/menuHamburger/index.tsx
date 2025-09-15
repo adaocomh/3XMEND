@@ -54,10 +54,20 @@ export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpe
         .map(Number);
       const isPageLight = rgbFValues[0] === 245 && rgbFValues[1] === 245 && rgbFValues[2] === 245;
   
-      const corListras = open ? "#F5F5F5" : (isTransparent && isPageLight ? "#262626" : "#F5F5F5");
+      let corListras;
+      if (window.scrollY === 0 && !open) {
+        corListras = "#262626";
+      } else {
+        corListras = open
+          ? "#F5F5F5"
+          : isTransparent && isPageLight
+          ? "#262626"
+          : "#F5F5F5";
+      }
+
       setIsBgLight(!open && isTransparent && isPageLight);
-  
-      listras.forEach(listra => {
+
+      listras.forEach((listra) => {
         listra.style.backgroundColor = corListras;
       });
     };
@@ -69,17 +79,21 @@ export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpe
     observer.observe(fundoPage, { attributes: true, attributeFilter: ["style", "class"] });
   
     window.addEventListener("scroll", updateListras);
+    window.addEventListener("resize", updateListras);
+    window.addEventListener("load", updateListras);
   
     return () => {
       observer.disconnect();
       window.removeEventListener("scroll", updateListras);
+      window.removeEventListener("resize", updateListras);
+      window.removeEventListener("load", updateListras);
     };
   }, [open, scrolled]);
 
 
 
   return (
-    <div className={`fixed right-[40px] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer transition-all duration-300 ease-in-out hoverSeta z-40  ${scrolled ? "bg-[var(--cor-terciaria)]" : "bg-transparent"} div-menu`}>
+    <div className={`fixed right-[40px] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer transition-all duration-150 ease-in-out hoverSeta z-40  ${scrolled ? "bg-[var(--cor-terciaria)]" : "bg-transparent"} div-menu`}>
       <div className={`absolute flex justify-center items-center w-0 h-0 bg-[var(--cor-terciaria)] transition-all duration-600 ease-in-out rounded-[100%] ${open ? "right-[-40px] top-[-45px] w-[100vw] h-[100vh] rounded-none" : ""} menu-w`}>
         <div className={`${open ? "flex flex-col justify-start gap-[40px] w-[80%] md:w-[1000px]" : "hidden"}`}>
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
