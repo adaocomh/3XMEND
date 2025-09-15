@@ -47,8 +47,8 @@ export default function CursorCustomizado({ open }: { open: boolean }) {
       const target = e.target as HTMLElement;
       
       if (target.classList.contains("hoverSetaAlternador"))  {
-        cursor.style.width = "20px";
-        cursor.style.height = "20px";
+        cursor.style.width = "25px";
+        cursor.style.height = "25px";
         cursor.style.boxShadow = "0px 0px 10px #00BFFF20";
         arrow.style.width = "0px"
       }

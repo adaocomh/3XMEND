@@ -19,19 +19,19 @@ export default function AlternadorIdiomaMenu() {
     <div className="relative flex">
       <button
         onClick={() => handleSelectOnChange("pt")}
-        className="flex items-center h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] font-medium text-center text-(--background) hoverSeta"
+        className="flex items-center h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] font-medium text-center text-(--background) hoverSetaAlternador"
       >
         BR
       </button>
       <button
         onClick={() => handleSelectOnChange("en")}
-        className="flex items-center h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] font-medium text-center text-(--background) hoverSeta"
+        className="flex items-center h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] font-medium text-center text-(--background) hoverSetaAlternador"
       >
         EUA
       </button>
       <button
         onClick={() => handleSelectOnChange("es")}
-        className="flex items-center h-[16px] p-[8px] px-[15px] text-[16px] font-medium text-center text-(--background) hoverSeta"
+        className="flex items-center h-[16px] p-[8px] px-[15px] text-[16px] font-medium text-center text-(--background) hoverSetaAlternador"
       >
         ES
       </button>
