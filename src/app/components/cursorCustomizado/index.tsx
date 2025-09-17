@@ -13,6 +13,10 @@ export default function CursorCustomizado({ open }: { open: boolean }) {
     const arrow = arrowRef.current;
     if (!cursor || !arrow) return;
 
+    if (!window.matchMedia("(pointer: fine)").matches) {
+      return;
+    }
+
     const moveCursor = (e: MouseEvent) => {
       cursor.style.left = e.clientX - 10 + "px";
       cursor.style.top = e.clientY - 10 + "px";
@@ -113,6 +117,8 @@ export default function CursorCustomizado({ open }: { open: boolean }) {
     const cursor = cursorRef.current;
     const arrow = arrowRef.current;
     if (!cursor || !arrow) return;
+
+    if (!window.matchMedia("(pointer: fine)").matches) return;
   
     if(open){
       cursor.style.backgroundColor = "#F5F5F5";
@@ -141,6 +147,8 @@ export default function CursorCustomizado({ open }: { open: boolean }) {
     const cursor = cursorRef.current;
     const arrow = arrowRef.current;
     if (!cursor || !arrow) return;
+
+    if (!window.matchMedia("(pointer: fine)").matches) return;
     
     cursor.classList.remove("menu-aberto");
     cursor.style.width = "15px";
@@ -154,7 +162,7 @@ export default function CursorCustomizado({ open }: { open: boolean }) {
   return (
     <div
       ref={cursorRef}
-      className={`fixed flex justify-center items-center w-[15px] h-[15px] rounded-full bg-[var(--cor-terciaria)] pointer-events-none z-50 transition-[width,height,background-color] duration-150 cursorr`}
+      className={`hidden fixed md:flex justify-center items-center w-[15px] h-[15px] rounded-full bg-[var(--cor-terciaria)] pointer-events-none z-50 transition-[width,height,background-color] duration-150 cursorr`}
     ><img className="transition-[width,height] duration-150" ref={arrowRef} src={open ? "/icons/right-blue.png" : "/icons/right-arrow.png"} alt="seta para direita"/>
     </div>
   );
