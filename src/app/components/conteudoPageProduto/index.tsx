@@ -99,11 +99,9 @@ export default function PaginaProduto({ title }: {
               </div>
             </div>
           </div>
-
           <div>
-            <p className="text-[48px] font-extrabold text-(--background)">{item.title}</p>
+            <h1 className="text-[48px] text-center font-extrabold text-(--background)">{item.title}</h1>
           </div>
-
           <div className="self-center">
             <Image
               className="bounce"
@@ -116,7 +114,7 @@ export default function PaginaProduto({ title }: {
         </div>
       </header>
 
-      <main className="flex flex-col justify-center items-start gap-[10vw] w-[95%] pt-[2vw] pb-[5vw] md:gap-[5vw] md:max-w-[1200px]">
+      <main className="flex flex-col justify-center items-start gap-[10vw] w-[90%] pt-[2vw] pb-[5vw] md:gap-[5vw] md:max-w-[1200px]">
         <div className="flex flex-col justify-between gap-[1vw] my-[2vw] md:flex-row">
           <div className="flex flex-col gap-[1vw] w-[100%] my-[2vw] md:w-[60%]">
             <Slide>

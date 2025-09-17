@@ -29,7 +29,7 @@ export default function Home() {
         <div className="self-end"><Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/></div>
       </div>
     </header>
-      <main id="servicos" className="flex flex-col justify-center items-center gap-[10vw] w-[95%] py-[10vw] md:gap-[5vw]  md:max-w-[1200px] md:py-[5vw]">
+      <main id="servicos" className="flex flex-col justify-center items-center gap-[10vw] w-[90%] py-[10vw] md:gap-[5vw]  md:max-w-[1200px] md:py-[5vw]">
         <h2 className="text-[30px] font-extrabold text-center">{t('titleCategoria')}</h2>
         <CardsMain/>
         <Link href="/sobre"><BtnSobre/></Link>
