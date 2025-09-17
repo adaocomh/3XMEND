@@ -15,7 +15,7 @@ export default function FallingTextCarregamento({ text }: { text: string }) {
       {text.split("").map((letter, i) => (
         <h3
           key={i}
-          className={`text-[100px] text-(--cor-terciaria) opacity-0 font-black transition-all ease-in-out ${
+          className={`text-[80px] text-(--cor-terciaria) opacity-0 font-black transition-all ease-in-out md:text-[100px] ${
             visible ? "translate-y-0 opacity-100  duration-1200" : "translate-y-[-200px]"
           }`}
           style={{

@@ -15,7 +15,7 @@ export default function Footer(){
             <div className="flex flex-col justify-center items-center gap-[60px] w-[95%] mb-[50] md:w-[1200px]">
                 <div className="overflow-hidden">
                     <Slide>
-                        <h1 className=" text-[80px] text-center font-bold text-(--background) md:text-[100px]">{t('titleFooter')}</h1>
+                        <h1 className="text-[60px] text-center font-bold text-(--background) md:text-[100px]">{t('titleFooter')}</h1>
                     </Slide>
                 </div>
                 <div className="overflow-hidden">
@@ -28,7 +28,7 @@ export default function Footer(){
                 </div>
                 <div className="flex flex-col gap-[50px] w-full">
                     <FadeIn>
-                    <div className="flex flex-col overflow-hidden">
+                    <div className="flex flex-col overflow-hidden mb-[20px] md:mb-[0px]">
                         <h6 className="text-[16px] font-bold text-center text-(--background)">NovAmerica Office Park</h6>
                         <p className="h-[50px] text-[16px] font-light text-center text-(--background) fade-in">Av. das Nações Unidas, 18801 - Santo Amaro, São Paulo - SP, 04753-100, Brasil</p>
                     </div>

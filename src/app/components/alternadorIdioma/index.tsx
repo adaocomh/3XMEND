@@ -39,7 +39,7 @@ export default function AlternadorIdioma() {
   })
 
   return (
-    <div className="relative flex px-[5px]">
+    <div className="relative hidden px-[5px] md:flex">
       <button
         onClick={() => handleSelectOnChange("pt")}
         className="flex items-center h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] text-center font-medium text-(--background) hoverSetaAlternador alternador"
