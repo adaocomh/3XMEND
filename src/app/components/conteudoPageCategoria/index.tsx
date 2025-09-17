@@ -49,7 +49,7 @@ export default function PageCategoria({ categoria }: { categoria: string }) {
   return (
     <div className="flex flex-col items-center bg-[var(--background)] header-page-dinamic">
       <header className="w-[100vw]">
-        <div className="flex justify-between w-[100%] p-[40px]">
+        <div className="flex justify-between w-[100%] p-[20px] md:p-[40px]">
           <Link href="/"><FallingText text="3XMEND" /></Link>
           <div className="flex items-center gap-[60px]">
             <AlternadorIdioma/>
@@ -61,7 +61,7 @@ export default function PageCategoria({ categoria }: { categoria: string }) {
       </header>
 
       <main className="flex flex-col justify-center items-center gap-[5vw] w-[95%] py-[10vw] md:gap-[5vw] md:max-w-[1200px] md:py-[5vw]">
-        <h2 className="text-[80px] font-black text-center">{title}</h2>
+        <h2 className="text-[48px] font-black text-center md:text-[80px]">{title}</h2>
 
         <div className="flex flex-col gap-[60px] w-[100%]">
           <div className="flex gap-x-[5%] gap-y-[60px] flex-wrap w-[100%]">

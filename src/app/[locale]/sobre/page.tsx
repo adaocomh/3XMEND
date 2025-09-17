@@ -14,7 +14,7 @@ export default function Sobre() {
   return (
     <div className="flex flex-col items-center bg-[var(--cor-secundaria)]">
       <header className="w-[100vw]">
-        <div className="flex justify-between w-[100%] p-[40px]">
+        <div className="flex justify-between w-[100%] p-[20px] md:p-[40px]">
           <Link href="/"><FallingText text="3XMEND"/></Link>
           <div className="flex items-center gap-[60px]">
             <AlternadorIdioma/>

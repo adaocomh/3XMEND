@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 type CardsProps = {
   src: string;
@@ -13,6 +14,8 @@ type CardsProps = {
 };
 
 export default function cardProduto({ src, poster, title, ver, desc, produto }: CardsProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
     const video = e.currentTarget;
     if (video.paused) {
@@ -34,6 +37,38 @@ export default function cardProduto({ src, poster, title, ver, desc, produto }: 
     e.currentTarget.currentTime = 0.1;
   };
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              video.play().catch((err) => {
+                console.warn("Erro ao tentar reproduzir o vídeo:", err);
+              });
+            } else {
+              video.pause();
+              video.currentTime = 0.1;
+            }
+          });
+        },
+        {
+          root: null,
+          threshold: 1,
+        }
+      );
+
+      observer.observe(video);
+
+      return () => {
+        observer.disconnect();
+      };
+    }
+  }, []);
+
 
   return (
     <Link href={`produto/${produto}`} className="flex flex-col items-center w-[100%] md:w-[30%]">
@@ -44,6 +79,7 @@ export default function cardProduto({ src, poster, title, ver, desc, produto }: 
         onLoadedData={handleLoadedData}
         muted
         loop={false}
+        playsInline
         poster={poster}
       >
         <source src={src} type="video/mp4" />

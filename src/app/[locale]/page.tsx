@@ -11,7 +11,7 @@ export default function Home() {
   const t = useTranslations('home');
   return (
   <div className="flex flex-col items-center w-[100vw]">
-    <header className="relative w-[100vw] h-[100vh]">
+    <header className="relative w-[100vw] h-[90vh] md:h-[100vh]">
       <video src="/videos/video-header-cortado-s-som.mp4" autoPlay muted loop playsInline className="absolute inset-0 h-full w-full object-cover"/>
       <div className="absolute flex flex-col items-center justify-between w-full h-full bg-[rgba(0,0,0,0.8)] p-[20px] md:p-[40px]">
         <div className="flex justify-between w-full">
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         </div>
         <div>
-          <p className="text-[48px] font-extrabold text-(--background) text-center">{t('titleHeader')}</p>
+          <h1 className="text-[48px] font-extrabold text-(--background) text-center">{t('titleHeader')}</h1>
         </div>
         <div className="self-end"><Image className="bounce" src="/icons/down-arrow.png" alt="seta" width={40} height={40}/></div>
       </div>

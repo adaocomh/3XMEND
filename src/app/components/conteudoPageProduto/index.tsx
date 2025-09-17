@@ -71,7 +71,7 @@ export default function PaginaProduto({ title }: {
 
   return (
     <div className="flex flex-col items-center w-[100vw]">
-      <header className="relative w-[100vw] h-[100vh]">
+      <header className="relative w-[100vw] h-[90vh] md:h-[100vh]">
         {item.src ? (
           <video
             src={item.src}
@@ -89,7 +89,7 @@ export default function PaginaProduto({ title }: {
           />
         )}
 
-        <div className="absolute inset-0 flex flex-col justify-between items-center bg-[rgba(0,0,0,0.8)] p-[40px]">
+        <div className="absolute inset-0 flex flex-col justify-between items-center bg-[rgba(0,0,0,0.8)] p-[20px] md:p-[40px]">
           <div className="flex justify-between w-full">
             <Link href="/"><FallingText text="3XMEND" /></Link>
             <div className="flex items-center gap-[60px]">
