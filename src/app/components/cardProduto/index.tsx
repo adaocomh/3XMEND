@@ -57,7 +57,7 @@ export default function cardProduto({ src, poster, title, ver, desc, produto }: 
         },
         {
           root: null,
-          threshold: 1,
+          threshold: 0.8,
         }
       );
 

@@ -54,7 +54,7 @@ export default function CardsOutros({ src, poster, title, ver, href }: CardsProp
         },
         {
           root: null,
-          threshold: 1,
+          threshold: 0.8,
         }
       );
 
