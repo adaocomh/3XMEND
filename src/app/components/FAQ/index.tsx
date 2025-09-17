@@ -30,7 +30,7 @@ const faq: FAQItem[] =  t.raw("faq") || [];
             <div key={index} className="pb-4 border-b border-[var(--background)] faqCursor">
               <button
                 onClick={() => toggleFAQ(index)}
-                className={`flex justify-between items-center w-full text-[22px] font-semibold text-left hoverSeta faqCursor`}
+                className={`flex justify-between items-center w-full text-[22px] font-medium text-left md:font-semibold hoverSeta faqCursor`}
               >
                 {item.questao}
                 <span className="text-xl faqCursor">
