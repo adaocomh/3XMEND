@@ -12,7 +12,7 @@ export default function Footer(){
 
     return(
         <div className="flex flex-col justify-center items-center w-[100vw] py-[50px] bg-[var(--cor-secundaria)]">
-            <div className="flex flex-col justify-center items-center gap-[60px] w-[95%] mb-[50] md:w-[1200px]">
+            <div className="flex flex-col justify-center items-center gap-[60px] w-[90%] mb-[50] md:w-[1200px]">
                 <div className="overflow-hidden">
                     <Slide>
                         <h1 className="text-[60px] text-center font-bold text-(--background) md:text-[100px]">{t('titleFooter')}</h1>

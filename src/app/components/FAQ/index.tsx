@@ -21,7 +21,7 @@ const faq: FAQItem[] =  t.raw("faq") || [];
   };
 
   return (
-      <div className="flex flex-col gap-[4vw] w-[95%] py-[10vw] bg-[var(--cor-terciaria)] text-(--background) md:max-w-[1200px] md:py-[5vw] faqCursor">
+      <div className="flex flex-col gap-[4vw] w-[90%] py-[10vw] bg-[var(--cor-terciaria)] text-(--background) md:max-w-[1200px] md:py-[5vw] faqCursor">
         <h2 className="text-[35px] font-bold text-center md:text-[75px] faqCursor">
           {t('titleFaq')}
         </h2>

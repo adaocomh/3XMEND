@@ -26,7 +26,7 @@ export default function Sobre() {
       </header>
 
       <main className="flex flex-col justify-center items-center">
-        <div className="flex flex-col gap-[4vw] w-[95%] py-[10vw] bg-[var(--cor-secundaria)] md:max-w-[1200px] md:py-[5vw]">
+        <div className="flex flex-col gap-[4vw] w-[90%] py-[10vw] bg-[var(--cor-secundaria)] md:max-w-[1200px] md:py-[5vw]">
             <h1 className="text-[35px] font-bold text-(--background) leading-tight md:text-[75px] md:font-black">{t("desc")}</h1>
             <div className="flex flex-col">
             {passos.map((passo, i) => (
@@ -56,7 +56,7 @@ export default function Sobre() {
             </div>
         </div>
         <div className="flex justify-center items-center w-[100vw] py-[10vw] bg-[var(--background)] md:py-[5vw]">
-            <div className="flex flex-col gap-[5px] w-[95%] md:max-w-[1200px]">
+            <div className="flex flex-col gap-[5px] w-[90%] md:max-w-[1200px]">
                 <h1 className="text-[35px] font-semibold text-(--cor-secundaria) leading-tight md:text-[75px]">{t("titleAgen1")}</h1>
                 <h2 className="text-[25px] font-semibold text-(--cor-secundaria) leading-tight md:text-[55px]">{t("titleAgen2")}</h2>
                 <div className="flex flex-col gap-[8px]">
