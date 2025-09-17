@@ -27,7 +27,7 @@ const faq: FAQItem[] =  t.raw("faq") || [];
         </h2>
         <div className="space-y-4 faqCursor">
           {faq.map((item, index) => (
-            <div key={index} className="pb-4 border-b border-[var(--background)] faqCursor">
+            <div key={index} className="pb-4 border-b-[1px] border-[var(--background)] faqCursor">
               <button
                 onClick={() => toggleFAQ(index)}
                 className={`flex justify-between items-center w-full text-[22px] font-medium text-left md:font-semibold hoverSeta faqCursor`}
