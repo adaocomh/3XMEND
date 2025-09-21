@@ -42,21 +42,21 @@ export default function AlternadorIdioma() {
     <div className="relative hidden px-[5px] md:flex">
       <button
         onClick={() => handleSelectOnChange("pt")}
-        className="flex items-center h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] text-center font-medium text-(--background) hoverSetaAlternador alternador"
+        className="flex items-center gap-[5px] h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] text-center font-medium text-(--background) hoverSetaAlternador alternador"
       >
-        BR 🇧🇷
+        <p>BR</p> <img className="w-[15px]" src="/icons/br.png" alt="BR"/>
       </button>
       <button
         onClick={() => handleSelectOnChange("en")}
-        className="flex items-center h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] text-center font-medium text-(--background) hoverSetaAlternador alternador"
+        className="flex items-center gap-[5px] h-[16px] p-[8px] px-[15px] border-r border-[var(--background)] text-[16px] text-center font-medium text-(--background) hoverSetaAlternador alternador"
       >
-        EUA 🇺🇸
+        <p>EUA</p> <img className="w-[15px]" src="/icons/eua.png" alt="EUA"/>
       </button>
       <button
         onClick={() => handleSelectOnChange("es")}
-        className="flex items-center h-[16px] p-[8px] px-[15px] text-[16px] font-medium  text-center text-(--background) hoverSetaAlternador alternador"
+        className="flex items-center gap-[5px] h-[16px] p-[8px] px-[15px] text-[16px] font-medium  text-center text-(--background) hoverSetaAlternador alternador"
       >
-        ES 🇪🇸
+        <p>ES</p> <img className="w-[15px]" src="/icons/es.png" alt="ES"/>
       </button>
     </div>
   );
