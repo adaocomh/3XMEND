@@ -6,31 +6,31 @@
         "cadsPageIniLeft": [
             {
             "id": 18,
-            "src": "/videos/social-media.mp4",
-            "poster": "/poster/social-media.jpeg",
-            "title": "Social media",
-            "ver": "See more...",
-            "href": "/socialmedia",
-            "produto": ""
-            },
-            {
-            "id": 19,
-            "src": "/videos/criacao-video.mp4",
-            "poster": "/poster/criacao-video.jpeg",
+            "src": "/videos/produtora.mp4",
+            "poster": "/poster/produtora.mp4.jpeg",
             "title": "Video production",
             "ver": "See more...",
             "href": "/produto/produtora-de-video",
             "produto": "produtora-de-video"
+            },
+            {
+            "id": 19,
+            "src": "/videos/ti.mp4",
+            "poster": "/poster/ti.jpeg",
+            "title": "I.T.",
+            "ver": "See more...",
+            "href": "/ti",
+            "produto": ""
             }
         ],
         "cadsPageIniRight": [
         {
         "id": 20,
-        "src": "/videos/ti-automacao.mp4",
-        "poster": "/poster/ti-automacao.jpeg",
-        "title": "I.T.",
+        "src": "/videos/social-media.mp4",
+        "poster": "/poster/social-media.jpeg",
+        "title": "Social media",
         "ver": "See more...",
-        "href": "/ti",
+        "href": "/socialmedia",
         "produto": ""
         },
         {
@@ -165,8 +165,8 @@
         },
         {
         "id": 4,
-        "src": "/videos/ti-automacao.mp4",
-        "poster": "/poster/ti-automacao.jpeg",
+        "src": "/videos/atendimento.mp4",
+        "poster": "/poster/atendimento.jpeg",
         "title": "Automation",
         "ver": "See more...",
         "desc": "Save time, scale results, and focus on what really matters with 3XMEND’s Automation service! 🤖⚙️ We automate processes in customer service, sales, marketing, and much more so your business runs smartly—even when you’re offline. No more repetitive tasks—with 3XMEND, your workflow becomes faster, more efficient, and more strategic!",
@@ -224,8 +224,8 @@
 "outrosSocial": [
     {
     "id": 1,
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
+    "src": "/videos/produtora.mp4",
+    "poster": "/poster/produtora.jpeg",
     "title": "Video production",
     "ver": "See more...",
     "href": "/produto/produtora-de-video",
@@ -233,8 +233,8 @@
     },
     {
     "id": 2,
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
+    "src": "/videos/ti.mp4",
+    "poster": "/poster/ti.jpeg",
     "title": "I.T.",
     "ver": "See more...",
     "href": "/ti",
@@ -262,8 +262,8 @@
     },
     {
     "id": 5,
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
+    "src": "/videos/produtora.mp4",
+    "poster": "/poster/produtora.jpeg",
     "title": "Video production",
     "ver": "See more...",
     "href": "produto/produtora-de-video",
@@ -291,8 +291,8 @@
     },
     {
     "id": 8,
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
+    "src": "/videos/ti.mp4",
+    "poster": "/poster/ti.jpeg",
     "title": "I.T.",
     "ver": "See more...",
     "href": "/ti",
@@ -300,8 +300,8 @@
     },
     {
     "id": 9,
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
+    "src": "/videos/produtora.mp4",
+    "poster": "/poster/produtora.jpeg",
     "title": "Video production",
     "ver": "See more...",
     "href": "produto/produtora-de-video",
@@ -320,8 +320,8 @@
     },
     {
       "id": 11,
-      "src": "/videos/ti-automacao.mp4",
-      "poster": "/poster/ti-automacao.jpeg",
+      "src": "/videos/ti.mp4",
+      "poster": "/poster/ti.jpeg",
       "title": "I.T.",
       "ver": "See more...",
       "href": "/ti",
@@ -329,8 +329,8 @@
     },
     {
       "id": 12,
-      "src": "/videos/criacao-video.mp4",
-      "poster": "/poster/criacao-video.jpeg",
+      "src": "/videos/produtora.mp4",
+      "poster": "/poster/produtora.jpeg",
       "title": "Video production",
       "ver": "See more...",
       "href": "/produto/produtora-de-video",

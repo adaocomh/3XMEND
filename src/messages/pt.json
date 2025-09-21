@@ -6,33 +6,33 @@
         "cadsPageIniLeft": [
             {
             "id": 18,
-            "src": "/videos/social-media.mp4",
-            "poster": "/poster/social-media.jpeg",
-            "title": "Social media",
-            "ver": "Ver mais...",
-            "href": "/socialmedia",
-            "produto": ""
-            },
-            {
-            "id": 19,
-            "src": "/videos/criacao-video.mp4",
-            "poster": "/poster/criacao-video.jpeg",
+            "src": "/videos/produtora.mp4",
+            "poster": "/poster/produtora.jpeg",
             "title": "Produtora de video",
             "ver": "Ver mais...",
             "href": "/produto/produtora-de-video",
             "produto": "produtora-de-video"
+            },
+            {
+            "id": 19,
+            "src": "/videos/ti.mp4",
+            "poster": "/poster/ti.jpeg",
+            "title": "T.I.",
+            "ver": "Ver mais...",
+            "href": "/ti",
+            "produto": ""
             }
         ],
         "cadsPageIniRight": [
         {
-        "id": 20,
-        "src": "/videos/ti-automacao.mp4",
-        "poster": "/poster/ti-automacao.jpeg",
-        "title": "T.I.",
-        "ver": "Ver mais...",
-        "href": "/ti",
-        "produto": ""
-        },
+          "id": 20,
+          "src": "/videos/social-media.mp4",
+          "poster": "/poster/social-media.jpeg",
+          "title": "Social media",
+          "ver": "Ver mais...",
+          "href": "/socialmedia",
+          "produto": ""
+          },
         {
         "id": 21,
         "src": "/videos/parceiros.mp4",
@@ -165,8 +165,8 @@
         },
         {
         "id": 4,
-        "src": "/videos/ti-automacao.mp4",
-        "poster": "/poster/ti-automacao.jpeg",
+        "src": "/videos/atendimento.mp4",
+        "poster": "/poster/atendimento.jpeg",
         "title": "Automação",
         "ver": "Ver mais...",
         "desc": "Ganhe tempo, escale resultados e foque no que realmente importa com o serviço de Automação da 3XMEND! Automatizamos processos de atendimento, vendas, marketing e muito mais para que seu negócio funcione de forma inteligente, mesmo quando você estiver offline. Chega de tarefas repetitivas com a 3XMEND, seu fluxo de trabalho se torna mais ágil, eficiente e estratégico!",
@@ -228,8 +228,8 @@
     "outrosSocial": [
         {
         "id": 1,
-        "src": "/videos/criacao-video.mp4",
-        "poster": "/poster/criacao-video.jpeg",
+        "src": "/videos/produtora.mp4",
+        "poster": "/poster/produtora.jpeg",
         "title": "Produtora de video",
         "ver": "Ver mais...",
         "href": "/produto/produtora-de-video",
@@ -238,8 +238,8 @@
         },
         {
         "id": 2,
-        "src": "/videos/ti-automacao.mp4",
-        "poster": "/poster/ti-automacao.jpeg",
+        "src": "/videos/ti.mp4",
+        "poster": "/poster/ti.mp4.jpeg",
         "title": "T.I.",
         "ver": "Ver mais...",
         "href": "/ti",
@@ -269,8 +269,8 @@
         },
         {
         "id": 5,
-        "src": "/videos/criacao-video.mp4",
-        "poster": "/poster/criacao-video.jpeg",
+        "src": "/videos/produtora.mp4",
+        "poster": "/poster/produtora.jpeg",
         "title": "Produtora de video",
         "ver": "Ver mais...",
         "href": "produto/produtora-de-video",
@@ -298,8 +298,8 @@
         },
         {
         "id": 8,
-        "src": "/videos/ti-automacao.mp4",
-        "poster": "/poster/ti-automacao.jpeg",
+        "src": "/videos/ti.mp4",
+        "poster": "/poster/ti.jpeg",
         "title": "T.I.",
         "ver": "Ver mais...",
         "href": "/ti",
@@ -307,8 +307,8 @@
         },
         {
         "id": 9,
-        "src": "/videos/criacao-video.mp4",
-        "poster": "/poster/criacao-video.jpeg",
+        "src": "/videos/produtora.mp4",
+        "poster": "/poster/produtora.jpeg",
         "title": "Produtora de video",
         "ver": "Ver mais...",
         "href": "produto/produtora-de-video",
@@ -327,8 +327,8 @@
         },
         {
           "id": 11,
-          "src": "/videos/ti-automacao.mp4",
-          "poster": "/poster/ti-automacao.jpeg",
+          "src": "/videos/ti.mp4",
+          "poster": "/poster/ti.jpeg",
           "title": "T.I.",
           "ver": "Ver mais...",
           "href": "/ti",
@@ -336,8 +336,8 @@
         },
         {
           "id": 12,
-          "src": "/videos/criacao-video.mp4",
-          "poster": "/poster/criacao-video.jpeg",
+          "src": "/videos/produtora.mp4",
+          "poster": "/poster/produtora.jpeg",
           "title": "Produtora de video",
           "ver": "Ver mais...",
           "href": "/produto/produtora-de-video",

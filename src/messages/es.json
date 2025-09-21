@@ -6,31 +6,31 @@
       "cadsPageIniLeft": [
         {
           "id": 18,
-          "src": "/videos/social-media.mp4",
-          "poster": "/poster/social-media.jpeg",
-          "title": "Redes sociales",
-          "ver": "Ver más...",
-          "href": "/socialmedia",
-          "produto": ""
-        },
-        {
-          "id": 19,
-          "src": "/videos/criacao-video.mp4",
-          "poster": "/poster/criacao-video.jpeg",
+          "src": "/videos/produtora.mp4",
+          "poster": "/poster/produtora.mp4.jpeg",
           "title": "Producción de video",
           "ver": "Ver más...",
           "href": "/produto/produtora-de-video",
           "produto": "produtora-de-video"
+        },
+        {
+          "id": 19,
+          "src": "/videos/ti.mp4",
+          "poster": "/poster/ti.jpeg",
+          "title": "T.I.",
+          "ver": "Ver más...",
+          "href": "/ti",
+          "produto": ""
         }
       ],
       "cadsPageIniRight": [
         {
           "id": 20,
-          "src": "/videos/ti-automacao.mp4",
-          "poster": "/poster/ti-automacao.jpeg",
-          "title": "T.I.",
+          "src": "/videos/social-media.mp4",
+          "poster": "/poster/social-media.jpeg",
+          "title": "Redes sociales",
           "ver": "Ver más...",
-          "href": "/ti",
+          "href": "/socialmedia",
           "produto": ""
         },
         {
@@ -223,8 +223,8 @@
 "outrosSocial": [
   {
     "id": 1,
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
+    "src": "/videos/produtora.mp4",
+    "poster": "/poster/produtora.jpeg",
     "title": "Producción de video",
     "ver": "Ver más...",
     "href": "/produto/produtora-de-video",
@@ -232,8 +232,8 @@
   },
   {
     "id": 2,
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
+    "src": "/videos/ti.mp4",
+    "poster": "/poster/ti.jpeg",
     "title": "T.I.",
     "ver": "Ver más...",
     "href": "/ti",
@@ -261,8 +261,8 @@
   },
   {
     "id": 5,
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
+    "src": "/videos/produtora.mp4",
+    "poster": "/poster/produtora.mp4.jpeg",
     "title": "Producción de video",
     "ver": "Ver más...",
     "href": "produto/produtora-de-video",
@@ -290,8 +290,8 @@
   },
   {
     "id": 8,
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
+    "src": "/videos/ti.mp4",
+    "poster": "/poster/ti.jpeg",
     "title": "T.I.",
     "ver": "Ver más...",
     "href": "/ti",
@@ -299,8 +299,8 @@
   },
   {
     "id": 9,
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
+    "src": "/videos/produtora.mp4",
+    "poster": "/poster/produtora.mp4",
     "title": "Producción de video",
     "ver": "Ver más...",
     "href": "produto/produtora-de-video",
@@ -319,8 +319,8 @@
   },
   {
     "id": 11,
-    "src": "/videos/ti-automacao.mp4",
-    "poster": "/poster/ti-automacao.jpeg",
+    "src": "/videos/ti.mp4",
+    "poster": "/poster/ti.jpeg",
     "title": "T.I.",
     "ver": "Ver más...",
     "href": "/ti",
@@ -328,8 +328,8 @@
   },
   {
     "id": 12,
-    "src": "/videos/criacao-video.mp4",
-    "poster": "/poster/criacao-video.jpeg",
+    "src": "/videos/produtora.mp4",
+    "poster": "/poster/produtora.mp4",
     "title": "Producción de video",
     "ver": "Ver más...",
     "href": "/produto/produtora-de-video",
