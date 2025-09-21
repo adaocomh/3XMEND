@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas. Agência Completa de Marketing Digital.",
   keywords: ["marketing digital", "gestão de tráfego", "branding", "social media", "agência 3XMEND", "cripto", "cripto moeda", "audio visual", "TI"],
   openGraph: {
-    title: "3XMEND | Agência de Marketing Digital",
+    title: "3XMEND | Agência de marketing digital",
     description: "Do posicionamento ao clique que gera vendas. Agência completa para o seu negócio.",
     url: "https://www.3xmend.com",
     siteName: "3XMEND",
