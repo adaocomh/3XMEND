@@ -266,7 +266,7 @@
     "poster": "/poster/produtora.jpeg",
     "title": "Video production",
     "ver": "See more...",
-    "href": "produto/produtora-de-video",
+    "href": "/produto/produtora-de-video",
     "produto": ""
     },
     {
@@ -304,7 +304,7 @@
     "poster": "/poster/produtora.jpeg",
     "title": "Video production",
     "ver": "See more...",
-    "href": "produto/produtora-de-video",
+    "href": "/produto/produtora-de-video",
     "produto": ""
     }
 ],
