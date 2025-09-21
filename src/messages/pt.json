@@ -233,8 +233,7 @@
         "title": "Produtora de video",
         "ver": "Ver mais...",
         "href": "/produto/produtora-de-video",
-        "produto": "",
-        "insta": ""
+        "produto": ""
         },
         {
         "id": 2,
@@ -243,8 +242,7 @@
         "title": "T.I.",
         "ver": "Ver mais...",
         "href": "/ti",
-        "produto": "",
-        "insta": ""
+        "produto": ""
         },
         {
         "id": 3,
@@ -253,8 +251,7 @@
         "title": "Parceiros",
         "ver": "Ver mais...",
         "href": "/parceiros",
-        "produto": "",
-        "insta": ""
+        "produto": ""
         }
     ],
     "outrosTI": [
