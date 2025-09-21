@@ -1,178 +1,186 @@
 {
-    "home": {
-      "titleHeader": "Agencia de marketing completa.",
-      "titleCategoria": "Nos encargamos de tu negocio, desde el posicionamiento hasta el clic que genera ventas.",
-      "btnSobre": "sobre",
-      "cadsPageIniLeft": [
-        {
-          "id": 18,
-          "src": "/videos/produtora.mp4",
-          "poster": "/poster/produtora.mp4.jpeg",
-          "title": "Producción de video",
-          "ver": "Ver más...",
-          "href": "/produto/produtora-de-video",
-          "produto": "produtora-de-video"
-        },
-        {
-          "id": 19,
-          "src": "/videos/ti.mp4",
-          "poster": "/poster/ti.jpeg",
-          "title": "T.I.",
-          "ver": "Ver más...",
-          "href": "/ti",
-          "produto": ""
-        }
-      ],
-      "cadsPageIniRight": [
-        {
-          "id": 20,
-          "src": "/videos/social-media.mp4",
-          "poster": "/poster/social-media.jpeg",
-          "title": "Redes sociales",
-          "ver": "Ver más...",
-          "href": "/socialmedia",
-          "produto": ""
-        },
-        {
-          "id": 21,
-          "src": "/videos/parceiros.mp4",
-          "poster": "/poster/parceiros.jpeg",
-          "title": "Socios",
-          "ver": "Ver más...",
-          "href": "/parceiros",
-          "produto": "parceiros"
-        }
-      ]
-    },
-    "paginaDinamicaCategoria": {
-      "titleOutrosS": "Otros servicios.",
-  
-      "titlesG": {
-        "titleSocial": "Servicios de redes sociales.",
-        "titleTi": "Servicios de T.I.",
-        "titleParceiro": "Hazte socio de 3XMEND"
+  "metadata": {
+  "title": "3XMEND | Agencia de Marketing Digital",
+  "description": "Cuidamos de tu negocio, desde el posicionamiento hasta el clic que genera ventas. Agencia completa de Marketing Digital.",
+  "keywords": ["marketing digital", "gestión de tráfico", "branding", "social media", "agencia 3XMEND", "cripto", "criptomoneda", "audiovisual", "TI"],
+  "titleOpen": "3XMEND | Agencia de Marketing Digital",
+  "descriptionOpen": "Desde el posicionamiento hasta el clic que genera ventas. Agencia completa para tu negocio.",
+  "descriptionTt": "Cuidamos de tu negocio, desde el posicionamiento hasta el clic que genera ventas."
+},
+  "home": {
+    "titleHeader": "Agencia de marketing completa.",
+    "titleCategoria": "Nos encargamos de tu negocio, desde el posicionamiento hasta el clic que genera ventas.",
+    "btnSobre": "sobre",
+    "cadsPageIniLeft": [
+      {
+        "id": 18,
+        "src": "/videos/produtora.mp4",
+        "poster": "/poster/produtora.mp4.jpeg",
+        "title": "Producción de video",
+        "ver": "Ver más...",
+        "href": "/produto/produtora-de-video",
+        "produto": "produtora-de-video"
       },
-      "socialmedia": [
-        {
-          "id": 1,
-          "src": "/videos/designer.mp4",
-          "poster": "/poster/designer.jpeg",
-          "title": "Diseñador",
-          "ver": "Ver más...",
-          "desc": "Nuestro servicio de Diseño transforma ideas en piezas profesionales, creativas y alineadas con tus objetivos. Ya sea para redes sociales, branding, materiales gráficos o proyectos personalizados, entregamos visuales que conectan, comunican y venden. ¡Tu marca merece ser vista con personalidad e impacto!",
-          "produto": "designer"
-        },
-        {
-          "id": 2,
-          "src": "/videos/criacao-video.mp4",
-          "poster": "/poster/criacao-video.jpeg",
-          "title": "Edición de video",
-          "ver": "Ver más...",
-          "desc": "¡Tus videos merecen impacto y profesionalismo! La edición de video de 3XMEND convierte grabaciones en contenidos atractivos, con cortes precisos, efectos en la medida justa y una identidad visual alineada con tu propósito. Da vida a tus ideas y destaca con producciones que realmente comunican tu mensaje. ¿Creamos algo increíble juntos?",
-          "produto": "edicao-de-video"
-        },
-        {
-          "id": 3,
-          "src": "/videos/social-media.mp4",
-          "poster": "/poster/social-media.jpeg",
-          "title": "Redes sociales",
-          "ver": "Ver más...",
-          "desc": "¡Tu marca en redes sociales con estrategia, creatividad y resultados! Con el servicio de Social Media de 3XMEND, tienes contenidos planificados, diseños profesionales, textos que generan interacción y una presencia digital sólida. Nos encargamos de tu comunicación para atraer, conectar y vender todos los días. ¡Basta de publicar por publicar, crece con nosotros!",
-          "produto": "social-media"
-        },
-        {
-          "id": 4,
-          "src": "/videos/ads.mp4",
-          "poster": "/poster/ads.jpeg",
-          "title": "ADS",
-          "ver": "Ver más...",
-          "desc": "¡Deja de hablar con todos y empieza a llegar a quienes realmente importan! Con el servicio de ADS de 3XMEND, tus campañas son planificadas estratégicamente, optimizadas y dirigidas para generar resultados reales. Ya sea para vender, atraer seguidores o fortalecer tu marca, creamos anuncios que convierten y hacen que tu inversión valga la pena. ¡Anuncia con inteligencia, anuncia con 3XMEND!",
-          "produto": "ads"
-        },
-        {
-          "id": 5,
-          "src": "/videos/criacao-curso.mp4",
-          "poster": "/poster/criacao-curso.jpeg",
-          "title": "Creación de cursos",
-          "ver": "Ver más...",
-          "desc": "¡Transforma tu conocimiento en un producto digital exitoso con la creación de cursos de 3XMEND! Nuestro equipo se encarga de todo: estructura de contenido, guiones, grabación, edición, identidad visual y publicación. Tu curso listo para vender, con calidad profesional, enseñanza atractiva y enfoque en resultados. Enseñar nunca fue tan fácil y rentable. ¡Creemos juntos!",
-          "produto": "criacao-de-curso"
-        },
-        {
-          "id": 6,
-          "src": "/videos/seo.mp4",
-          "poster": "/poster/seo.jpeg",
-          "title": "SEO",
-          "ver": "Ver más...",
-          "desc": "¿Quieres aparecer en Google cuando tus clientes te busquen? ¡3XMEND lo hace realidad! Con nuestro servicio de SEO, tu sitio gana más visibilidad, autoridad y tráfico calificado. Optimizamos contenidos, estructura y palabras clave para poner tu marca en la cima de las búsquedas y delante de la competencia. ¡Más clics, más visitas, más ventas!",
-          "produto": "seo"
-        },
-        {
-          "id": 7,
-          "src": "/videos/seo.mp4",
-          "poster": "/poster/seo.jpeg",
-          "title": "Producción de viñetas",
-          "ver": "Ver más...",
-          "desc": "¡Transforma tu marca en una experiencia inolvidable! Con 3XMEND, tus intros cobran vida con creatividad e impacto, transmitiendo tu mensaje de manera clara y profesional. ¡Destácate con animaciones que dejan huella!",
-          "produto": "criacao-de-vinheta"
-        },
-        {
-          "id": 8,
-          "src": "/videos/marca.mp4",
-          "poster": "/poster/marca.jpeg",
-          "title": "Marca",
-          "ver": "Ver más...",
-          "desc": "Tu marca necesita alma, propósito y presencia, y eso es exactamente lo que entrega 3XMEND. Con nuestro servicio de Creación de Marca y Branding, desarrollamos desde el nombre e identidad visual hasta el posicionamiento y la esencia de tu marca. Todo pensado estratégicamente para transmitir tus valores, conectar con el público adecuado y generar reconocimiento. Las marcas fuertes no nacen por casualidad, ¡nacen en 3XMEND!",
-          "produto": "marca"
-        },
-        {
-          "id": 9,
-          "src": "/videos/criacao-fisico-digital.mp4",
-          "poster": "/poster/criacao-fisico-digital.jpeg",
-          "title": "Creación de productos físicos y digitales",
-          "ver": "Ver más...",
-          "desc": "¡De la idea al mercado, 3XMEND transforma tu visión en realidad! Con nuestro servicio de Creación de Productos Físicos y Digitales, desarrollamos todo lo que necesitas: identidad visual, diseño, empaque, materiales promocionales e incluso contenidos para el lanzamiento. Ya sea un e-book, curso, infoproducto o producto físico, entregamos soluciones completas para que lances con calidad, autoridad y resultados. ¡Tu producto comienza aquí!",
-          "produto": "criacao-de-produtos-fisicos-e-digitais"
-        }
-      ],
-      "ti": [
-        {
-          "id": 1,
-          "src": "/videos/site.mp4",
-          "poster": "/poster/site.jpeg",
-          "title": "Sitios web y e-commerce",
-          "ver": "Ver más...",
-          "desc": "¡Ten un sitio web o e-commerce que realmente trabaje para ti! En 3XMEND, creamos plataformas modernas, rápidas y responsivas, con diseño profesional y total enfoque en la experiencia del usuario. Ya sea para presentar tu marca o vender tus productos en línea, entregamos sitios optimizados, seguros y listos para convertir. Basta de presencia digital amateur, ¡con 3XMEND tu vitrina es de alto nivel!",
-          "produto": "sites-e-ecommerce"
-        },
-        {
-          "id": 2,
-          "src": "/videos/banco-dados.mp4",
-          "poster": "/poster/banco-dados.jpeg",
-          "title": "Base de datos",
-          "ver": "Ver más...",
-          "desc": "¡Organiza, protege y potencia tu información con el servicio de Base de Datos de 3XMEND! Creamos estructuras inteligentes y seguras para que almacenes, gestiones y accedas a datos con eficiencia. Ideal para empresas que valoran la organización, la automatización y la toma de decisiones basadas en datos. ¡Ten control total sobre lo que realmente importa con tecnología hecha a medida para tu negocio!",
-          "produto": "banco-de-dados"
-        },
-        {
-          "id": 3,
-          "src": "/videos/cripto.mp4",
-          "poster": "/poster/cripto.jpeg",
-          "title": "Cripto",
-          "ver": "Ver más...",
-          "desc": "¡Anticípate a tu tiempo con el servicio de pagos en cripto de 3XMEND! Facilitamos la integración de criptomonedas en tu negocio, ofreciendo seguridad, practicidad e innovación para tus clientes. Expande tus métodos de pago, alcanza a un público más tecnológico y muestra que tu marca está conectada con el futuro. Simple, moderno y sin fronteras, ¡así lo hace 3XMEND!",
-          "produto": "cripto"
-        },
-        {
-          "id": 4,
-          "src": "/videos/ti-automacao.mp4",
-          "poster": "/poster/ti-automacao.jpeg",
-          "title": "Automatización",
-          "ver": "Ver más...",
-          "desc": "¡Ahorra tiempo, escala resultados y concéntrate en lo que realmente importa con el servicio de Automatización de 3XMEND! Automatizamos procesos de atención al cliente, ventas, marketing y mucho más para que tu negocio funcione de forma inteligente, incluso cuando estés offline. Basta de tareas repetitivas, con 3XMEND tu flujo de trabajo se vuelve más ágil, eficiente y estratégico.",
-          "produto": "automacao"
-        }
-      ],
+      {
+        "id": 19,
+        "src": "/videos/ti.mp4",
+        "poster": "/poster/ti.jpeg",
+        "title": "T.I.",
+        "ver": "Ver más...",
+        "href": "/ti",
+        "produto": ""
+      }
+    ],
+    "cadsPageIniRight": [
+      {
+        "id": 20,
+        "src": "/videos/social-media.mp4",
+        "poster": "/poster/social-media.jpeg",
+        "title": "Redes sociales",
+        "ver": "Ver más...",
+        "href": "/socialmedia",
+        "produto": ""
+      },
+      {
+        "id": 21,
+        "src": "/videos/parceiros.mp4",
+        "poster": "/poster/parceiros.jpeg",
+        "title": "Socios",
+        "ver": "Ver más...",
+        "href": "/parceiros",
+        "produto": "parceiros"
+      }
+    ]
+  },
+  "paginaDinamicaCategoria": {
+    "titleOutrosS": "Otros servicios.",
+
+    "titlesG": {
+      "titleSocial": "Servicios de redes sociales.",
+      "titleTi": "Servicios de T.I.",
+      "titleParceiro": "Hazte socio de 3XMEND"
+    },
+    "socialmedia": [
+      {
+        "id": 1,
+        "src": "/videos/designer.mp4",
+        "poster": "/poster/designer.jpeg",
+        "title": "Diseñador",
+        "ver": "Ver más...",
+        "desc": "Nuestro servicio de Diseño transforma ideas en piezas profesionales, creativas y alineadas con tus objetivos. Ya sea para redes sociales, branding, materiales gráficos o proyectos personalizados, entregamos visuales que conectan, comunican y venden. ¡Tu marca merece ser vista con personalidad e impacto!",
+        "produto": "designer"
+      },
+      {
+        "id": 2,
+        "src": "/videos/criacao-video.mp4",
+        "poster": "/poster/criacao-video.jpeg",
+        "title": "Edición de video",
+        "ver": "Ver más...",
+        "desc": "¡Tus videos merecen impacto y profesionalismo! La edición de video de 3XMEND convierte grabaciones en contenidos atractivos, con cortes precisos, efectos en la medida justa y una identidad visual alineada con tu propósito. Da vida a tus ideas y destaca con producciones que realmente comunican tu mensaje. ¿Creamos algo increíble juntos?",
+        "produto": "edicao-de-video"
+      },
+      {
+        "id": 3,
+        "src": "/videos/social-media.mp4",
+        "poster": "/poster/social-media.jpeg",
+        "title": "Redes sociales",
+        "ver": "Ver más...",
+        "desc": "¡Tu marca en redes sociales con estrategia, creatividad y resultados! Con el servicio de Social Media de 3XMEND, tienes contenidos planificados, diseños profesionales, textos que generan interacción y una presencia digital sólida. Nos encargamos de tu comunicación para atraer, conectar y vender todos los días. ¡Basta de publicar por publicar, crece con nosotros!",
+        "produto": "social-media"
+      },
+      {
+        "id": 4,
+        "src": "/videos/ads.mp4",
+        "poster": "/poster/ads.jpeg",
+        "title": "ADS",
+        "ver": "Ver más...",
+        "desc": "¡Deja de hablar con todos y empieza a llegar a quienes realmente importan! Con el servicio de ADS de 3XMEND, tus campañas son planificadas estratégicamente, optimizadas y dirigidas para generar resultados reales. Ya sea para vender, atraer seguidores o fortalecer tu marca, creamos anuncios que convierten y hacen que tu inversión valga la pena. ¡Anuncia con inteligencia, anuncia con 3XMEND!",
+        "produto": "ads"
+      },
+      {
+        "id": 5,
+        "src": "/videos/criacao-curso.mp4",
+        "poster": "/poster/criacao-curso.jpeg",
+        "title": "Creación de cursos",
+        "ver": "Ver más...",
+        "desc": "¡Transforma tu conocimiento en un producto digital exitoso con la creación de cursos de 3XMEND! Nuestro equipo se encarga de todo: estructura de contenido, guiones, grabación, edición, identidad visual y publicación. Tu curso listo para vender, con calidad profesional, enseñanza atractiva y enfoque en resultados. Enseñar nunca fue tan fácil y rentable. ¡Creemos juntos!",
+        "produto": "criacao-de-curso"
+      },
+      {
+        "id": 6,
+        "src": "/videos/seo.mp4",
+        "poster": "/poster/seo.jpeg",
+        "title": "SEO",
+        "ver": "Ver más...",
+        "desc": "¿Quieres aparecer en Google cuando tus clientes te busquen? ¡3XMEND lo hace realidad! Con nuestro servicio de SEO, tu sitio gana más visibilidad, autoridad y tráfico calificado. Optimizamos contenidos, estructura y palabras clave para poner tu marca en la cima de las búsquedas y delante de la competencia. ¡Más clics, más visitas, más ventas!",
+        "produto": "seo"
+      },
+      {
+        "id": 7,
+        "src": "/videos/seo.mp4",
+        "poster": "/poster/seo.jpeg",
+        "title": "Producción de viñetas",
+        "ver": "Ver más...",
+        "desc": "¡Transforma tu marca en una experiencia inolvidable! Con 3XMEND, tus intros cobran vida con creatividad e impacto, transmitiendo tu mensaje de manera clara y profesional. ¡Destácate con animaciones que dejan huella!",
+        "produto": "criacao-de-vinheta"
+      },
+      {
+        "id": 8,
+        "src": "/videos/marca.mp4",
+        "poster": "/poster/marca.jpeg",
+        "title": "Marca",
+        "ver": "Ver más...",
+        "desc": "Tu marca necesita alma, propósito y presencia, y eso es exactamente lo que entrega 3XMEND. Con nuestro servicio de Creación de Marca y Branding, desarrollamos desde el nombre e identidad visual hasta el posicionamiento y la esencia de tu marca. Todo pensado estratégicamente para transmitir tus valores, conectar con el público adecuado y generar reconocimiento. Las marcas fuertes no nacen por casualidad, ¡nacen en 3XMEND!",
+        "produto": "marca"
+      },
+      {
+        "id": 9,
+        "src": "/videos/criacao-fisico-digital.mp4",
+        "poster": "/poster/criacao-fisico-digital.jpeg",
+        "title": "Creación de productos físicos y digitales",
+        "ver": "Ver más...",
+        "desc": "¡De la idea al mercado, 3XMEND transforma tu visión en realidad! Con nuestro servicio de Creación de Productos Físicos y Digitales, desarrollamos todo lo que necesitas: identidad visual, diseño, empaque, materiales promocionales e incluso contenidos para el lanzamiento. Ya sea un e-book, curso, infoproducto o producto físico, entregamos soluciones completas para que lances con calidad, autoridad y resultados. ¡Tu producto comienza aquí!",
+        "produto": "criacao-de-produtos-fisicos-e-digitais"
+      }
+    ],
+    "ti": [
+      {
+        "id": 1,
+        "src": "/videos/site.mp4",
+        "poster": "/poster/site.jpeg",
+        "title": "Sitios web y e-commerce",
+        "ver": "Ver más...",
+        "desc": "¡Ten un sitio web o e-commerce que realmente trabaje para ti! En 3XMEND, creamos plataformas modernas, rápidas y responsivas, con diseño profesional y total enfoque en la experiencia del usuario. Ya sea para presentar tu marca o vender tus productos en línea, entregamos sitios optimizados, seguros y listos para convertir. Basta de presencia digital amateur, ¡con 3XMEND tu vitrina es de alto nivel!",
+        "produto": "sites-e-ecommerce"
+      },
+      {
+        "id": 2,
+        "src": "/videos/banco-dados.mp4",
+        "poster": "/poster/banco-dados.jpeg",
+        "title": "Base de datos",
+        "ver": "Ver más...",
+        "desc": "¡Organiza, protege y potencia tu información con el servicio de Base de Datos de 3XMEND! Creamos estructuras inteligentes y seguras para que almacenes, gestiones y accedas a datos con eficiencia. Ideal para empresas que valoran la organización, la automatización y la toma de decisiones basadas en datos. ¡Ten control total sobre lo que realmente importa con tecnología hecha a medida para tu negocio!",
+        "produto": "banco-de-dados"
+      },
+      {
+        "id": 3,
+        "src": "/videos/cripto.mp4",
+        "poster": "/poster/cripto.jpeg",
+        "title": "Cripto",
+        "ver": "Ver más...",
+        "desc": "¡Anticípate a tu tiempo con el servicio de pagos en cripto de 3XMEND! Facilitamos la integración de criptomonedas en tu negocio, ofreciendo seguridad, practicidad e innovación para tus clientes. Expande tus métodos de pago, alcanza a un público más tecnológico y muestra que tu marca está conectada con el futuro. Simple, moderno y sin fronteras, ¡así lo hace 3XMEND!",
+        "produto": "cripto"
+      },
+      {
+        "id": 4,
+        "src": "/videos/ti-automacao.mp4",
+        "poster": "/poster/ti-automacao.jpeg",
+        "title": "Automatización",
+        "ver": "Ver más...",
+        "desc": "¡Ahorra tiempo, escala resultados y concéntrate en lo que realmente importa con el servicio de Automatización de 3XMEND! Automatizamos procesos de atención al cliente, ventas, marketing y mucho más para que tu negocio funcione de forma inteligente, incluso cuando estés offline. Basta de tareas repetitivas, con 3XMEND tu flujo de trabajo se vuelve más ágil, eficiente y estratégico.",
+        "produto": "automacao"
+      }
+    ],
   "parceiros": [
   {
     "id": 1,

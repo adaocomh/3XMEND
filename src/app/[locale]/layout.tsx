@@ -8,20 +8,22 @@ import Footer from "../components/footer";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
- 
+ import {useTranslations} from "next-intl";
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
 });
 
+const t = useTranslations("metadata")
+
 export const metadata: Metadata = {
-  title: "3XMEND | Agência de Marketing Digital",
-  description: "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas. Agência Completa de Marketing Digital.",
-  keywords: ["marketing digital", "gestão de tráfego", "branding", "social media", "agência 3XMEND", "cripto", "cripto moeda", "audio visual", "TI"],
+  title: `${t('title')}`,
+  description: `${t('description')}`,
+  keywords: `${t('keywords')}`,
   openGraph: {
-    title: "3XMEND | Agência de marketing digital",
-    description: "Do posicionamento ao clique que gera vendas. Agência completa para o seu negócio.",
+    title: `${t('title')}`,
+    description: `${t('descriptionOpen')}`,
     url: "https://www.3xmend.com",
     siteName: "3XMEND",
     images: [
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
         url: "https://www.3xmend.com/sala-3xmend-angulo-1.webp",
         width: 1200,
         height: 630,
-        alt: "3XMEND - Agência de Marketing Digital",
+        alt: `${t('title')}`,
       },
     ],
     locale: "pt_BR",
@@ -37,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3XMEND | Agência de Marketing Digital",
-    description: "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas.",
+    title: `${t('title')}`,
+    description: `${t('descriptionTt')}`,
     images: ["https://www.3xmend.com/sala-3xmend-angulo-1.webp"],
   },
   icons: {

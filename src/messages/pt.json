@@ -1,47 +1,55 @@
 {
-    "home": {
-        "titleHeader": "Agência completa de marketing.",
-        "titleCategoria": "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas.",
-        "btnSobre": "sobre",
-        "cadsPageIniLeft": [
-            {
-            "id": 18,
-            "src": "/videos/produtora.mp4",
-            "poster": "/poster/produtora.jpeg",
-            "title": "Produtora de video",
-            "ver": "Ver mais...",
-            "href": "/produto/produtora-de-video",
-            "produto": "produtora-de-video"
-            },
-            {
-            "id": 19,
-            "src": "/videos/ti.mp4",
-            "poster": "/poster/ti.jpeg",
-            "title": "T.I.",
-            "ver": "Ver mais...",
-            "href": "/ti",
-            "produto": ""
-            }
-        ],
-        "cadsPageIniRight": [
-        {
-          "id": 20,
-          "src": "/videos/social-media.mp4",
-          "poster": "/poster/social-media.jpeg",
-          "title": "Social media",
+  "metadata": {
+    "title": "3XMEND | Agência de Marketing Digital",
+    "description": "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas. Agência Completa de Marketing Digital.",
+    "keywords": ["marketing digital", "gestão de tráfego", "branding", "social media", "agência 3XMEND", "cripto", "cripto moeda", "audio visual", "TI"],
+    "titleOpen": "3XMEND | Agência de marketing digital",
+    "descriptionOpen": "Do posicionamento ao clique que gera vendas. Agência completa para o seu negócio.",
+    "descriptionTt": "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas."
+  },
+  "home": {
+      "titleHeader": "Agência completa de marketing.",
+      "titleCategoria": "Cuidamos do seu negócio, desde o posicionamento ao clique que gera vendas.",
+      "btnSobre": "sobre",
+      "cadsPageIniLeft": [
+          {
+          "id": 18,
+          "src": "/videos/produtora.mp4",
+          "poster": "/poster/produtora.jpeg",
+          "title": "Produtora de video",
           "ver": "Ver mais...",
-          "href": "/socialmedia",
-          "produto": ""
+          "href": "/produto/produtora-de-video",
+          "produto": "produtora-de-video"
           },
-        {
-        "id": 21,
-        "src": "/videos/parceiros.mp4",
-        "poster": "/poster/parceiros.jpeg",
-        "title": "Parceiros",
+          {
+          "id": 19,
+          "src": "/videos/ti.mp4",
+          "poster": "/poster/ti.jpeg",
+          "title": "T.I.",
+          "ver": "Ver mais...",
+          "href": "/ti",
+          "produto": ""
+          }
+      ],
+      "cadsPageIniRight": [
+      {
+        "id": 20,
+        "src": "/videos/social-media.mp4",
+        "poster": "/poster/social-media.jpeg",
+        "title": "Social media",
         "ver": "Ver mais...",
-        "href": "/parceiros",
-        "produto": "parceiros"
-        }
+        "href": "/socialmedia",
+        "produto": ""
+        },
+      {
+      "id": 21,
+      "src": "/videos/parceiros.mp4",
+      "poster": "/poster/parceiros.jpeg",
+      "title": "Parceiros",
+      "ver": "Ver mais...",
+      "href": "/parceiros",
+      "produto": "parceiros"
+      }
     ]
     },
     "paginaDinamicaCategoria": {
