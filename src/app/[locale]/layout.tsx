@@ -8,46 +8,48 @@ import Footer from "../components/footer";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
- import {useTranslations} from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
 });
 
-const t = useTranslations("metadata")
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: "metadata" });
 
-export const metadata: Metadata = {
-  title: `${t('title')}`,
-  description: `${t('description')}`,
-  keywords: `${t('keywords')}`,
-  openGraph: {
-    title: `${t('title')}`,
-    description: `${t('descriptionOpen')}`,
-    url: "https://www.3xmend.com",
-    siteName: "3XMEND",
-    images: [
-      {
-        url: "https://www.3xmend.com/sala-3xmend-angulo-1.webp",
-        width: 1200,
-        height: 630,
-        alt: `${t('title')}`,
-      },
-    ],
-    locale: "pt_BR",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${t('title')}`,
-    description: `${t('descriptionTt')}`,
-    images: ["https://www.3xmend.com/sala-3xmend-angulo-1.webp"],
-  },
-  icons: {
-    icon: "/iconsLogo/icon3MEND.webp",
-    apple: "/iconsLogo/icon-apple3XMEND.webp",
-  }
-};
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t.raw("keywords").join(", "),
+    openGraph: {
+      title: t("title"),
+      description: t("descriptionOpen"),
+      url: "https://www.3xmend.com",
+      siteName: "3XMEND",
+      images: [
+        {
+          url: "https://www.3xmend.com/sala-3xmend-angulo-1.webp",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+      locale: params.locale === "pt" ? "pt_BR" : params.locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("descriptionTt"),
+      images: ["https://www.3xmend.com/sala-3xmend-angulo-1.webp"],
+    },
+    icons: {
+      icon: "/iconsLogo/icon3MEND.webp",
+      apple: "/iconsLogo/icon-apple3XMEND.webp",
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
