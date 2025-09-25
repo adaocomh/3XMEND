@@ -16,9 +16,9 @@ const roboto = Roboto({
 });
 
 export async function generateMetadata(
-  { params }: { params: Promise<{ locale: string }> }  // ✅ aqui é Promise
+  { params }: { params: Promise<{ locale: string }> }
 ): Promise<Metadata> {
-  const { locale } = await params;                     // ✅ precisa do await
+  const { locale } = await params;                  
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
