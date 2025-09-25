@@ -26,7 +26,7 @@ export async function generateMetadata(
     description: t("description"),
     keywords: Array.isArray(t.raw("keywords"))
       ? t.raw("keywords").join(", ")
-      : t.raw("keywords"), // ✅ evita erro caso venha string
+      : t.raw("keywords"), 
     openGraph: {
       title: t("title"),
       description: t("descriptionOpen"),
