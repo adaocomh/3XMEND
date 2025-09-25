@@ -15,13 +15,18 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale: params.locale, namespace: "metadata" });
+export async function generateMetadata(
+  { params }: { params: Promise<{ locale: string }> }  // ✅ aqui é Promise
+): Promise<Metadata> {
+  const { locale } = await params;                     // ✅ precisa do await
+  const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
     title: t("title"),
     description: t("description"),
-    keywords: t.raw("keywords").join(", "),
+    keywords: Array.isArray(t.raw("keywords"))
+      ? t.raw("keywords").join(", ")
+      : t.raw("keywords"), // ✅ evita erro caso venha string
     openGraph: {
       title: t("title"),
       description: t("descriptionOpen"),
@@ -35,7 +40,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           alt: t("title"),
         },
       ],
-      locale: params.locale === "pt" ? "pt_BR" : params.locale,
+      locale: locale === "pt" ? "pt_BR" : locale,
       type: "website",
     },
     twitter: {
