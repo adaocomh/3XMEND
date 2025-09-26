@@ -14,7 +14,7 @@
       {
         "id": 18,
         "src": "/videos/produtora.mp4",
-        "poster": "/poster/produtora.mp4.jpeg",
+        "poster": "/poster/produtora.jpeg",
         "title": "Producción de video",
         "ver": "Ver más...",
         "href": "/produto/produtora-de-video",
@@ -116,8 +116,8 @@
       },
       {
         "id": 7,
-        "src": "/videos/seo.mp4",
-        "poster": "/poster/seo.jpeg",
+        "src": "/videos/vinheta.mp4",
+        "poster": "/poster/vinheta.jpeg",
         "title": "Producción de viñetas",
         "ver": "Ver más...",
         "desc": "¡Transforma tu marca en una experiencia inolvidable! Con 3XMEND, tus intros cobran vida con creatividad e impacto, transmitiendo tu mensaje de manera clara y profesional. ¡Destácate con animaciones que dejan huella!",
@@ -269,7 +269,7 @@
   {
     "id": 5,
     "src": "/videos/produtora.mp4",
-    "poster": "/poster/produtora.mp4.jpeg",
+    "poster": "/poster/produtora.jpeg",
     "title": "Producción de video",
     "ver": "Ver más...",
     "href": "/produto/produtora-de-video",

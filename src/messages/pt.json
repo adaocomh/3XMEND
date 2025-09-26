@@ -116,8 +116,8 @@
         },
         {
         "id": 7,
-        "src": "/videos/seo.mp4",
-        "poster": "/poster/seo.jpeg",
+        "src": "/videos/vinheta.mp4",
+        "poster": "/poster/vinheta.jpeg",
         "title": "Produção de vinhetas",
         "ver": "Ver mais...",
         "desc": "Transforme sua marca em uma experiência inesquecível! Com a 3XMEND, suas vinhetas ganham vida com criatividade e impacto, deixando sua mensagem clara e profissional. Destaque-se com animações que marcam presença!",
@@ -245,7 +245,7 @@
         {
         "id": 2,
         "src": "/videos/ti.mp4",
-        "poster": "/poster/ti.mp4.jpeg",
+        "poster": "/poster/ti.jpeg",
         "title": "T.I.",
         "ver": "Ver mais...",
         "href": "/ti",
