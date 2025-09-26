@@ -172,8 +172,8 @@
       },
       {
         "id": 4,
-        "src": "/videos/ti-automacao.mp4",
-        "poster": "/poster/ti-automacao.jpeg",
+        "src": "/videos/atendimento.mp4",
+        "poster": "/poster/atendimento.jpeg",
         "title": "Automatización",
         "ver": "Ver más...",
         "desc": "¡Ahorra tiempo, escala resultados y concéntrate en lo que realmente importa con el servicio de Automatización de 3XMEND! Automatizamos procesos de atención al cliente, ventas, marketing y mucho más para que tu negocio funcione de forma inteligente, incluso cuando estés offline. Basta de tareas repetitivas, con 3XMEND tu flujo de trabajo se vuelve más ágil, eficiente y estratégico.",
@@ -307,7 +307,7 @@
   {
     "id": 9,
     "src": "/videos/produtora.mp4",
-    "poster": "/poster/produtora.mp4",
+    "poster": "/poster/produtora.jpeg",
     "title": "Producción de video",
     "ver": "Ver más...",
     "href": "/produto/produtora-de-video",
