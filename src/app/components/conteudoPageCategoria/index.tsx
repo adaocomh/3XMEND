@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { notFound } from "next/navigation";
 import FallingText from "@/app/components/fallingText";
 import HamburgerCursor from "@/app/components/cursorMenu";
 import AlternadorIdioma from "../alternadorIdioma";
@@ -30,7 +31,11 @@ type CardsProps = {
 export default function PageCategoria({ categoria }: { categoria: string }) {
   const t = useTranslations("paginaDinamicaCategoria");
 
-  const cards: CardsProps[] = t.raw(categoria) || [];
+  if (!t.has(categoria)) {
+    return notFound();
+  }
+
+  const cards: CardsProps[] = t.raw(categoria) as CardsProps[];
 
   const titleMap: Record<string, string> = {
     socialmedia: t("titlesG.titleSocial"),
@@ -39,12 +44,15 @@ export default function PageCategoria({ categoria }: { categoria: string }) {
   };
   const title = titleMap[categoria] || "Categoria";
 
-  const outrosMap: Record<string, CardsOutrosProps[]> = {
-    socialmedia: t.raw("outrosSocial") || [],
-    parceiros: t.raw("outrosParceiros") || [],
-    ti: t.raw("outrosTI") || [],
+  const getOutros = (key: string): CardsOutrosProps[] => {
+    return t.has(key) ? (t.raw(key) as CardsOutrosProps[]) : [];
   };
-  const outros = outrosMap[categoria] || [];
+
+  const outros: CardsOutrosProps[] = {
+    socialmedia: getOutros("outrosSocial"),
+    parceiros: getOutros("outrosParceiros"),
+    ti: getOutros("outrosTI"),
+  }[categoria] || [];
 
   return (
     <div className="flex flex-col items-center bg-[var(--background)] header-page-dinamic">
