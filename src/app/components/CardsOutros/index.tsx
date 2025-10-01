@@ -1,18 +1,19 @@
-"use client"
+"use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type CardsProps = {
-    src: string;
-    poster: string;
-    title: string;
-    ver: string;
-    href: string;
-  };
+  src: string;
+  poster: string;
+  title: string;
+  ver: string;
+  href: string;
+};
 
-export default function CardsOutros({ src, poster, title, ver, href }: CardsProps){
+export default function CardsOutros({ src, poster, title, ver, href }: CardsProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [unlocked, setUnlocked] = useState(false);
 
   const handleMouseEnter = (e: React.MouseEvent<HTMLVideoElement>) => {
     const video = e.currentTarget;
@@ -34,13 +35,30 @@ export default function CardsOutros({ src, poster, title, ver, href }: CardsProp
   const handleLoadedData = (e: React.SyntheticEvent<HTMLVideoElement>) => {
     e.currentTarget.currentTime = 0.1;
   };
+
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
+    const unlock = () => {
+      video.play()
+        .then(() => {
+          video.pause();
+          video.currentTime = 0.1;
+          setUnlocked(true);
+        })
+        .catch((err) => console.warn("Falha ao desbloquear autoplay:", err));
+
+      document.removeEventListener("touchstart", unlock);
+    };
+
+    document.addEventListener("touchstart", unlock, { once: true });
+
     if (window.matchMedia("(pointer: coarse)").matches) {
       const observer = new IntersectionObserver(
         (entries) => {
+          if (!unlocked) return;
+
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               video.play().catch((err) => {
@@ -54,7 +72,7 @@ export default function CardsOutros({ src, poster, title, ver, href }: CardsProp
         },
         {
           root: null,
-          threshold: 0.8,
+          threshold: 0.5,
         }
       );
 
@@ -64,11 +82,12 @@ export default function CardsOutros({ src, poster, title, ver, href }: CardsProp
         observer.disconnect();
       };
     }
-  }, []);
+  }, [unlocked]);
 
-    return(
+  return (
     <Link href={href} className="flex flex-col items-center w-[100%]">
       <video
+        ref={videoRef}
         className="w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -78,12 +97,11 @@ export default function CardsOutros({ src, poster, title, ver, href }: CardsProp
         playsInline
         poster={poster}
       >
-        <source src={src} type="video/mp4" />
+        <source src={src} type="video/mp4"/>
         Seu navegador não suporta vídeos HTML5.
       </video>
       <h4 className="text-[18px] font-bold hoverSeta">{title}</h4>
       <p className="text-[12px] text-(--cor-quartenaria) hoverSeta">{ver}</p>
     </Link>
-    )
+  );
 }
-    
