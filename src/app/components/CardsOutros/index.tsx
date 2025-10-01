@@ -93,7 +93,7 @@ export default function CardsOutros({ src, poster, title, ver, href }: CardsProp
         onMouseLeave={handleMouseLeave}
         onLoadedData={handleLoadedData}
         muted
-        loop={false}
+        loop={true}
         playsInline
         poster={poster}
       >

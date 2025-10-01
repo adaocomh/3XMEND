@@ -95,7 +95,7 @@ export default function CardProduto({ src, poster, title, ver, desc, produto }: 
           onMouseLeave={handleMouseLeave}
           onLoadedData={handleLoadedData}
           muted
-          loop={false}
+          loop={true}
           playsInline
           poster={poster}
         >
