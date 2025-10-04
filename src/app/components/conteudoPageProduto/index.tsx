@@ -7,7 +7,7 @@ import AlternadorIdioma from "../alternadorIdioma";
 import HamburgerCursor from "../cursorMenu";
 import Image from "next/image";
 import Link from "next/link";
-import Cards from "../cardsOutros";
+import Cards from "../CardsOutros";
 import Slide from "../elementosSlides";
 
 type CardsProps = {

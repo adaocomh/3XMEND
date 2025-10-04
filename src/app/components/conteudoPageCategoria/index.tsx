@@ -6,7 +6,7 @@ import FallingText from "../fallingText";
 import HamburgerCursor from "../cursorMenu";
 import AlternadorIdioma from "../alternadorIdioma";
 import CardProduto from "../cardProduto";
-import CardsOutros from "../cardsOutros";
+import CardsOutros from "../CardsOutros";
 import Link from "next/link";
 
 type CardsOutrosProps = {

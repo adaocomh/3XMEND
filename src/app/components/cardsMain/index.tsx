@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import CardsOutros from "../cardsOutros";
+import CardsOutros from "../CardsOutros";
 import { useTranslations } from "next-intl";
 
 
