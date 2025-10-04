@@ -18,8 +18,8 @@ export default function TransicaoPage({ children }: { children: React.ReactNode 
     setShow(true);
     setAnimate(true);
 
-    const timer1 = setTimeout(() => setAnimate(false), 450);
-    const timer2 = setTimeout(() => setShow(false), 600);
+    const timer1 = setTimeout(() => setAnimate(false), 500);
+    const timer2 = setTimeout(() => setShow(false), 800);
 
     prevPathname.current = pathname;
 
