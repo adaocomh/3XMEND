@@ -9,7 +9,6 @@ import { useTranslations } from "next-intl";
 
 export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpen: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false);
-  const [isBgLight, setIsBgLight] = useState(false);
   const t = useTranslations('menu')
 
   useEffect(() => {
@@ -64,8 +63,6 @@ export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpe
           ? "#262626"
           : "#F5F5F5";
       }
-
-      setIsBgLight(!open && isTransparent && isPageLight);
 
       listras.forEach((listra) => {
         listra.style.backgroundColor = corListras;
