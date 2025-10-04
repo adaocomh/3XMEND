@@ -427,7 +427,7 @@
   },
   "criacao-de-vinheta": {
     "id": 7,
-    "src": "/videos/seo.mp4",
+    "src": "/videos/vinheta.mp4",
     "poster": "",
     "ver": "",
     "title": "Creación de intro",
@@ -499,7 +499,7 @@
   },
   "automacao": {
     "id": 13,
-    "src": "/videos/ti-automacao.mp4",
+    "src": "/videos/atendimento.mp4",
     "poster": "",
     "ver": "",
     "title": "Automatización",
