@@ -204,7 +204,7 @@
         {
         "id": 3,
         "src": "",
-        "poster": "/parceiros/fabiana.png",
+        "poster": "/parceiros/fabiana.jpg",
         "title": "Fabiana Santos",
         "ver": "@fabianasantosfisio",
         "desc": "Fabiana é dedicada à promoção da saúde e qualidade de vida por meio da fisioterapia. Com o lema 'O movimento é qualidade de vida', ela compartilha conteúdos que incentivam hábitos saudáveis e a importância da atividade física.",
@@ -576,20 +576,8 @@
     "descIcon": [],
     "imgs": []
   },
-  "diego": {
-    "id": 17,
-    "src": "",
-    "poster": "/parceiros/diego.webp",
-    "ver": "@diegorossato_",
-    "title": "Diego Rossato",
-    "subTitle": "",
-    "desc": "O Instagram de Diego Rossato é dedicado à sua jornada como atleta híbrido, combinando musculação, corrida e jiu-jitsu para ganhar massa e perder gordura. Ele compartilha treinos, desafios e conquistas, como completar seu primeiro triatlo olímpico no Triathlon Internacional de Santos.",
-    "icon": [],
-    "descIcon": [],
-    "imgs": []
-  },
   "douglas": {
-    "id": 18,
+    "id": 17,
     "src": "",
     "poster": "/parceiros/douglas.webp",
     "ver": "@flaminodoug",
@@ -601,9 +589,9 @@
     "imgs": []
   },
   "fabiana": {
-    "id": 19,
+    "id": 18,
     "src": "",
-    "poster": "/parceiros/fabiana.webp",
+    "poster": "/parceiros/fabiana.jpg",
     "ver": "@fabianasantosfisio",
     "title": "Fabiana Santos",
     "subTitle": "",
@@ -613,7 +601,7 @@
     "imgs": []
   },
   "flavia": {
-    "id": 20,
+    "id": 19,
     "src": "",
     "poster": "/parceiros/flavia.webp",
     "ver": "@corro_pra_descansar",
@@ -625,7 +613,7 @@
     "imgs": []
   },
   "tiago": {
-    "id": 21,
+    "id": 20,
     "src": "",
     "poster": "/parceiros/tiago.webp",
     "ver": "@tiagomecabo",
