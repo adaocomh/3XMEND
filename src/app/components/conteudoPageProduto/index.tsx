@@ -2,13 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import Data from "../../../messages/pt.json"
-import FallingText from "@/app/components/fallingText";
+import FallingText from "../fallingText";
 import AlternadorIdioma from "../alternadorIdioma";
-import HamburgerCursor from "@/app/components/cursorMenu";
+import HamburgerCursor from "../cursorMenu";
 import Image from "next/image";
 import Link from "next/link";
-import Cards from "@/app/components/cardsOutros";
-import Slide from "@/app/components/elementosSlides";
+import Cards from "../cardsOutros";
+import Slide from "../elementosSlides";
 
 type CardsProps = {
   id: number;

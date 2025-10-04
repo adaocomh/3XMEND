@@ -2,8 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { notFound } from "next/navigation";
-import FallingText from "@/app/components/fallingText";
-import HamburgerCursor from "@/app/components/cursorMenu";
+import FallingText from "../fallingText";
+import HamburgerCursor from "../cursorMenu";
 import AlternadorIdioma from "../alternadorIdioma";
 import CardProduto from "../cardProduto";
 import CardsOutros from "../cardsOutros";
