@@ -14,7 +14,7 @@ type CardsProps = {
   produto: string;
 };
 
-export default function cardsMain() {
+export default function CardsMain() {
   const t = useTranslations('home')
 
   const cardsLeft: CardsProps[] = t.raw('cadsPageIniLeft') || []
