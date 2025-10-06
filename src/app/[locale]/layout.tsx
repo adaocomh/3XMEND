@@ -70,7 +70,6 @@ export default async function RootLayout({
     notFound();
   }
 
-  // Load messages on the server to ensure production has locale data
   const {messages} = await requestConfig({requestLocale: Promise.resolve(locale)} as any);
   
   return (
