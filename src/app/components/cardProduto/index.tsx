@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation"
 
 type CardsProps = {
   src: string;
@@ -86,7 +86,7 @@ export default function CardProduto({ src, poster, title, ver, desc, produto }: 
   }, [unlocked]);
 
   return (
-    <Link href={`produto/${produto}`} className="flex flex-col items-center w-[100%] md:w-[30%]">
+    <Link href={`produto/${produto}` as any} className="flex flex-col items-center w-[100%] md:w-[30%]">
       {src ? (
         <video
           ref={videoRef}

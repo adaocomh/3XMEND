@@ -7,7 +7,7 @@ import HamburgerCursor from "../cursorMenu";
 import AlternadorIdioma from "../alternadorIdioma";
 import CardProduto from "../cardProduto";
 import CardsOutros from "../CardsOutros";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 
 type CardsOutrosProps = {
   id: number;

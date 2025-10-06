@@ -4,7 +4,7 @@ import AlternadorIdioma from "../components/alternadorIdioma";
 import Image from "next/image";
 import CardsMain from "../components/cardsMain";
 import BtnSobre from "../components/btnSobre"
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import {useTranslations} from 'next-intl';
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <video src="/videos/video-header-cortado-s-som.mp4" autoPlay muted loop playsInline className="absolute inset-0 h-full w-full object-cover"/>
       <div className="absolute flex flex-col items-center justify-between w-full h-full bg-[rgba(0,0,0,0.8)] p-[20px] md:p-[40px]">
         <div className="flex justify-between w-full">
-          <Link href="/">
+          <Link href={"/" as any}>
             <FallingText text="3XMEND"/>
           </Link>
           <div className="flex items-center gap-[60px]">

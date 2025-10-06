@@ -1,7 +1,7 @@
 import FallingText from "@/app/components/fallingText";
 import AlternadorIdioma from "@/app/components/alternadorIdioma";
 import HamburgerCursor from "@/app/components/cursorMenu";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import Contador from "../../components/contador";
 import FAQ from "../../components/FAQ";
 import { useTranslations } from "next-intl";
@@ -15,7 +15,7 @@ export default function Sobre() {
     <div className="flex flex-col items-center bg-[var(--cor-secundaria)]">
       <header className="w-[100vw]">
         <div className="flex justify-between w-[100%] p-[20px] md:p-[40px]">
-          <Link href="/"><FallingText text="3XMEND"/></Link>
+          <Link href={"/" as any}><FallingText text="3XMEND"/></Link>
           <div className="flex items-center gap-[60px]">
             <AlternadorIdioma/>
             <div className="flex justify-center items-center">

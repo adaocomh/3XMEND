@@ -6,7 +6,7 @@ import FallingText from "../fallingText";
 import AlternadorIdioma from "../alternadorIdioma";
 import HamburgerCursor from "../cursorMenu";
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import Cards from "../CardsOutros";
 import Slide from "../elementosSlides";
 

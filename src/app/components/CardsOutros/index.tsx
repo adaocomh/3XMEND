@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
 
 type CardsProps = {
@@ -85,7 +85,7 @@ export default function CardsOutros({ src, poster, title, ver, href }: CardsProp
   }, [unlocked]);
 
   return (
-    <Link href={href} className="flex flex-col items-center w-[100%]">
+    <Link href={href as any} className="flex flex-col items-center w-[100%]">
       <video
         ref={videoRef}
         className="w-[100%] h-[100%] rounded-[10px] mb-[10px] cursor-pointer hoverSeta"

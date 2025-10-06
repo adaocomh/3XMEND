@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import FallingText from "../fallingText";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import AlternadorIdiomaMenu from "../alternadorMenu";
 import LinksContatosMenu from "../linksContatosMenu/inde";
 import { useTranslations } from "next-intl";
@@ -96,7 +96,7 @@ export default function MenuHamburger({ open, setOpen }: { open: boolean; setOpe
           <div className={`${open && scrolled? "absolute top-[40px] left-[40px]" : "hidden"}`}>
             <Link href="/"><FallingText text="3XMEND"/></Link>
           </div>
-          <Link href="/#servicos">
+          <Link href={{pathname: "/", hash: "servicos"}}>
           <h3 className="max-w-min text-[60px] font-black text-(--background) hoverSeta slideMenu1" onClick={() => {
                 const timer = setTimeout(() => setOpen(false), 200);
                 return () => clearTimeout(timer);}}>{t('servicos')}</h3></Link>

@@ -9,6 +9,7 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import { getTranslations } from "next-intl/server";
+import requestConfig from '@/i18n/request';
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -68,6 +69,9 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  // Load messages on the server to ensure production has locale data
+  const {messages} = await requestConfig({requestLocale: Promise.resolve(locale)} as any);
   
   return (
     <html lang={locale}>
@@ -78,7 +82,7 @@ export default async function RootLayout({
         <CustomCursor open/>
         <Loader>
           <TransicaoPage>
-          <NextIntlClientProvider>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             {children}
             <Footer/>
           </NextIntlClientProvider>
